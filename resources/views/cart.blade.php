@@ -16,11 +16,28 @@
         <div class="container">
         	<div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 main-col">
-                	<div class="alert alert-success text-uppercase" role="alert">
+
+                	<div id="free_shipping" class="alert alert-success text-uppercase" role="alert">
 						<i class="icon anm anm-truck-l icon-large"></i> &nbsp;<strong>Congratulations!</strong> You've got free shipping!
 					</div>
+
+                    <div id="empty" class="alert alert-danger text-uppercase" role="alert">
+						<i class="icon anm anm-truck-l icon-large"></i> &nbsp;<strong>Congratulations!</strong> You've got free shipping!
+					</div>
+
                 	<div class="cart style2">
-                		<table>
+
+                		<table id="cart_table">
+
+                            {{-- start If empty cart --}}
+                            @if($count_cart_products == 0)
+                                <style>
+                                    #cart_table{display: none}
+                                    #free_shipping{display: none}
+                                </style>
+                            @endif
+                            {{-- end If empty cart --}}
+                            
                             <thead class="cart__row cart__header">
                                 <tr>
                                     <th colspan="2" class="text-center">Product</th>
@@ -66,7 +83,7 @@
                                                 
                                                 <form action="{{ route('update_cart', [$cart_product->id]) }}" method="POST">
                                                     @csrf
-                                                    {{ method_field('PUT') }}
+                                                    {{ method_field('patch') }}
                                                     <input class="cart__qty-input qty" type="text" name="update_quantity" id="qty" value="{{ $cart_product->quantity }}" pattern="[0-9]*">
                                                 </form>
                                                 
@@ -83,7 +100,7 @@
                                         {{ method_field('delete') }}
                                     <td class="text-center small--hide"><button type="submit" class="btn btn--secondary cart__remove" title="Remove tem"><i class="icon icon anm anm-times-l"></i></button></td>
                                     </form>
-                                    {{-- {!! Form::close() !!}       --}}
+                                    {{-- {!! Form::close() !!} --}}
 
                                 </tr>
 
@@ -95,10 +112,16 @@
                                 <tr>
                                     <td colspan="3" class="text-left"><a href="{{ route('shop') }}" class="btn btn-secondary btn--small cart-continue">Continue shopping</a></td>
                                     <td colspan="3" class="text-right">
+
+                                        {{-- Delete all button --}} 
                                         {!! Form::open(['route'=>['delete_all'], 'method'=>'delete'])!!}
                                             <button type="submit" name="clear" class="btn btn-secondary btn--small  small--hide">Clear Cart</button>
-                                        {!! Form::close() !!}      
-                                    	    <button type="submit" name="update" class="btn btn-secondary btn--small cart-continue ml-2">Update Cart</button>
+                                        {!! Form::close() !!}
+
+                                        {{-- Update all button --}}   
+                                        {!! Form::open(['route'=>['update_all'], 'method'=>'put'])!!} 
+                                    	    <button type="submit" onclick="document.querySelector('#form_id').submit();" name="update" class="btn btn-secondary btn--small cart-continue ml-2">Update Cart</button>
+                                        {!! Form::close() !!}
                                     </td>
                                 </tr>
                             </tfoot>

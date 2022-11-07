@@ -40,7 +40,8 @@ Route::group(['middleware' => ['notCustomer', 'auth']], function () {
     Route::get('/cart', [CartController::class, 'index'])->name('show_cart');
     Route::Post('/create_cart/{id}', [CartController::class, 'create_cart'])->name('create_cart');
     //update cart routes ------
-    Route::put('/update_cart/{id}', [CartController::class, 'update_cart'])->name('update_cart');
+    Route::patch('/update_cart/{id}', [CartController::class, 'update_cart'])->name('update_cart');
+    Route::put('/update_all', [CartController::class, 'update_all'])->name('update_all');
     //delete cart routes ------
     Route::delete('/delete_all', [CartController::class, 'delete_all'])->name('delete_all');
     Route::delete('/delete_row/{id}', [CartController::class, 'delete_row'])->name('delete_row');
@@ -71,13 +72,10 @@ Route::get('/product-page', function () {
     return view('product-page');
 })->name('product-page');
 
-Route::get('/shop-grid', function () {
-    return view('shop-grid');
-})->name('shop-grid');
-
-Route::get('/shop', function () {
-    return view('shop');
-})->name('shop');
+Route::group([], function () {
+    route::get('/input', [ProductController::class, 'products'])->name('input');
+    route::get('/shop', [ProductController::class, 'products'])->name('shop');
+});
 
 //all routes for register, login and logout are built-in ---- but you can call out
 
