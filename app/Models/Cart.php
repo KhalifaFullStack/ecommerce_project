@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Product extends Model
+class Cart extends Model
 {
     use HasFactory, SoftDeletes;
 
@@ -17,15 +17,8 @@ class Product extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function variantPics(): \Illuminate\Database\Eloquent\Relations\HasMany
+    public function products(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->hasMany(VariationPic::class);
+        return $this->hasMany(Product::class);
     }
-
-    Public function cart(): \Illuminate\Database\Eloquent\Relations\BelongsTo
-    {
-        return $this->belongsTo(Cart::class);
-    }
-
-    
 }

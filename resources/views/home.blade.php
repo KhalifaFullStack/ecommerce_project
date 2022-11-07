@@ -199,14 +199,15 @@ Home page
                             </a>
                             <!-- end product image -->
 
-                            <!-- countdown start -->
+                            {{-- <!-- countdown start -->
                             <div class="saleTime desktop" data-countdown="2022/03/01"></div>
-                            <!-- countdown end -->
+                            <!-- countdown end --> --}}
 
                             <!-- Start product button -->
-                            <form class="variants add" action="#" onclick="window.location.href='cart.html'" method="post">
-                                <button class="btn btn-addto-cart" type="button" tabindex="0">Add To
-                                    Cart</button>
+                            <form class="variants add" action="{{ route('create_cart', [$product->id]) }}" method="post">
+                                @csrf
+                                <input type="number" name="add_quantity">
+                                <button class="btn btn-addto-cart" type="submit" tabindex="0">Add To Cart</button>
                             </form>
                             <div class="button-set">
                                 <a href="javascript:void(0)" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal" data-target="#content_quickview">
@@ -236,12 +237,12 @@ Home page
 
                             <!-- product price -->
                             <div class="product-price">
-                                @if($product->discounts > 0)
+                                @if($product->discount > 0)
 
                                     <span class="old-price">{{$product->price}} EGP</span>
-                                    <span class="price">{{$product->price - ($product->discounts * $product->price)}} EGP</span>
+                                    <span class="price">{{$product->price - ($product->discount * $product->price)}} EGP</span>
                                     
-                                @elseif($product->discounts <= 0) 
+                                @elseif($product->discount   <= 0) 
                                     <span class="price">{{$product->price}} EGP</span>
                                 @endif
                             </div>
@@ -318,12 +319,12 @@ Home page
                             <!-- product price -->
                             <div class="product-price">
 
-                                @if($sec_product->discounts <= 0 || $sec_product->discounts == null || $sec_product->discounts == "")
+                                @if($sec_product->discount <= 0 || $sec_product->discount == null || $sec_product->discount == "")
                                     <span class="price">{{ $sec_product->price ?? "line 504" }} EGP</span>
                                     
-                                    @elseif ($sec_product->discounts > 0)
+                                    @elseif ($sec_product->discount > 0)
                                     <span class="old-price">{{ $sec_product->price ?? "line 507" }} EGP</span>
-                                    <span class="price">{{ $sec_product->price - ($sec_product->dicounts * $sec_product->price) ?? "line 508"}} EGP</span>
+                                    <span class="price">{{ $sec_product->price - ($sec_product->dicount * $sec_product->price) ?? "line 508"}} EGP</span>
                                 @endif
 
                             </div>

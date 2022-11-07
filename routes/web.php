@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CartController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
@@ -34,9 +35,17 @@ Route::get('/blog', function () {
     return view('blog');
 })->name('blog');
 
-Route::get('/cart', function () {
-    return view('cart');
-})->name('cart');
+//start of Cart routes ----------------------
+Route::group(['middleware' => ['notCustomer', 'auth']], function () {
+    Route::get('/cart', [CartController::class, 'index'])->name('show_cart');
+    Route::Post('/create_cart/{id}', [CartController::class, 'create_cart'])->name('create_cart');
+    //update cart routes ------
+    Route::put('/update_cart/{id}', [CartController::class, 'update_cart'])->name('update_cart');
+    //delete cart routes ------
+    Route::delete('/delete_all', [CartController::class, 'delete_all'])->name('delete_all');
+    Route::delete('/delete_row/{id}', [CartController::class, 'delete_row'])->name('delete_row');
+});
+//End of Cart routes ----------------------
 
 Route::get('/checkout', function () {
     return view('checkout');
@@ -80,8 +89,8 @@ Route::get('/shop', function () {
 
 //******************* group routes (that holds one or more route and middleware) *******************//
 Route::group([
-    'middleware' => ['', '', ''] // all the middlewares here
+    'middleware' => ['', '', ''] //** all the middlewares here**// 
 ], function () {
     // all the routes here
 });
-//**************************************************************************************************//
+//**************************************************************************************************//s

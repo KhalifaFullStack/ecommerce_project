@@ -36,7 +36,12 @@ class User extends Authenticatable
         return $this->HasMany(Product::class);
     }
 
-    
+    public function cart(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->HasMany(Cart::class);
+    }
+
+
     /**
      * The attributes that should be hidden for serialization.
      *
