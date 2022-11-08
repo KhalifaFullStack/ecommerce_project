@@ -4,7 +4,7 @@
 
 @section('content')
     
-@include('layouts.sidebar')
+@include('layouts.shop_sidebar')
                 <!--Main Content-->
                 <div class="col-12 col-sm-12 col-md-9 col-lg-9 main-col">
                 	<div class="category-description">
@@ -27,7 +27,7 @@
                                             <!-- Image -->
                                             <a href="product-layout-2.html"><img class="list-view-item__image blur-up lazyload" data-src="{{ $product_value->image }}" src="{{ $product_value->image }}" alt="{{ $product_value->name." image not found" }}" title="{{ $product_value->name ?? 'Product name' }}"></a>
                                             <!-- End Image -->
-                                        </div>
+                                    </div>
                                     </div>
                                     <div class="list-view-item__title-column">
                                         <div class="h4 grid-view-item__title"><a href="product-layout-2.html">{{ $product_value->name ?? 'Product name'}}</a></div>

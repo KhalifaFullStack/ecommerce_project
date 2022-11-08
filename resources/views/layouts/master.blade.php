@@ -15,17 +15,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <link rel="shortcut icon" href="/assets/images/favicon.png" />
 
     <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/css/plugins.css">
+    <link rel="stylesheet" href="/assets/css/plugins.css">
 
     <!-- Bootstap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
 
     @livewireStyles
 </head>
@@ -44,7 +44,7 @@
     </div> -->
 
     <div id="pre-loader">
-        <img src="assets/images/loader.gif" alt="Loading..." />
+        <img src="/assets/images/loader.gif" alt="Loading..." />
     </div>
     <!-- End Preloader -->
 
@@ -61,17 +61,17 @@
         <!--End Scoll Top-->
 
         <!-- Including Jquery -->
-        <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
-        <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-        <script src="assets/js/vendor/jquery.cookie.js"></script>
-        <script src="assets/js/vendor/wow.min.js"></script>
+        <script src="/assets/js/vendor/jquery-3.3.1.min.js"></script>
+        <script src="/assets/js/vendor/modernizr-3.6.0.min.js"></script>
+        <script src="/assets/js/vendor/jquery.cookie.js"></script>
+        <script src="/assets/js/vendor/wow.min.js"></script>
 
         <!-- Including Javascript -->
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/plugins.js"></script>
-        <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/lazysizes.js"></script>
-        <script src="assets/js/main.js"></script>
+        <script src="/assets/js/bootstrap.min.js"></script>
+        <script src="/assets/js/plugins.js"></script>
+        <script src="/assets/js/popper.min.js"></script>
+        <script src="/assets/js/lazysizes.js"></script>
+        <script src="/assets/js/main.js"></script>
 
         <!--For Newsletter Popup-->
         <script>

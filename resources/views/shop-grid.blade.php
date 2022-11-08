@@ -9,7 +9,7 @@
     	<!--Collection Banner-->
     	<div class="collection-header">
 			<div class="collection-hero">
-        		<div class="collection-hero__image"><img class="blur-up lazyload" data-src="assets/images/cat-women.jpg" src="assets/images/cat-women.jpg" alt="Women" title="Women" /></div>
+        		<div class="collection-hero__image"><img class="blur-up lazyload" data-src="/assets/images/cat-women.jpg" src="/assets/images/cat-women.jpg" alt="Women" title="Women" /></div>
         		<div class="collection-hero__title-wrapper"><h1 class="collection-hero__title page-width">Shop Grid 5 Column</h1></div>
       		</div>
 		</div>
@@ -151,7 +151,7 @@
                                       <div class="mini-list-item">
                                         <div class="mini-view_image">
                                             <a class="grid-view-item__link" href="#">
-                                                <img class="grid-view-item__image" src="assets/images/product-images/mini-product-img.jpg" alt="" />
+                                                <img class="grid-view-item__image" src="/assets/images/product-images/mini-product-img.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="details"> <a class="grid-view-item__title" href="#">Cena Skirt</a>
@@ -161,7 +161,7 @@
                                     </div>
                                     <div class="grid__item">
                                       <div class="mini-list-item">
-                                        <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image" src="assets/images/product-images/mini-product-img1.jpg" alt="" /></a> </div>
+                                        <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image" src="/assets/images/product-images/mini-product-img1.jpg" alt="" /></a> </div>
                                         <div class="details"> <a class="grid-view-item__title" href="#">Block Button Up</a>
                                           <div class="grid-view-item__meta"><span class="product-price__price"><span class="money">$378.00</span></span></div>
                                         </div>
@@ -169,7 +169,7 @@
                                     </div>
                                     <div class="grid__item">
                                       <div class="mini-list-item">
-                                        <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image" src="assets/images/product-images/mini-product-img2.jpg" alt="" /></a> </div>
+                                        <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image" src="/assets/images/product-images/mini-product-img2.jpg" alt="" /></a> </div>
                                         <div class="details"> <a class="grid-view-item__title" href="#">Balda Button Pant</a>
                                           <div class="grid-view-item__meta"><span class="product-price__price"><span class="money">$278.60</span></span></div>
                                         </div>
@@ -177,7 +177,7 @@
                                     </div>
                                     <div class="grid__item">
                                       <div class="mini-list-item">
-                                        <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image" src="assets/images/product-images/mini-product-img3.jpg" alt="" /></a> </div>
+                                        <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image" src="/assets/images/product-images/mini-product-img3.jpg" alt="" /></a> </div>
                                         <div class="details"> <a class="grid-view-item__title" href="#">Border Dress in Black/Silver</a>
                                           <div class="grid-view-item__meta"><span class="product-price__price"><span class="money">$228.00</span></span></div>
                                         </div>
@@ -190,7 +190,7 @@
                         <!--End Popular Products-->
                         <!--Banner-->
                         <div class="sidebar_widget static-banner">
-                        	<img src="assets/images/side-banner-2.jpg" alt="" />
+                        	<img src="/assets/images/side-banner-2.jpg" alt="" />
                         </div>
                         <!--Banner-->
                         <!--Information-->
@@ -256,10 +256,10 @@
                             	<div class="row">
                                 	<div class="col-4 col-md-4 col-lg-4 filters-toolbar__item collection-view-as d-flex justify-content-start align-items-center">
                                     	<a href="shop-left-sidebar.html" title="Grid View" class="change-view change-view--active">
-                                        	<img src="assets/images/grid.jpg" alt="Grid" />
+                                        	<img src="/assets/images/grid.jpg" alt="Grid" />
                                         </a>
                                         <a href="shop-listview.html" title="List View" class="change-view">
-                                        	<img src="assets/images/list.jpg" alt="List" />
+                                        	<img src="/assets/images/list.jpg" alt="List" />
                                         </a>
                                     </div>
                                     <div class="col-4 col-md-4 col-lg-4 text-center filters-toolbar__item filters-toolbar__item--count d-flex justify-content-center align-items-center">
@@ -294,10 +294,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image1.jpg" src="assets/images/product-images/product-image1.jpg" alt="image" title="product">
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image1.jpg" src="/assets/images/product-images/product-image1.jpg" alt="image" title="product">
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image1-1.jpg" src="assets/images/product-images/product-image1-1.jpg" alt="image" title="product">
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image1-1.jpg" src="/assets/images/product-images/product-image1-1.jpg" alt="image" title="product">
                                             <!-- End hover image -->
                                             <!-- product label -->
                                             <div class="product-labels rectangular"><span class="lbl on-sale">-16%</span> <span class="lbl pr-label1">new</span></div>
@@ -357,10 +357,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image2.jpg" src="assets/images/product-images/product-image2.jpg" alt="image" title="product">
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image2.jpg" src="/assets/images/product-images/product-image2.jpg" alt="image" title="product">
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image2-1.jpg" src="assets/images/product-images/product-image2-1.jpg" alt="image" title="product">
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image2-1.jpg" src="/assets/images/product-images/product-image2-1.jpg" alt="image" title="product">
                                             <!-- End hover image -->
                                         </a>
                                         <!-- end product image -->
@@ -416,10 +416,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image3.jpg" src="assets/images/product-images/product-image3.jpg" alt="image" title="product">
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image3.jpg" src="/assets/images/product-images/product-image3.jpg" alt="image" title="product">
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image3-1.jpg" src="assets/images/product-images/product-image3-1.jpg" alt="image" title="product">
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image3-1.jpg" src="/assets/images/product-images/product-image3-1.jpg" alt="image" title="product">
                                             <!-- End hover image -->
                                             <!-- product label -->
                                             <div class="product-labels rectangular"><span class="lbl pr-label2">Hot</span></div>
@@ -479,10 +479,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image4.jpg" src="assets/images/product-images/product-image4.jpg" alt="image" title="product" />
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image4.jpg" src="/assets/images/product-images/product-image4.jpg" alt="image" title="product" />
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image4-1.jpg" src="assets/images/product-images/product-image4-1.jpg" alt="image" title="product" />
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image4-1.jpg" src="/assets/images/product-images/product-image4-1.jpg" alt="image" title="product" />
                                             <!-- End hover image -->
                                             <!-- product label -->
                                             <div class="product-labels"><span class="lbl on-sale">Sale</span></div>
@@ -543,10 +543,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image5.jpg" src="assets/images/product-images/product-image5.jpg" alt="image" title="product" />
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image5.jpg" src="/assets/images/product-images/product-image5.jpg" alt="image" title="product" />
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image5-1.jpg" src="assets/images/product-images/product-image5-1.jpg" alt="image" title="product" />
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image5-1.jpg" src="/assets/images/product-images/product-image5-1.jpg" alt="image" title="product" />
                                             <!-- End hover image -->
                                             <!-- product label -->
                                             <div class="product-labels"><span class="lbl on-sale">Sale</span></div>
@@ -606,10 +606,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image17.jpg" src="assets/images/product-images/product-image17.jpg" alt="image" title="product" />
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image17.jpg" src="/assets/images/product-images/product-image17.jpg" alt="image" title="product" />
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image17-1.jpg" src="assets/images/product-images/product-image17-1.jpg" alt="image" title="product" />
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image17-1.jpg" src="/assets/images/product-images/product-image17-1.jpg" alt="image" title="product" />
                                             <!-- End hover image -->
                                             <!-- product label -->
                                             <div class="product-labels"><span class="lbl on-sale">Sale</span></div>
@@ -669,10 +669,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image18.jpg" src="assets/images/product-images/product-image18.jpg" alt="image" title="product" />
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image18.jpg" src="/assets/images/product-images/product-image18.jpg" alt="image" title="product" />
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image18-1.jpg" src="assets/images/product-images/product-image18-1.jpg" alt="image" title="product" />
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image18-1.jpg" src="/assets/images/product-images/product-image18-1.jpg" alt="image" title="product" />
                                             <!-- End hover image -->
                                         </a>
                                         <!-- end product image -->
@@ -729,10 +729,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image19.jpg" src="assets/images/product-images/product-image19.jpg" alt="image" title="product" />
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image19.jpg" src="/assets/images/product-images/product-image19.jpg" alt="image" title="product" />
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image19-1.jpg" src="assets/images/product-images/product-image19-1.jpg" alt="image" title="product" />
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image19-1.jpg" src="/assets/images/product-images/product-image19-1.jpg" alt="image" title="product" />
                                             <!-- End hover image -->
                                         </a>
                                         <!-- end product image -->
@@ -789,10 +789,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image20.jpg" src="assets/images/product-images/product-image20.jpg" alt="image" title="product" />
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image20.jpg" src="/assets/images/product-images/product-image20.jpg" alt="image" title="product" />
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image20-1.jpg" src="assets/images/product-images/product-image20-1.jpg" alt="image" title="product" />
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image20-1.jpg" src="/assets/images/product-images/product-image20-1.jpg" alt="image" title="product" />
                                             <!-- End hover image -->
                                             <!-- product label -->
                                             <div class="product-labels"><span class="lbl pr-label3">Popular</span></div>
@@ -852,10 +852,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image21.jpg" src="assets/images/product-images/product-image21.jpg" alt="image" title="product" />
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image21.jpg" src="/assets/images/product-images/product-image21.jpg" alt="image" title="product" />
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image21-1.jpg" src="assets/images/product-images/product-image21-1.jpg" alt="image" title="product" />
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image21-1.jpg" src="/assets/images/product-images/product-image21-1.jpg" alt="image" title="product" />
                                             <!-- End hover image -->
                                         </a>
                                         <!-- end product image -->
@@ -912,10 +912,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image22.jpg" src="assets/images/product-images/product-image22.jpg" alt="image" title="product" />
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image22.jpg" src="/assets/images/product-images/product-image22.jpg" alt="image" title="product" />
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image22-1.jpg" src="assets/images/product-images/product-image22-1.jpg" alt="image" title="product" />
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image22-1.jpg" src="/assets/images/product-images/product-image22-1.jpg" alt="image" title="product" />
                                             <!-- End hover image -->
                                         </a>
                                         <!-- end product image -->
@@ -972,10 +972,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image23.jpg" src="assets/images/product-images/product-image23.jpg" alt="image" title="product" />
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image23.jpg" src="/assets/images/product-images/product-image23.jpg" alt="image" title="product" />
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image23-1.jpg" src="assets/images/product-images/product-image23-1.jpg" alt="image" title="product" />
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image23-1.jpg" src="/assets/images/product-images/product-image23-1.jpg" alt="image" title="product" />
                                             <!-- End hover image -->
                                         </a>
                                         <!-- end product image -->
@@ -1032,10 +1032,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image24.jpg" src="assets/images/product-images/product-image24.jpg" alt="image" title="product" />
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image24.jpg" src="/assets/images/product-images/product-image24.jpg" alt="image" title="product" />
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image24-1.jpg" src="assets/images/product-images/product-image24-1.jpg" alt="image" title="product" />
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image24-1.jpg" src="/assets/images/product-images/product-image24-1.jpg" alt="image" title="product" />
                                             <!-- End hover image -->
                                         </a>
                                         <!-- end product image -->
@@ -1092,10 +1092,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image25.jpg" src="assets/images/product-images/product-image25.jpg" alt="image" title="product" />
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image25.jpg" src="/assets/images/product-images/product-image25.jpg" alt="image" title="product" />
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image25-1.jpg" src="assets/images/product-images/product-image25-1.jpg" alt="image" title="product" />
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image25-1.jpg" src="/assets/images/product-images/product-image25-1.jpg" alt="image" title="product" />
                                             <!-- End hover image -->
                                         </a>
                                         <!-- end product image -->
@@ -1152,10 +1152,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image26.jpg" src="assets/images/product-images/product-image26.jpg" alt="image" title="product" />
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image26.jpg" src="/assets/images/product-images/product-image26.jpg" alt="image" title="product" />
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image26-1.jpg" src="assets/images/product-images/product-image26-1.jpg" alt="image" title="product" />
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image26-1.jpg" src="/assets/images/product-images/product-image26-1.jpg" alt="image" title="product" />
                                             <!-- End hover image -->
                                         </a>
                                         <!-- end product image -->
@@ -1212,10 +1212,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="grid-view-item__image primary blur-up lazyload" data-src="assets/images/product-images/product-image27.jpg" src="assets/images/product-images/product-image27.jpg" alt="image" title="product" />
+                                            <img class="grid-view-item__image primary blur-up lazyload" data-src="/assets/images/product-images/product-image27.jpg" src="/assets/images/product-images/product-image27.jpg" alt="image" title="product" />
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="grid-view-item__image hover blur-up lazyload" data-src="assets/images/product-images/product-image27-1.jpg" src="assets/images/product-images/product-image27-1.jpg" alt="image" title="product" />
+                                            <img class="grid-view-item__image hover blur-up lazyload" data-src="/assets/images/product-images/product-image27-1.jpg" src="/assets/images/product-images/product-image27-1.jpg" alt="image" title="product" />
                                             <!-- End hover image -->
                                             <span class="sold-out"><span>Sold out</span></span>
                                         </a>
@@ -1251,10 +1251,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image28.jpg" src="assets/images/product-images/product-image28.jpg" alt="image" title="product" />
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image28.jpg" src="/assets/images/product-images/product-image28.jpg" alt="image" title="product" />
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image28-1.jpg" src="assets/images/product-images/product-image28-1.jpg" alt="image" title="product" />
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image28-1.jpg" src="/assets/images/product-images/product-image28-1.jpg" alt="image" title="product" />
                                             <!-- End hover image -->
                                         </a>
                                         <!-- end product image -->
@@ -1306,10 +1306,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image29.jpg" src="assets/images/product-images/product-image29.jpg" alt="image" title="product" />
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image29.jpg" src="/assets/images/product-images/product-image29.jpg" alt="image" title="product" />
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image29-1.jpg" src="assets/images/product-images/product-image29-1.jpg" alt="image" title="product" />
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image29-1.jpg" src="/assets/images/product-images/product-image29-1.jpg" alt="image" title="product" />
                                             <!-- End hover image -->
                                         </a>
                                         <!-- end product image -->
@@ -1366,10 +1366,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image30.jpg" src="assets/images/product-images/product-image30.jpg" alt="image" title="product" />
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image30.jpg" src="/assets/images/product-images/product-image30.jpg" alt="image" title="product" />
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image30-1.jpg" src="assets/images/product-images/product-image30-1.jpg" alt="image" title="product" />
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image30-1.jpg" src="/assets/images/product-images/product-image30-1.jpg" alt="image" title="product" />
                                             <!-- End hover image -->
                                         </a>
                                         <!-- end product image -->
@@ -1426,10 +1426,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image31.jpg" src="assets/images/product-images/product-image31.jpg" alt="image" title="product" />
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image31.jpg" src="/assets/images/product-images/product-image31.jpg" alt="image" title="product" />
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image31-1.jpg" src="assets/images/product-images/product-image31-1.jpg" alt="image" title="product" />
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image31-1.jpg" src="/assets/images/product-images/product-image31-1.jpg" alt="image" title="product" />
                                             <!-- End hover image -->
                                         </a>
                                         <!-- end product image -->

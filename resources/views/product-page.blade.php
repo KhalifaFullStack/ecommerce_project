@@ -24,44 +24,44 @@
                                 <div class="product-details-img">
                                     <div class="product-thumb">
                                         <div id="gallery" class="product-dec-slider-2 product-tab-left">
-                                            <a data-image="assets/images/product-detail-page/camelia-reversible-big1.jpg" data-zoom-image="assets/images/product-detail-page/camelia-reversible-big1.jpg" class="slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" tabindex="-1">
-                                                <img class="blur-up lazyload" src="assets/images/product-detail-page/camelia-reversible0.jpg" alt="" />
+                                            <a data-image="/assets/images/product-detail-page/camelia-reversible-big1.jpg" data-zoom-image="/assets/images/product-detail-page/camelia-reversible-big1.jpg" class="slick-slide slick-cloned" data-slick-index="-4" aria-hidden="true" tabindex="-1">
+                                                <img class="blur-up lazyload" src="/assets/images/product-detail-page/camelia-reversible0.jpg" alt="" />
                                             </a>
-                                            <a data-image="assets/images/product-detail-page/camelia-reversible-big2.jpg" data-zoom-image="assets/images/product-detail-page/camelia-reversible-big2.jpg" class="slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1">
-                                                <img class="blur-up lazyload" src="assets/images/product-detail-page/camelia-reversible.jpg" alt="" />
+                                            <a data-image="/assets/images/product-detail-page/camelia-reversible-big2.jpg" data-zoom-image="/assets/images/product-detail-page/camelia-reversible-big2.jpg" class="slick-slide slick-cloned" data-slick-index="-3" aria-hidden="true" tabindex="-1">
+                                                <img class="blur-up lazyload" src="/assets/images/product-detail-page/camelia-reversible.jpg" alt="" />
                                             </a>
-                                            <a data-image="assets/images/product-detail-page/camelia-reversible-big3.jpg" data-zoom-image="assets/images/product-detail-page/camelia-reversible-big3.jpg" class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1">
-                                                <img class="blur-up lazyload" src="assets/images/product-detail-page/camelia-reversible6.jpg" alt="" />
+                                            <a data-image="/assets/images/product-detail-page/camelia-reversible-big3.jpg" data-zoom-image="/assets/images/product-detail-page/camelia-reversible-big3.jpg" class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1">
+                                                <img class="blur-up lazyload" src="/assets/images/product-detail-page/camelia-reversible6.jpg" alt="" />
                                             </a>
-                                            <a data-image="assets/images/product-detail-page/camelia-reversible7-big.jpg" data-zoom-image="assets/images/product-detail-page/camelia-reversible7-big.jpg" class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1">
-                                                <img class="blur-up lazyload" src="assets/images/product-detail-page/camelia-reversible7.jpg" alt="" />
+                                            <a data-image="/assets/images/product-detail-page/camelia-reversible7-big.jpg" data-zoom-image="/assets/images/product-detail-page/camelia-reversible7-big.jpg" class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1">
+                                                <img class="blur-up lazyload" src="/assets/images/product-detail-page/camelia-reversible7.jpg" alt="" />
                                             </a>
-                                            <a data-image="assets/images/product-detail-page/camelia-reversible-big4.jpg" data-zoom-image="assets/images/product-detail-page/camelia-reversible-big4.jpg" class="slick-slide slick-cloned" data-slick-index="0" aria-hidden="true" tabindex="-1">
-                                                <img class="blur-up lazyload" src="assets/images/product-detail-page/camelia-reversible8.jpg" alt="" />
+                                            <a data-image="/assets/images/product-detail-page/camelia-reversible-big4.jpg" data-zoom-image="/assets/images/product-detail-page/camelia-reversible-big4.jpg" class="slick-slide slick-cloned" data-slick-index="0" aria-hidden="true" tabindex="-1">
+                                                <img class="blur-up lazyload" src="/assets/images/product-detail-page/camelia-reversible8.jpg" alt="" />
                                             </a>
-                                            <a data-image="assets/images/product-detail-page/camelia-reversible-big5.jpg" data-zoom-image="assets/images/product-detail-page/camelia-reversible-big5.jpg" class="slick-slide slick-cloned" data-slick-index="1" aria-hidden="true" tabindex="-1">
-                                                <img class="blur-up lazyload" src="assets/images/product-detail-page/camelia-reversible9.jpg" alt="" />
+                                            <a data-image="/assets/images/product-detail-page/camelia-reversible-big5.jpg" data-zoom-image="/assets/images/product-detail-page/camelia-reversible-big5.jpg" class="slick-slide slick-cloned" data-slick-index="1" aria-hidden="true" tabindex="-1">
+                                                <img class="blur-up lazyload" src="/assets/images/product-detail-page/camelia-reversible9.jpg" alt="" />
                                             </a>
-                                            <a data-image="assets/images/product-detail-page/camelia-reversible-big6.jpg" data-zoom-image="assets/images/product-detail-page/camelia-reversible-big6.jpg" class="slick-slide slick-cloned" data-slick-index="2" aria-hidden="true" tabindex="-1">
-                                                <img class="blur-up lazyload" src="assets/images/product-detail-page/camelia-reversible1.jpg" alt="" />
+                                            <a data-image="/assets/images/product-detail-page/camelia-reversible-big6.jpg" data-zoom-image="/assets/images/product-detail-page/camelia-reversible-big6.jpg" class="slick-slide slick-cloned" data-slick-index="2" aria-hidden="true" tabindex="-1">
+                                                <img class="blur-up lazyload" src="/assets/images/product-detail-page/camelia-reversible1.jpg" alt="" />
                                             </a>
-                                            <a data-image="assets/images/product-detail-page/camelia-reversible-big7.jpg" data-zoom-image="assets/images/product-detail-page/camelia-reversible-big7.jpg" class="slick-slide slick-cloned" data-slick-index="3" aria-hidden="true" tabindex="-1">
-                                                <img class="blur-up lazyload" src="assets/images/product-detail-page/camelia-reversible2.jpg" alt="" />
+                                            <a data-image="/assets/images/product-detail-page/camelia-reversible-big7.jpg" data-zoom-image="/assets/images/product-detail-page/camelia-reversible-big7.jpg" class="slick-slide slick-cloned" data-slick-index="3" aria-hidden="true" tabindex="-1">
+                                                <img class="blur-up lazyload" src="/assets/images/product-detail-page/camelia-reversible2.jpg" alt="" />
                                             </a>
-                                            <a data-image="assets/images/product-detail-page/camelia-reversible-big8.jpg" data-zoom-image="assets/images/product-detail-page/camelia-reversible-big8.jpg" class="slick-slide slick-cloned" data-slick-index="4" aria-hidden="true" tabindex="-1">
-                                                <img class="blur-up lazyload" src="assets/images/product-detail-page/camelia-reversible3.jpg" alt="" />
+                                            <a data-image="/assets/images/product-detail-page/camelia-reversible-big8.jpg" data-zoom-image="/assets/images/product-detail-page/camelia-reversible-big8.jpg" class="slick-slide slick-cloned" data-slick-index="4" aria-hidden="true" tabindex="-1">
+                                                <img class="blur-up lazyload" src="/assets/images/product-detail-page/camelia-reversible3.jpg" alt="" />
                                             </a>
-                                            <a data-image="assets/images/product-detail-page/camelia-reversible-big9.jpg" data-zoom-image="assets/images/product-detail-page/camelia-reversible-big9.jpg" class="slick-slide slick-cloned" data-slick-index="5" aria-hidden="true" tabindex="-1">
-                                                <img class="blur-up lazyload" src="assets/images/product-detail-page/camelia-reversible4.jpg" alt="" />
+                                            <a data-image="/assets/images/product-detail-page/camelia-reversible-big9.jpg" data-zoom-image="/assets/images/product-detail-page/camelia-reversible-big9.jpg" class="slick-slide slick-cloned" data-slick-index="5" aria-hidden="true" tabindex="-1">
+                                                <img class="blur-up lazyload" src="/assets/images/product-detail-page/camelia-reversible4.jpg" alt="" />
                                             </a>
-                                            <a data-image="assets/images/product-detail-page/camelia-reversible-big10.jpg" data-zoom-image="assets/images/product-detail-page/camelia-reversible-big10.jpg" class="slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" tabindex="-1">
-                                                <img class="blur-up lazyload" src="assets/images/product-detail-page/camelia-reversible5.jpg" alt="" />
+                                            <a data-image="/assets/images/product-detail-page/camelia-reversible-big10.jpg" data-zoom-image="/assets/images/product-detail-page/camelia-reversible-big10.jpg" class="slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" tabindex="-1">
+                                                <img class="blur-up lazyload" src="/assets/images/product-detail-page/camelia-reversible5.jpg" alt="" />
                                             </a>
                                         </div>
                                     </div>
                                     <div class="zoompro-wrap product-zoom-right pl-20">
                                         <div class="zoompro-span">
-                                            <img class="blur-up lazyload zoompro" data-zoom-image="assets/images/product-detail-page/camelia-reversible-big1.jpg" alt="" src="assets/images/product-detail-page/camelia-reversible-big1.jpg" />
+                                            <img class="blur-up lazyload zoompro" data-zoom-image="/assets/images/product-detail-page/camelia-reversible-big1.jpg" alt="" src="/assets/images/product-detail-page/camelia-reversible-big1.jpg" />
                                         </div>
                                         <div class="product-labels"><span class="lbl on-sale">Sale</span><span class="lbl pr-label1">new</span></div>
                                         <div class="product-buttons">
@@ -70,17 +70,17 @@
                                         </div>
                                     </div>
                                     <div class="lightboximages">
-                                        <a href="assets/images/product-detail-page/camelia-reversible-big1.jpg" data-size="1462x2048"></a>
-                                        <a href="assets/images/product-detail-page/camelia-reversible-big2.jpg" data-size="1462x2048"></a>
-                                        <a href="assets/images/product-detail-page/camelia-reversible-big3.jpg" data-size="1462x2048"></a>
-                                        <a href="assets/images/product-detail-page/camelia-reversible7-big.jpg" data-size="1462x2048"></a>
-                                        <a href="assets/images/product-detail-page/camelia-reversible-big4.jpg" data-size="1462x2048"></a>
-                                        <a href="assets/images/product-detail-page/camelia-reversible-big5.jpg" data-size="1462x2048"></a>
-                                        <a href="assets/images/product-detail-page/camelia-reversible-big6.jpg" data-size="731x1024"></a>
-                                        <a href="assets/images/product-detail-page/camelia-reversible-big7.jpg" data-size="731x1024"></a>
-                                        <a href="assets/images/product-detail-page/camelia-reversible-big8.jpg" data-size="731x1024"></a>
-                                        <a href="assets/images/product-detail-page/camelia-reversible-big9.jpg" data-size="731x1024"></a>
-                                        <a href="assets/images/product-detail-page/camelia-reversible-big10.jpg" data-size="731x1024"></a>
+                                        <a href="/assets/images/product-detail-page/camelia-reversible-big1.jpg" data-size="1462x2048"></a>
+                                        <a href="/assets/images/product-detail-page/camelia-reversible-big2.jpg" data-size="1462x2048"></a>
+                                        <a href="/assets/images/product-detail-page/camelia-reversible-big3.jpg" data-size="1462x2048"></a>
+                                        <a href="/assets/images/product-detail-page/camelia-reversible7-big.jpg" data-size="1462x2048"></a>
+                                        <a href="/assets/images/product-detail-page/camelia-reversible-big4.jpg" data-size="1462x2048"></a>
+                                        <a href="/assets/images/product-detail-page/camelia-reversible-big5.jpg" data-size="1462x2048"></a>
+                                        <a href="/assets/images/product-detail-page/camelia-reversible-big6.jpg" data-size="731x1024"></a>
+                                        <a href="/assets/images/product-detail-page/camelia-reversible-big7.jpg" data-size="731x1024"></a>
+                                        <a href="/assets/images/product-detail-page/camelia-reversible-big8.jpg" data-size="731x1024"></a>
+                                        <a href="/assets/images/product-detail-page/camelia-reversible-big9.jpg" data-size="731x1024"></a>
+                                        <a href="/assets/images/product-detail-page/camelia-reversible-big10.jpg" data-size="731x1024"></a>
                                     </div>
         
                                 </div>
@@ -111,7 +111,7 @@
                                             </span>  
                                         </p>
                                         <div class="orderMsg" data-user="23" data-time="24">
-                                            <img src="assets/images/order-icon.jpg" alt="" /> <strong class="items">5</strong> sold in last <strong class="time">26</strong> hours</div>
+                                            <img src="/assets/images/order-icon.jpg" alt="" /> <strong class="items">5</strong> sold in last <strong class="time">26</strong> hours</div>
                                         </div>
                                     <div class="product-single__description rte">
                                         <ul>
@@ -222,19 +222,19 @@
                     <div class="prFeatures">
                         <div class="row">
                             <div class="col-12 col-sm-6 col-md-6 col-lg-3 feature">
-                                <img src="assets/images/credit-card.png" alt="Safe Payment" title="Safe Payment" />
+                                <img src="/assets/images/credit-card.png" alt="Safe Payment" title="Safe Payment" />
                                 <div class="details"><h3>Safe Payment</h3>Pay with the world's most payment methods.</div>
                             </div>
                             <div class="col-12 col-sm-6 col-md-6 col-lg-3 feature">
-                                <img src="assets/images/shield.png" alt="Confidence" title="Confidence" />
+                                <img src="/assets/images/shield.png" alt="Confidence" title="Confidence" />
                                 <div class="details"><h3>Confidence</h3>Protection covers your purchase and personal data.</div>
                             </div>
                             <div class="col-12 col-sm-6 col-md-6 col-lg-3 feature">
-                                <img src="assets/images/worldwide.png" alt="Worldwide Delivery" title="Worldwide Delivery" />
+                                <img src="/assets/images/worldwide.png" alt="Worldwide Delivery" title="Worldwide Delivery" />
                                 <div class="details"><h3>Worldwide Delivery</h3>FREE &amp; fast shipping to over 200+ countries &amp; regions.</div>
                             </div>
                             <div class="col-12 col-sm-6 col-md-6 col-lg-3 feature">
-                                <img src="assets/images/phone-call.png" alt="Hotline" title="Hotline" />
+                                <img src="/assets/images/phone-call.png" alt="Hotline" title="Hotline" />
                                 <div class="details"><h3>Hotline</h3>Talk to help line for your question on 4141 456 789, 4125 666 888</div>
                             </div>
                         </div>
@@ -464,7 +464,7 @@
                                   </tbody>
                                 </table>
                                 <div class="text-center">
-                                    <img src="assets/images/size.jpg" alt="" />
+                                    <img src="/assets/images/size.jpg" alt="" />
                                 </div>
                           </div>
                             
@@ -492,10 +492,10 @@
                                     <!-- start product image -->
                                     <a href="#">
                                         <!-- image -->
-                                        <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image1.jpg" src="assets/images/product-images/product-image1.jpg" alt="image" title="product">
+                                        <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image1.jpg" src="/assets/images/product-images/product-image1.jpg" alt="image" title="product">
                                         <!-- End image -->
                                         <!-- Hover image -->
-                                        <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image1-1.jpg" src="assets/images/product-images/product-image1-1.jpg" alt="image" title="product">
+                                        <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image1-1.jpg" src="/assets/images/product-images/product-image1-1.jpg" alt="image" title="product">
                                         <!-- End hover image -->
                                         <!-- product label -->
                                         <div class="product-labels rectangular"><span class="lbl on-sale">-16%</span> <span class="lbl pr-label1">new</span></div>
@@ -543,12 +543,12 @@
                                     </div>
                                     <!-- Variant -->
                                     <ul class="swatches">
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant1.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant2.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant4.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant5.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant6.jpg" alt="image" /></li>
+                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant1.jpg" alt="image" /></li>
+                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant2.jpg" alt="image" /></li>
+                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant3.jpg" alt="image" /></li>
+                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant4.jpg" alt="image" /></li>
+                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant5.jpg" alt="image" /></li>
+                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant6.jpg" alt="image" /></li>
                                     </ul>
                                     <!-- End Variant -->
                                 </div>
@@ -560,10 +560,10 @@
                                     <!-- start product image -->
                                     <a href="#">
                                         <!-- image -->
-                                        <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image2.jpg" src="assets/images/product-images/product-image2.jpg" alt="image" title="product">
+                                        <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image2.jpg" src="/assets/images/product-images/product-image2.jpg" alt="image" title="product">
                                         <!-- End image -->
                                         <!-- Hover image -->
-                                        <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image2-1.jpg" src="assets/images/product-images/product-image2-1.jpg" alt="image" title="product">
+                                        <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image2-1.jpg" src="/assets/images/product-images/product-image2-1.jpg" alt="image" title="product">
                                         <!-- End hover image -->
                                     </a>
                                     <!-- end product image -->
@@ -607,10 +607,10 @@
                                     </div>
                                     <!-- Variant -->
                                     <ul class="swatches">
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant2-1.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant2-2.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant2-3.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant2-4.jpg" alt="image" /></li>
+                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant2-1.jpg" alt="image" /></li>
+                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant2-2.jpg" alt="image" /></li>
+                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant2-3.jpg" alt="image" /></li>
+                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant2-4.jpg" alt="image" /></li>
                                     </ul>
                                     <!-- End Variant -->
                                 </div>
@@ -622,10 +622,10 @@
                                     <!-- start product image -->
                                     <a href="#">
                                         <!-- image -->
-                                        <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image3.jpg" src="assets/images/product-images/product-image3.jpg" alt="image" title="product">
+                                        <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image3.jpg" src="/assets/images/product-images/product-image3.jpg" alt="image" title="product">
                                         <!-- End image -->
                                         <!-- Hover image -->
-                                        <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image3-1.jpg" src="assets/images/product-images/product-image3-1.jpg" alt="image" title="product">
+                                        <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image3-1.jpg" src="/assets/images/product-images/product-image3-1.jpg" alt="image" title="product">
                                         <!-- End hover image -->
                                         <!-- product label -->
                                         <div class="product-labels rectangular"><span class="lbl pr-label2">Hot</span></div>
@@ -673,10 +673,10 @@
                                     </div>
                                     <!-- Variant -->
                                     <ul class="swatches">
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-1.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-2.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-3.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-4.jpg" alt="image" /></li>
+                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant3-1.jpg" alt="image" /></li>
+                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant3-2.jpg" alt="image" /></li>
+                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant3-3.jpg" alt="image" /></li>
+                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant3-4.jpg" alt="image" /></li>
                                     </ul>
                                     <!-- End Variant -->
                                 </div>
@@ -688,10 +688,10 @@
                                     <!-- start product image -->
                                     <a href="#">
                                         <!-- image -->
-                                        <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image4.jpg" src="assets/images/product-images/product-image4.jpg" alt="image" title="product" />
+                                        <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image4.jpg" src="/assets/images/product-images/product-image4.jpg" alt="image" title="product" />
                                         <!-- End image -->
                                         <!-- Hover image -->
-                                        <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image4-1.jpg" src="assets/images/product-images/product-image4-1.jpg" alt="image" title="product" />
+                                        <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image4-1.jpg" src="/assets/images/product-images/product-image4-1.jpg" alt="image" title="product" />
                                         <!-- End hover image -->
                                         <!-- product label -->
                                         <div class="product-labels"><span class="lbl on-sale">Sale</span></div>
@@ -740,10 +740,10 @@
                                     </div>
                                     <!-- Variant -->
                                     <ul class="swatches">
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant4-1.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant4-2.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant4-3.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant4-4.jpg" alt="image" /></li>
+                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant4-1.jpg" alt="image" /></li>
+                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant4-2.jpg" alt="image" /></li>
+                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant4-3.jpg" alt="image" /></li>
+                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant4-4.jpg" alt="image" /></li>
                                     </ul>
                                     <!-- End Variant -->
                                 </div>
@@ -755,10 +755,10 @@
                                     <!-- start product image -->
                                     <a href="#">
                                         <!-- image -->
-                                        <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image5.jpg" src="assets/images/product-images/product-image5.jpg" alt="image" title="product" />
+                                        <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image5.jpg" src="/assets/images/product-images/product-image5.jpg" alt="image" title="product" />
                                         <!-- End image -->
                                         <!-- Hover image -->
-                                        <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image5-1.jpg" src="assets/images/product-images/product-image5-1.jpg" alt="image" title="product" />
+                                        <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image5-1.jpg" src="/assets/images/product-images/product-image5-1.jpg" alt="image" title="product" />
                                         <!-- End hover image -->
                                         <!-- product label -->
                                         <div class="product-labels"><span class="lbl on-sale">Sale</span></div>
@@ -806,10 +806,10 @@
                                     </div>
                                     <!-- Variant -->
                                     <ul class="swatches">
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-1.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-2.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-3.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-4.jpg" alt="image" /></li>
+                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant3-1.jpg" alt="image" /></li>
+                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant3-2.jpg" alt="image" /></li>
+                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant3-3.jpg" alt="image" /></li>
+                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant3-4.jpg" alt="image" /></li>
                                     </ul>
                                     <!-- End Variant -->
                                 </div>
@@ -821,10 +821,10 @@
                                                     <!-- start product image -->
                                                     <a href="#">
                                                         <!-- image -->
-                                                        <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image6.jpg" src="assets/images/product-images/product-image6.jpg" alt="image" title="product">
+                                                        <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image6.jpg" src="/assets/images/product-images/product-image6.jpg" alt="image" title="product">
                                                         <!-- End image -->
                                                         <!-- Hover image -->
-                                                        <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image6-1.jpg" src="assets/images/product-images/product-image6-1.jpg" alt="image" title="product">
+                                                        <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image6-1.jpg" src="/assets/images/product-images/product-image6-1.jpg" alt="image" title="product">
                                                         <!-- End hover image -->
                                                         <!-- product label -->
                                                         <div class="product-labels rectangular"><span class="lbl on-sale">-16%</span> <span class="lbl pr-label1">new</span></div>
@@ -879,10 +879,10 @@
                                                     <!-- start product image -->
                                                     <a href="#">
                                                         <!-- image -->
-                                                        <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image7.jpg" src="assets/images/product-images/product-image7.jpg" alt="image" title="product">
+                                                        <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image7.jpg" src="/assets/images/product-images/product-image7.jpg" alt="image" title="product">
                                                         <!-- End image -->
                                                         <!-- Hover image -->
-                                                        <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image7-1.jpg" src="assets/images/product-images/product-image7-1.jpg" alt="image" title="product">
+                                                        <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image7-1.jpg" src="/assets/images/product-images/product-image7-1.jpg" alt="image" title="product">
                                                         <!-- End hover image -->
                                                     </a>
                                                     <!-- end product image -->
@@ -944,10 +944,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image6.jpg" src="assets/images/product-images/product-image6.jpg" alt="image" title="product">
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image6.jpg" src="/assets/images/product-images/product-image6.jpg" alt="image" title="product">
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image6-1.jpg" src="assets/images/product-images/product-image6-1.jpg" alt="image" title="product">
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image6-1.jpg" src="/assets/images/product-images/product-image6-1.jpg" alt="image" title="product">
                                             <!-- End hover image -->
                                             <!-- product label -->
                                             <div class="product-labels rectangular"><span class="lbl on-sale">-16%</span> <span class="lbl pr-label1">new</span></div>
@@ -973,10 +973,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image7.jpg" src="assets/images/product-images/product-image7.jpg" alt="image" title="product">
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image7.jpg" src="/assets/images/product-images/product-image7.jpg" alt="image" title="product">
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image7-1.jpg" src="assets/images/product-images/product-image7-1.jpg" alt="image" title="product">
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image7-1.jpg" src="/assets/images/product-images/product-image7-1.jpg" alt="image" title="product">
                                             <!-- End hover image -->
                                         </a>
                                         <!-- end product image -->
@@ -999,10 +999,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image8.jpg" src="assets/images/product-images/product-image8.jpg" alt="image" title="product">
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image8.jpg" src="/assets/images/product-images/product-image8.jpg" alt="image" title="product">
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image8-1.jpg" src="assets/images/product-images/product-image8-1.jpg" alt="image" title="product">
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image8-1.jpg" src="/assets/images/product-images/product-image8-1.jpg" alt="image" title="product">
                                             <!-- End hover image -->
                                         </a>
                                         <!-- end product image -->
@@ -1026,10 +1026,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image9.jpg" src="assets/images/product-images/product-image9.jpg" alt="image" title="product">
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image9.jpg" src="/assets/images/product-images/product-image9.jpg" alt="image" title="product">
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image9-1.jpg" src="assets/images/product-images/product-image9-1.jpg" alt="image" title="product">
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image9-1.jpg" src="/assets/images/product-images/product-image9-1.jpg" alt="image" title="product">
                                             <!-- End hover image -->
                                         </a>
                                         <!-- end product image -->
@@ -1052,10 +1052,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image10.jpg" src="assets/images/product-images/product-image10.jpg" alt="image" title="product">
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image10.jpg" src="/assets/images/product-images/product-image10.jpg" alt="image" title="product">
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image10-1.jpg" src="assets/images/product-images/product-image10-1.jpg" alt="image" title="product">
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image10-1.jpg" src="/assets/images/product-images/product-image10-1.jpg" alt="image" title="product">
                                             <!-- End hover image -->
                                         </a>
                                         <!-- end product image -->
@@ -1078,10 +1078,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image13.jpg" src="assets/images/product-images/product-image13.jpg" alt="image" title="product">
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image13.jpg" src="/assets/images/product-images/product-image13.jpg" alt="image" title="product">
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image13-1.jpg" src="assets/images/product-images/product-image13-1.jpg" alt="image" title="product">
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image13-1.jpg" src="/assets/images/product-images/product-image13-1.jpg" alt="image" title="product">
                                             <!-- End hover image -->
                                         </a>
                                         <!-- end product image -->
@@ -1105,10 +1105,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image14.jpg" src="assets/images/product-images/product-image14.jpg" alt="image" title="product">
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image14.jpg" src="/assets/images/product-images/product-image14.jpg" alt="image" title="product">
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image14-1.jpg" src="assets/images/product-images/product-image14-1.jpg" alt="image" title="product">
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image14-1.jpg" src="/assets/images/product-images/product-image14-1.jpg" alt="image" title="product">
                                             <!-- End hover image -->
                                         </a>
                                         <!-- end product image -->
@@ -1131,10 +1131,10 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                            <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image15.jpg" src="assets/images/product-images/product-image15.jpg" alt="image" title="product">
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image15.jpg" src="/assets/images/product-images/product-image15.jpg" alt="image" title="product">
                                             <!-- End image -->
                                             <!-- Hover image -->
-                                            <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image15-1.jpg" src="assets/images/product-images/product-image15-1.jpg" alt="image" title="product">
+                                            <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image15-1.jpg" src="/assets/images/product-images/product-image15-1.jpg" alt="image" title="product">
                                             <!-- End hover image -->
                                         </a>
                                         <!-- end product image -->

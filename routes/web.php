@@ -75,6 +75,7 @@ Route::get('/product-page', function () {
 Route::group([], function () {
     route::get('/input', [ProductController::class, 'products'])->name('input');
     route::get('/shop', [ProductController::class, 'products'])->name('shop');
+    route::get('/price_filter', [ProductController::class, 'price_filter'])->name('price_filter');
 });
 
 //all routes for register, login and logout are built-in ---- but you can call out

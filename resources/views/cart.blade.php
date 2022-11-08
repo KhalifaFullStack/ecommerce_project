@@ -415,7 +415,7 @@
 								</label>
                               </p>
                               <input type="submit" name="checkout" id="cartCheckout" class="btn btn--small-wide checkout" value="Proceed To Checkout" disabled="disabled">
-                              <div class="paymnet-img"><img src="assets/images/payment-img.jpg" alt="Payment"></div>
+                              <div class="paymnet-img"><img src="/assets/images/payment-img.jpg" alt="Payment"></div>
                               <p><a href="#;">Checkout with Multiple Addresses</a></p>
                             </div>
         

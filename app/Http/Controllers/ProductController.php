@@ -129,7 +129,7 @@ class ProductController extends Controller
         // $kids_sports         = $kids->where('type', '=', 'sports')->get();
     }
 
-    // public function price_filter(Request $request, $id){
+    public function price_filter(Request $request, $id){
 
-    // }
+    }
 }

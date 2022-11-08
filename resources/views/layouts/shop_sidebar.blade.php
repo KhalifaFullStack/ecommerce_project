@@ -3,7 +3,7 @@
     <!--Collection Banner-->
     <div class="collection-header mb-5">
         <div class="collection-hero">
-            <div class="collection-hero__image"><img data-src="assets/images/cat-women3.jpg" src="assets/images/cat-women3.jpg" alt="Women" title="Women" /></div>
+            <div class="collection-hero__image"><img data-src="/assets/images/cat-women3.jpg" src="/assets/images/cat-women3.jpg" alt="Women" title="Women" /></div>
             <div class="collection-hero__title-wrapper"><h1 class="collection-hero__title page-width">Shop List View</h1></div>
         </div>
     </div>
@@ -49,12 +49,13 @@
                         </div>
                     </form>
                     <!--Categories-->
+
                     <!--Price Filter-->
                     <div class="sidebar_widget filterBox filter-widget">
                         <div class="widget-title">
                             <h2>Price</h2>
                         </div>
-                        <form action="#" method="post" class="price-filter">
+                        <form action="{{ route('price_filter') }}" method="get" class="price-filter">
                             <div id="slider-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
                                 <div class="ui-slider-range ui-widget-header ui-corner-all"></div>
                                 <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
@@ -62,15 +63,16 @@
                             </div>
                             <div class="row">
                                 <div class="col-6">
-                                    <p class="no-margin"><input id="amount" type="text"></p>
+                                    <p class="no-margin"><input id="amount" name="firter" value="1" type="text"></p>
                                 </div>
                                 <div class="col-6 text-right margin-25px-top">
-                                    <button class="btn btn-secondary btn--small">filter</button>
+                                    <button type="submit" class="btn btn-secondary btn--small">filter</button>
                                 </div>
                             </div>
                         </form>
                     </div>
                     <!--End Price Filter-->
+
                     <!--Size Swatches-->
                     <div class="sidebar_widget filterBox filter-widget size-swacthes">
                         <div class="widget-title"><h2>Size</h2></div>
@@ -149,7 +151,7 @@
                                   <div class="mini-list-item">
                                     <div class="mini-view_image">
                                         <a class="grid-view-item__link" href="#">
-                                            <img class="grid-view-item__image" src="assets/images/product-images/mini-product-img.jpg" alt="" />
+                                            <img class="grid-view-item__image" src="/assets/images/product-images/mini-product-img.jpg" alt="" />
                                         </a>
                                     </div>
                                     <div class="details"> <a class="grid-view-item__title" href="#">Cena Skirt</a>
@@ -159,7 +161,7 @@
                                 </div>
                                 <div class="grid__item">
                                   <div class="mini-list-item">
-                                    <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image" src="assets/images/product-images/mini-product-img1.jpg" alt="" /></a> </div>
+                                    <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image" src="/assets/images/product-images/mini-product-img1.jpg" alt="" /></a> </div>
                                     <div class="details"> <a class="grid-view-item__title" href="#">Block Button Up</a>
                                       <div class="grid-view-item__meta"><span class="product-price__price"><span class="money">$378.00</span></span></div>
                                     </div>
@@ -167,7 +169,7 @@
                                 </div>
                                 <div class="grid__item">
                                   <div class="mini-list-item">
-                                    <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image" src="assets/images/product-images/mini-product-img2.jpg" alt="" /></a> </div>
+                                    <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image" src="/assets/images/product-images/mini-product-img2.jpg" alt="" /></a> </div>
                                     <div class="details"> <a class="grid-view-item__title" href="#">Balda Button Pant</a>
                                       <div class="grid-view-item__meta"><span class="product-price__price"><span class="money">$278.60</span></span></div>
                                     </div>
@@ -175,7 +177,7 @@
                                 </div>
                                 <div class="grid__item">
                                   <div class="mini-list-item">
-                                    <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image" src="assets/images/product-images/mini-product-img3.jpg" alt="" /></a> </div>
+                                    <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image" src="/assets/images/product-images/mini-product-img3.jpg" alt="" /></a> </div>
                                     <div class="details"> <a class="grid-view-item__title" href="#">Border Dress in Black/Silver</a>
                                       <div class="grid-view-item__meta"><span class="product-price__price"><span class="money">$228.00</span></span></div>
                                     </div>
@@ -186,9 +188,10 @@
                           </div>
                     </div>
                     <!--End Popular Products-->
+
                     <!--Banner-->
                     <div class="sidebar_widget static-banner">
-                        <img src="assets/images/side-banner-2.jpg" alt="" />
+                        <img src="/assets/images/side-banner-2.jpg" alt="" />
                     </div>
                     <!--Banner-->
                     <!--Information-->

@@ -43,7 +43,7 @@
                                       <div class="mini-list-item">
                                         <div class="mini-view_image">
                                             <a class="grid-view-item__link" href="#">
-                                                <img class="grid-view-item__image blur-up lazyload" data-src="assets/images/blog/blog-post-sml-1.jpg" src="assets/images/blog/blog-post-sml-1.jpg" alt="" />
+                                                <img class="grid-view-item__image blur-up lazyload" data-src="/assets/images/blog/blog-post-sml-1.jpg" src="/assets/images/blog/blog-post-sml-1.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="details"> <a class="grid-view-item__title" href="#">It's all about how you wear</a>
@@ -53,7 +53,7 @@
                                     </div>
                                     <div class="grid__item">
                                       <div class="mini-list-item">
-                                        <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image blur-up lazyload" data-src="assets/images/blog/blog-post-sml-2.jpg" src="assets/images/blog/blog-post-sml-2.jpg" alt="" /></a> </div>
+                                        <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image blur-up lazyload" data-src="/assets/images/blog/blog-post-sml-2.jpg" src="/assets/images/blog/blog-post-sml-2.jpg" alt="" /></a> </div>
                                         <div class="details"> <a class="grid-view-item__title" href="#">27 Days of Spring Fashion Recap</a>
                                           <div class="grid-view-item__meta"><span class="article__date"> <time datetime="2017-05-02T14:33:00Z">May 02, 2017</time> </span></div>
                                         </div>
@@ -61,7 +61,7 @@
                                     </div>
                                     <div class="grid__item">
                                       <div class="mini-list-item">
-                                        <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image blur-up lazyload" data-src="assets/images/blog/blog-post-sml-3.jpg" src="assets/images/blog/blog-post-sml-3.jpg" alt="" /></a> </div>
+                                        <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image blur-up lazyload" data-src="/assets/images/blog/blog-post-sml-3.jpg" src="/assets/images/blog/blog-post-sml-3.jpg" alt="" /></a> </div>
                                         <div class="details"> <a class="grid-view-item__title" href="#">How to Wear The Folds Trend Four Ways</a>
                                           <div class="grid-view-item__meta"><span class="article__date"> <time datetime="2017-05-02T14:14:00Z">May 02, 2017</time> </span></div>
                                         </div>
@@ -69,7 +69,7 @@
                                     </div>
                                     <div class="grid__item">
                                       <div class="mini-list-item">
-                                        <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image blur-up lazyload" data-src="assets/images/blog/blog-post-sml-4.jpg" src="assets/images/blog/blog-post-sml-4.jpg" alt="" /></a> </div>
+                                        <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image blur-up lazyload" data-src="/assets/images/blog/blog-post-sml-4.jpg" src="/assets/images/blog/blog-post-sml-4.jpg" alt="" /></a> </div>
                                         <div class="details"> <a class="grid-view-item__title" href="#">Accusantium doloremque</a>
                                           <div class="grid-view-item__meta"><span class="article__date"> <time datetime="2017-05-02T14:12:00Z">May 02, 2017</time> </span></div>
                                         </div>
@@ -88,7 +88,7 @@
                                       <div class="mini-list-item">
                                         <div class="mini-view_image">
                                             <a class="grid-view-item__link" href="#">
-                                                <img class="grid-view-item__image blur-up lazyload" data-src="assets/images/recent-commnet-img.jpg" src="assets/images/recent-commnet-img.jpg" alt="" />
+                                                <img class="grid-view-item__image blur-up lazyload" data-src="/assets/images/recent-commnet-img.jpg" src="/assets/images/recent-commnet-img.jpg" alt="" />
                                             </a>
                                         </div>
                                         <div class="details">
@@ -99,7 +99,7 @@
                                     </div>
                                     <div class="grid__item">
                                       <div class="mini-list-item">
-                                        <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image blur-up lazyload" data-src="assets/images/recent-commnet-img.jpg" src="assets/images/recent-commnet-img.jpg" alt="" /></a> </div>
+                                        <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image blur-up lazyload" data-src="/assets/images/recent-commnet-img.jpg" src="/assets/images/recent-commnet-img.jpg" alt="" /></a> </div>
                                         <div class="details">
                                         	<div class="grid-view-item__meta"><strong>Joy</strong> On <a href="#">Lorem Ipsum</a></div>
                                         	<a class="grid-view-item__title" href="#">On sait depuis longtemps que travailler avec</a>
@@ -108,7 +108,7 @@
                                     </div>
                                     <div class="grid__item">
                                       <div class="mini-list-item">
-                                        <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image blur-up lazyload" data-src="assets/images/recent-commnet-img.jpg" src="assets/images/recent-commnet-img.jpg" alt="" /></a> </div>
+                                        <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image blur-up lazyload" data-src="/assets/images/recent-commnet-img.jpg" src="/assets/images/recent-commnet-img.jpg" alt="" /></a> </div>
                                         <div class="details">
                                         	<div class="grid-view-item__meta"><strong>Jhon</strong> On <a href="#">Lorem Ipsum</a></div>
                                         	<a class="grid-view-item__title" href="#">On sait depuis longtemps que travailler avec</a>
@@ -117,7 +117,7 @@
                                     </div>
                                     <div class="grid__item">
                                       <div class="mini-list-item">
-                                        <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image blur-up lazyload" data-src="assets/images/recent-commnet-img.jpg" src="assets/images/recent-commnet-img.jpg" alt="" /></a> </div>
+                                        <div class="mini-view_image"> <a class="grid-view-item__link" href="#"><img class="grid-view-item__image blur-up lazyload" data-src="/assets/images/recent-commnet-img.jpg" src="/assets/images/recent-commnet-img.jpg" alt="" /></a> </div>
                                         <div class="details">
                                         	<div class="grid-view-item__meta"><strong>Tim</strong> On <a href="#">Lorem Ipsum</a></div>
                                         	<a class="grid-view-item__title" href="#">On sait depuis longtemps que travailler avec</a>
@@ -158,7 +158,7 @@
                     	<div class="row">
                             <div class="col-12 col-sm-12 col-md-4 col-lg-4 article"> 
                                 <!-- Article Image --> 
-                                 <a class="article_featured-image" href="#"><img class="blur-up lazyload" data-src="assets/images/blog/blog-post-1.jpg" src="assets/images/blog/blog-post-1.jpg" alt="It's all about how you wear"></a> 
+                                 <a class="article_featured-image" href="#"><img class="blur-up lazyload" data-src="/assets/images/blog/blog-post-1.jpg" src="/assets/images/blog/blog-post-1.jpg" alt="It's all about how you wear"></a> 
                                 <h2 class="h3"><a href="blog-left-sidebar.html">It's all about how you wear</a></h2>
                                 <ul class="publish-detail">                      
                                     <li><i class="anm anm-user-al" aria-hidden="true"></i>  User</li>
@@ -172,7 +172,7 @@
                             
                             <div class="col-12 col-sm-12 col-md-4 col-lg-4 article"> 
                                 <!-- Article Image --> 
-                                 <a class="article_featured-image" href="#"><img class="blur-up lazyload" data-src="assets/images/blog/blog-post-2.jpg" src="assets/images/blog/blog-post-2.jpg" alt="27 Days of Spring Fashion Recap"></a> 
+                                 <a class="article_featured-image" href="#"><img class="blur-up lazyload" data-src="/assets/images/blog/blog-post-2.jpg" src="/assets/images/blog/blog-post-2.jpg" alt="27 Days of Spring Fashion Recap"></a> 
                                 <h2 class="h3"><a href="blog-right-sidebar.html">27 Days of Spring Fashion Recap</a></h2>
                                 <ul class="publish-detail">                      
                                     <li><i class="anm anm-user-al" aria-hidden="true"></i>  User</li>
@@ -186,7 +186,7 @@
                             
                             <div class="col-12 col-sm-12 col-md-4 col-lg-4 article"> 
                                 <!-- Article Image --> 
-                                 <a class="article_featured-image" href="#"><img class="blur-up lazyload" data-src="assets/images/blog/blog-post-3.jpg" src="assets/images/blog/blog-post-3.jpg" alt="How to Wear The Folds Trend Four Ways"></a> 
+                                 <a class="article_featured-image" href="#"><img class="blur-up lazyload" data-src="/assets/images/blog/blog-post-3.jpg" src="/assets/images/blog/blog-post-3.jpg" alt="How to Wear The Folds Trend Four Ways"></a> 
                                 <h2 class="h3"><a href="#">How to Wear The Folds Trend Four Ways</a></h2>
                                 <ul class="publish-detail">                      
                                     <li><i class="anm anm-user-al" aria-hidden="true"></i>  User</li>
@@ -200,7 +200,7 @@
                             
                             <div class="col-12 col-sm-12 col-md-4 col-lg-4 article"> 
                                 <!-- Article Image --> 
-                                 <a class="article_featured-image" href="#"><img class="blur-up lazyload" data-src="assets/images/blog/blog-post-4.jpg" src="assets/images/blog/blog-post-4.jpg" alt="Accusantium doloremque"></a> 
+                                 <a class="article_featured-image" href="#"><img class="blur-up lazyload" data-src="/assets/images/blog/blog-post-4.jpg" src="/assets/images/blog/blog-post-4.jpg" alt="Accusantium doloremque"></a> 
                                 <h2 class="h3"><a href="#">Accusantium doloremque</a></h2>
                                 <ul class="publish-detail">                      
                                     <li><i class="anm anm-user-al" aria-hidden="true"></i>  User</li>
@@ -213,7 +213,7 @@
                             </div>
                             <div class="col-12 col-sm-12 col-md-4 col-lg-4 article"> 
                                 <!-- Article Image --> 
-                                 <a class="article_featured-image" href="#"><img class="blur-up lazyload" data-src="assets/images/blog/blog-post-5.jpg" src="assets/images/blog/blog-post-5.jpg" alt=""></a> 
+                                 <a class="article_featured-image" href="#"><img class="blur-up lazyload" data-src="/assets/images/blog/blog-post-5.jpg" src="/assets/images/blog/blog-post-5.jpg" alt=""></a> 
                                 <h2 class="h3"><a href="#">Neque porro quisquam est</a></h2>
                                 <ul class="publish-detail">                      
                                     <li><i class="anm anm-user-al" aria-hidden="true"></i>  User</li>
@@ -226,7 +226,7 @@
                             </div>
                             <div class="col-12 col-sm-12 col-md-4 col-lg-4 article"> 
                                 <!-- Article Image --> 
-                                 <a class="article_featured-image" href="#"><img class="blur-up lazyload" data-src="assets/images/blog/blog-post-6.jpg" src="assets/images/blog/blog-post-6.jpg" alt=""></a> 
+                                 <a class="article_featured-image" href="#"><img class="blur-up lazyload" data-src="/assets/images/blog/blog-post-6.jpg" src="/assets/images/blog/blog-post-6.jpg" alt=""></a> 
                                 <h2 class="h3"><a href="#">Contrary to popular belief</a></h2>
                                 <ul class="publish-detail">                      
                                     <li><i class="anm anm-user-al" aria-hidden="true"></i>  User</li>
@@ -239,7 +239,7 @@
                             </div>
                             <div class="col-12 col-sm-12 col-md-4 col-lg-4 article"> 
                                 <!-- Article Image --> 
-                                 <a class="article_featured-image" href="#"><img class="blur-up lazyload" data-src="assets/images/blog/blog-post-7.jpg" src="assets/images/blog/blog-post-7.jpg" alt=""></a> 
+                                 <a class="article_featured-image" href="#"><img class="blur-up lazyload" data-src="/assets/images/blog/blog-post-7.jpg" src="/assets/images/blog/blog-post-7.jpg" alt=""></a> 
                                 <h2 class="h3"><a href="#">The standard chunk of Lorem</a></h2>
                                 <ul class="publish-detail">                      
                                     <li><i class="anm anm-user-al" aria-hidden="true"></i>  User</li>

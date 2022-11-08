@@ -83,7 +83,7 @@
             <!--Desktop Logo-->
             <div class="logo col-md-2 col-lg-2 d-none d-lg-block">
                 <a href="{{ Route('home') }}">
-                    <img src="assets/images/logo.svg" alt="Belle logo" title="Belle logo" />
+                    <img src="/assets/images/logo.svg" alt="Belle logo" title="Belle logo" />
                 </a>
             </div>
             <!--End Desktop Logo-->
@@ -137,7 +137,7 @@
             <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-block d-lg-none mobile-logo">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="assets/images/logo.svg" alt="Belle Multipurpose Html Template" title="Belle Multipurpose Html Template" />
+                        <img src="/assets/images/logo.svg" alt="Belle Multipurpose Html Template" title="Belle Multipurpose Html Template" />
                     </a>
                 </div>
             </div>
@@ -156,7 +156,7 @@
                                 <ul class="mini-products-list">
                                     <li class="item">
                                         <a class="product-image" href="#">
-                                            <img src="assets/images/product-images/cape-dress-1.jpg" alt="3/4 Sleeve Kimono Dress" title="" />
+                                            <img src="/assets/images/product-images/cape-dress-1.jpg" alt="3/4 Sleeve Kimono Dress" title="" />
                                         </a>
                                         <div class="product-details">
                                             <a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>

@@ -28,9 +28,9 @@ About us
                	</div>
             </div>
             <div class="row">
-            	<div class="col-12 col-sm-4 col-md-4 col-lg-4 mb-4"><img class="blur-up lazyload" data-src="assets/images/about1.jpg" src="assets/images/about1.jpg" alt="About Us" /></div>
-                <div class="col-12 col-sm-4 col-md-4 col-lg-4 mb-4"><img class="blur-up lazyload" data-src="assets/images/about2.jpg" src="assets/images/about2.jpg" alt="About Us" /></div>
-                <div class="col-12 col-sm-4 col-md-4 col-lg-4 mb-4"><img class="blur-up lazyload" data-src="assets/images/about3.jpg" src="assets/images/about3.jpg" alt="About Us" /></div>
+            	<div class="col-12 col-sm-4 col-md-4 col-lg-4 mb-4"><img class="blur-up lazyload" data-src="/assets/images/about1.jpg" src="/assets/images/about1.jpg" alt="About Us" /></div>
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 mb-4"><img class="blur-up lazyload" data-src="/assets/images/about2.jpg" src="/assets/images/about2.jpg" alt="About Us" /></div>
+                <div class="col-12 col-sm-4 col-md-4 col-lg-4 mb-4"><img class="blur-up lazyload" data-src="/assets/images/about3.jpg" src="/assets/images/about3.jpg" alt="About Us" /></div>
             </div>
             <div class="row">
             	<div class="col-12">

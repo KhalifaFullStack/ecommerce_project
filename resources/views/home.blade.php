@@ -15,7 +15,7 @@ Home page
         <div class="home-slideshow">
             <div class="slide">
                 <div class="blur-up lazyload">
-                    <img class="blur-up lazyload" data-src="assets/images/slideshow-banners/home2-default-banner1.jpg" src="assets/images/slideshow-banners/home2-default-banner1.jpg" alt="Shop Our New Collection" title="Shop Our New Collection" />
+                    <img class="blur-up lazyload" data-src="/assets/images/slideshow-banners/home2-default-banner1.jpg" src="/assets/images/slideshow-banners/home2-default-banner1.jpg" alt="Shop Our New Collection" title="Shop Our New Collection" />
                     <div class="slideshow__text-wrap slideshow__overlay classic middle">
                         <div class="slideshow__text-content middle">
                             <div class="container">
@@ -33,7 +33,7 @@ Home page
             <!-- slide 2 -->
             <div class="slide">
                 <div class="blur-up lazyload">
-                    <img class="blur-up lazyload" data-src="assets/images/slideshow-banners/home2-default-banner2.jpg" src="assets/images/slideshow-banners/home2-default-banner2.jpg" alt="Summer Bikini Collection" title="Summer Bikini Collection" />
+                    <img class="blur-up lazyload" data-src="/assets/images/slideshow-banners/home2-default-banner2.jpg" src="/assets/images/slideshow-banners/home2-default-banner2.jpg" alt="Summer Bikini Collection" title="Summer Bikini Collection" />
                     <div class="slideshow__text-wrap slideshow__overlay classic middle">
                         <div class="slideshow__text-content middle">
                             <div class="container">
@@ -52,7 +52,7 @@ Home page
             <!-- slide 3 -->
             <div class="slide">
                 <div class="blur-up lazyload">
-                    <img class="blur-up lazyload" data-src="assets/images/slideshow-banners/home2-default-banner2.jpg" src="assets/images/slideshow-banners/home2-default-banner2.jpg" alt="Summer Bikini Collection" title="Summer Bikini Collection" />
+                    <img class="blur-up lazyload" data-src="/assets/images/slideshow-banners/home2-default-banner2.jpg" src="/assets/images/slideshow-banners/home2-default-banner2.jpg" alt="Summer Bikini Collection" title="Summer Bikini Collection" />
                     <div class="slideshow__text-wrap slideshow__overlay classic middle">
                         <div class="slideshow__text-content middle">
                             <div class="container">
@@ -82,7 +82,7 @@ Home page
             <div class="collection-grid">
                 <div class="collection-grid-item">
                     <a href="collection-page.html" class="collection-grid-item__link">
-                        <img data-src="assets/images/categories/men.jfif" src="assets/images/categories/men.jfif" alt="men cate" class="blur-up lazyload" style="height:390px;" />
+                        <img data-src="/assets/images/categories/men.jfif" src="/assets/images/categories/men.jfif" alt="men cate" class="blur-up lazyload" style="height:390px;" />
                         <div class="collection-grid-item__title-wrapper">
                             <h3 class="collection-grid-item__title btn btn--secondary no-border">Men</h3>
                         </div>
@@ -91,7 +91,7 @@ Home page
 
                 <div class="collection-grid-item">
                     <a href="collection-page.html" class="collection-grid-item__link">
-                        <img data-src="assets/images/categories/women.jpg" src="assets/images/categories/women.jpg" alt="women cate" class="blur-up lazyload" style="height:390px;" />
+                        <img data-src="/assets/images/categories/women.jpg" src="/assets/images/categories/women.jpg" alt="women cate" class="blur-up lazyload" style="height:390px;" />
                         <div class="collection-grid-item__title-wrapper">
                             <h3 class="collection-grid-item__title btn btn--secondary no-border">Women</h3>
                         </div>
@@ -100,7 +100,7 @@ Home page
 
                 <div class="collection-grid-item blur-up lazyloaded">
                     <a href="collection-page.html" class="collection-grid-item__link">
-                        <img data-src="assets/images/categories/kids.jpg" src="assets/images/categories/kids.jpg" alt="kids cate" class="blur-up lazyload" style="height:390px;" />
+                        <img data-src="/assets/images/categories/kids.jpg" src="/assets/images/categories/kids.jpg" alt="kids cate" class="blur-up lazyload" style="height:390px;" />
                         <div class="collection-grid-item__title-wrapper">
                             <h3 class="collection-grid-item__title btn btn--secondary no-border">Kids</h3>
                         </div>
@@ -109,7 +109,7 @@ Home page
 
                 <div class="collection-grid-item">
                     <a href="collection-page.html" class="collection-grid-item__link">
-                        <img class="blur-up lazyload" data-src="assets/images/collection/cosmetic.jpg" src="assets/images/collection/cosmetic.jpg" alt="Cosmetic" style="height:390px;" />
+                        <img class="blur-up lazyload" data-src="/assets/images/collection/cosmetic.jpg" src="/assets/images/collection/cosmetic.jpg" alt="Cosmetic" style="height:390px;" />
                         <div class="collection-grid-item__title-wrapper">
                             <h3 class="collection-grid-item__title btn btn--secondary no-border">Cosmetic</h3>
                         </div>
@@ -118,7 +118,7 @@ Home page
 
                 <div class="collection-grid-item">
                     <a href="collection-page.html" class="collection-grid-item__link">
-                        <img data-src="assets/images/collection/accessories.jpg" src="assets/images/collection/accessories.jpg" alt="Accessories" class="blur-up lazyload" style="height:390px;" />
+                        <img data-src="/assets/images/collection/accessories.jpg" src="/assets/images/collection/accessories.jpg" alt="Accessories" class="blur-up lazyload" style="height:390px;" />
                         <div class="collection-grid-item__title-wrapper">
                             <h3 class="collection-grid-item__title btn btn--secondary no-border">Accessories
                             </h3>
@@ -128,7 +128,7 @@ Home page
 
                 <div class="collection-grid-item">
                     <a href="collection-page.html" class="collection-grid-item__link">
-                        <img data-src="assets/images/categories/shoes.jpg" src="assets/images/categories/shoes.jpg" alt="Shoes" class="blur-up lazyload" style="height:390px ;" />
+                        <img data-src="/assets/images/categories/shoes.jpg" src="/assets/images/categories/shoes.jpg" alt="Shoes" class="blur-up lazyload" style="height:390px ;" />
                         <div class="collection-grid-item__title-wrapper">
                             <h3 class="collection-grid-item__title btn btn--secondary no-border">Shoes</h3>
                         </div>
@@ -143,7 +143,7 @@ Home page
     <!--Parallax Section-->
     <div class="section">
         <div class="hero hero--large hero__overlay bg-size">
-            <img class="bg-img" src="assets/images/parallax-banners/parallax-banner.jpg" alt="" />
+            <img class="bg-img" src="/assets/images/parallax-banners/parallax-banner.jpg" alt="" />
             <div class="hero__inner">
                 <div class="container">
                     <div class="wrap-text left text-small font-bold">
@@ -190,7 +190,7 @@ Home page
                                 <!-- End hover image -->
 
                                 <!-- Variant Image-->
-                                <img class="grid-view-item__image hover variantImg" src="assets/images/product-images/product-image1.jpg" alt="image" title="product">
+                                <img class="grid-view-item__image hover variantImg" src="/assets/images/product-images/product-image1.jpg" alt="image" title="product">
                                 <!-- Variant Image-->
 
                                 <!-- product label -->
@@ -250,11 +250,11 @@ Home page
 
                             <!-- Color Variant -->
                             <!-- <ul class="swatches">
-                                <li class="swatch small rounded navy" rel="assets/images/product-images/product-image-stw1.jpg"></li>
-                                <li class="swatch small rounded green" rel="assets/images/product-images/product-image-stw1-1.jpg"></li>
-                                <li class="swatch small rounded gray" rel="assets/images/product-images/product-image-stw1-2.jpg"></li>
-                                <li class="swatch small rounded aqua" rel="assets/images/product-images/product-image-stw1-3.jpg"></li>
-                                <li class="swatch small rounded orange" rel="assets/images/product-images/product-image-stw1-4.jpg"></li>
+                                <li class="swatch small rounded navy" rel="/assets/images/product-images/product-image-stw1.jpg"></li>
+                                <li class="swatch small rounded green" rel="/assets/images/product-images/product-image-stw1-1.jpg"></li>
+                                <li class="swatch small rounded gray" rel="/assets/images/product-images/product-image-stw1-2.jpg"></li>
+                                <li class="swatch small rounded aqua" rel="/assets/images/product-images/product-image-stw1-3.jpg"></li>
+                                <li class="swatch small rounded orange" rel="/assets/images/product-images/product-image-stw1-4.jpg"></li>
                             </ul> -->
                             <!-- End Variant -->
                         </div>
@@ -280,7 +280,7 @@ Home page
                                 <img class="hover blur-up lazyload" data-src="{{ $sec_product->hover_image }}" src="{{ $sec_product->hover_image }}" alt="image" title="product" />
                                 <!-- End hover image -->
                                 <!-- Variant Image-->
-                                <img class="grid-view-item__image hover variantImg" src="assets/images/product-images/product-image7.jpg" alt="image" title="product">
+                                <img class="grid-view-item__image hover variantImg" src="/assets/images/product-images/product-image7.jpg" alt="image" title="product">
                                 <!-- Variant Image-->
                             </a>
                             <!-- end product image -->
@@ -332,10 +332,10 @@ Home page
 
                             <!-- Color Variant -->
                             <ul class="swatches">
-                                <li class="swatch small rounded gray" rel="assets/images/product-images/product-image16.jpg"></li>
-                                <li class="swatch small rounded red" rel="assets/images/product-images/product-image5.jpg"></li>
-                                <li class="swatch small rounded orange" rel="assets/images/product-images/product-image5-1.jpg"></li>
-                                <li class="swatch small rounded yellow" rel="assets/images/product-images/product-image17.jpg"></li>
+                                <li class="swatch small rounded gray" rel="/assets/images/product-images/product-image16.jpg"></li>
+                                <li class="swatch small rounded red" rel="/assets/images/product-images/product-image5.jpg"></li>
+                                <li class="swatch small rounded orange" rel="/assets/images/product-images/product-image5-1.jpg"></li>
+                                <li class="swatch small rounded yellow" rel="/assets/images/product-images/product-image17.jpg"></li>
                             </ul>
                             <!-- End Variant -->
                             
@@ -352,10 +352,10 @@ Home page
                             <!--start product image -->
                             <a href="product-layout-1.html" class="grid-view-item__link">
                                 <!-- image -->
-                                <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image19.jpg" src="assets/images/product-images/product-image19.jpg" alt="image" title="product" />
+                                <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image19.jpg" src="/assets/images/product-images/product-image19.jpg" alt="image" title="product" />
                                 <!-- End image -->
                                 <!-- Hover image -->
-                                <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image19-1.jpg" src="assets/images/product-images/product-image19-1.jpg" alt="image" title="product" />
+                                <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image19-1.jpg" src="/assets/images/product-images/product-image19-1.jpg" alt="image" title="product" />
                                 <!-- End hover image -->
                             </a>
                             <!-- end product image -->
@@ -404,10 +404,10 @@ Home page
                             <!-- start product image -->
                             <a href="product-layout-1.html" class="grid-view-item__link">
                                 <!-- image -->
-                                <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image18.jpg" src="assets/images/product-images/product-image18.jpg" alt="image" title="product" />
+                                <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image18.jpg" src="/assets/images/product-images/product-image18.jpg" alt="image" title="product" />
                                 <!-- End image -->
                                 <!-- Hover image -->
-                                <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image18-1.jpg" src="assets/images/product-images/product-image18-1.jpg" alt="image" title="product" />
+                                <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image18-1.jpg" src="/assets/images/product-images/product-image18-1.jpg" alt="image" title="product" />
                                 <!-- End hover image -->
                             </a>
                             <!-- end product image -->
@@ -455,10 +455,10 @@ Home page
                             <!-- start product image -->
                             <a href="product-layout-1.html" class="grid-view-item__link">
                                 <!-- image -->
-                                <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image2.jpg" src="assets/images/product-images/product-image2.jpg" alt="image" title="product">
+                                <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image2.jpg" src="/assets/images/product-images/product-image2.jpg" alt="image" title="product">
                                 <!-- End image -->
                                 <!-- Hover image -->
-                                <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image2-1.jpg" src="assets/images/product-images/product-image2-1.jpg" alt="image" title="product">
+                                <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image2-1.jpg" src="/assets/images/product-images/product-image2-1.jpg" alt="image" title="product">
                                 <!-- End hover image -->
                             </a>
                             <!-- product button -->
@@ -521,22 +521,22 @@ Home page
                     </div>
                     <div class="logo-bar">
                         <div class="logo-bar__item">
-                            <img src="assets/images/logo/brandlogo1.png" alt="" title="" />
+                            <img src="/assets/images/logo/brandlogo1.png" alt="" title="" />
                         </div>
                         <div class="logo-bar__item">
-                            <img src="assets/images/logo/brandlogo2.png" alt="" title="" />
+                            <img src="/assets/images/logo/brandlogo2.png" alt="" title="" />
                         </div>
                         <div class="logo-bar__item">
-                            <img src="assets/images/logo/brandlogo3.png" alt="" title="" />
+                            <img src="/assets/images/logo/brandlogo3.png" alt="" title="" />
                         </div>
                         <div class="logo-bar__item">
-                            <img src="assets/images/logo/brandlogo4.png" alt="" title="" />
+                            <img src="/assets/images/logo/brandlogo4.png" alt="" title="" />
                         </div>
                         <div class="logo-bar__item">
-                            <img src="assets/images/logo/brandlogo5.png" alt="" title="" />
+                            <img src="/assets/images/logo/brandlogo5.png" alt="" title="" />
                         </div>
                         <div class="logo-bar__item">
-                            <img src="assets/images/logo/brandlogo6.png" alt="" title="" />
+                            <img src="/assets/images/logo/brandlogo6.png" alt="" title="" />
                         </div>
                     </div>
                 </div>
@@ -562,7 +562,7 @@ Home page
                             <div class="col-lg-6 col-md-6 col-sm-12 col-12">
                                 <div class="product-details-img">
                                     <div class="pl-20">
-                                        <img src="assets/images/product-detail-page/camelia-reversible-big1.jpg" alt="" />
+                                        <img src="/assets/images/product-detail-page/camelia-reversible-big1.jpg" alt="" />
                                     </div>
                                 </div>
                             </div>
@@ -592,19 +592,19 @@ Home page
                                                 <label class="header">Color: <span class="slVariant">Red</span></label>
                                                 <div data-value="Red" class="swatch-element color red available">
                                                     <input class="swatchInput" id="swatch-0-red" type="radio" name="option-0" value="Red">
-                                                    <label class="swatchLbl color medium rectangle" for="swatch-0-red" style="background-image:url(assets/images/product-detail-page/variant1-1.jpg);" title="Red"></label>
+                                                    <label class="swatchLbl color medium rectangle" for="swatch-0-red" style="background-image:url(/assets/images/product-detail-page/variant1-1.jpg);" title="Red"></label>
                                                 </div>
                                                 <div data-value="Blue" class="swatch-element color blue available">
                                                     <input class="swatchInput" id="swatch-0-blue" type="radio" name="option-0" value="Blue">
-                                                    <label class="swatchLbl color medium rectangle" for="swatch-0-blue" style="background-image:url(assets/images/product-detail-page/variant1-2.jpg);" title="Blue"></label>
+                                                    <label class="swatchLbl color medium rectangle" for="swatch-0-blue" style="background-image:url(/assets/images/product-detail-page/variant1-2.jpg);" title="Blue"></label>
                                                 </div>
                                                 <div data-value="Green" class="swatch-element color green available">
                                                     <input class="swatchInput" id="swatch-0-green" type="radio" name="option-0" value="Green">
-                                                    <label class="swatchLbl color medium rectangle" for="swatch-0-green" style="background-image:url(assets/images/product-detail-page/variant1-3.jpg);" title="Green"></label>
+                                                    <label class="swatchLbl color medium rectangle" for="swatch-0-green" style="background-image:url(/assets/images/product-detail-page/variant1-3.jpg);" title="Green"></label>
                                                 </div>
                                                 <div data-value="Gray" class="swatch-element color gray available">
                                                     <input class="swatchInput" id="swatch-0-gray" type="radio" name="option-0" value="Gray">
-                                                    <label class="swatchLbl color medium rectangle" for="swatch-0-gray" style="background-image:url(assets/images/product-detail-page/variant1-4.jpg);" title="Gray"></label>
+                                                    <label class="swatchLbl color medium rectangle" for="swatch-0-gray" style="background-image:url(/assets/images/product-detail-page/variant1-4.jpg);" title="Gray"></label>
                                                 </div>
                                             </div>
                                         </div>
@@ -673,7 +673,7 @@ Home page
         <a class="btn closepopup"><i class="icon icon anm anm-times-l"></i></a>
         <!-- Modal content-->
         <div class="display-table splash-bg">
-            <div class="display-table-cell width40"><img src="assets/images/newsletter-img.jpg" alt="Join Our Mailing List" title="Join Our Mailing List" /> </div>
+            <div class="display-table-cell width40"><img src="/assets/images/newsletter-img.jpg" alt="Join Our Mailing List" title="Join Our Mailing List" /> </div>
             <div class="display-table-cell width60 text-center">
                 <div class="newsletter-left">
                     <h2>Join Our Mailing List</h2>

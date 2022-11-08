@@ -299,7 +299,7 @@
                                                                 <input type="date" name="exdate" class="form-control">
                                                             </div>
                                                             <div class="form-group col-md-6 col-lg-6 col-xl-6 required">
-                                                                <img class="padding-25px-top xs-padding-5px-top" src="assets/images/payment-img.jpg" alt="card" title="card" />
+                                                                <img class="padding-25px-top xs-padding-5px-top" src="/assets/images/payment-img.jpg" alt="card" title="card" />
                                                             </div>
                                                         </div>
                                                     </fieldset>

@@ -23,7 +23,7 @@ class ProductSeeder extends Seeder
             'accessories'   => "false",
             'type'          => "casual",
             'description'   => "xxxxxxxxxxxxxx",
-            'image'         => 'assets/images/product-images/product-image36.jpg',
+            'image'         => '/assets/images/product-images/product-image36.jpg',
             'discount'     => "0",
             'available_quantity' => 60,
 

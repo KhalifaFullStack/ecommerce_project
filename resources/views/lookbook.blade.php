@@ -18,7 +18,7 @@
         	<div class="lookbook grid grid-masonary">
             	<div class="grid-sizer"></div>
             	<div class="grid-lookbook grid-item">
-                    <img src="assets/images/lookbook-2.jpg" alt="">
+                    <img src="/assets/images/lookbook-2.jpg" alt="">
                     <div class="caption">
                         <h2>Women's Winter wear</h2>
                         <a class="btn" href="#">Shop The Collectons <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
@@ -26,7 +26,7 @@
                     <a class="overlay" href="#"></a>
                 </div>
                 <div class="grid-lookbook grid-item">
-                    <img src="assets/images/lookbook-3.jpg" alt="">
+                    <img src="/assets/images/lookbook-3.jpg" alt="">
                     <div class="caption">
                       <h2>Collection 2017 special</h2>
                       <a class="btn" href="#">Shop The Collectons <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
@@ -34,7 +34,7 @@
                     <a class="overlay" href="#"></a>
             	</div>
                 <div class="grid-lookbook grid-item">
-          			<img src="assets/images/lookbook-4.jpg" alt="">
+          			<img src="/assets/images/lookbook-4.jpg" alt="">
         			<div class="caption">
           				<h2>Summer Collection</h2>
           				<a class="btn" href="#">Shop The Collectons <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
@@ -42,7 +42,7 @@
         			<a class="overlay" href="#"></a>
         		</div>
                 <div class="grid-lookbook grid-item">
-          			<img src="assets/images/lookbook-5.jpg" alt="">
+          			<img src="/assets/images/lookbook-5.jpg" alt="">
         			<div class="caption">
           				<h2>Kids Wear</h2>
           				<a class="btn" href="#">Shop The Collectons <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
@@ -50,7 +50,7 @@
         			<a class="overlay" href="#"></a>
         		</div>
                 <div class="grid-lookbook grid-item">
-          			<img src="assets/images/lookbook-6.jpg" alt="">
+          			<img src="/assets/images/lookbook-6.jpg" alt="">
         			<div class="caption">
           <h2>lingerie collection</h2>
         

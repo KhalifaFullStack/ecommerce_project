@@ -50,7 +50,7 @@
                                 </tr>
                                 <tr>
                                     <th valign="middle" class="product-name">Product Image</th>
-                                    <td valign="middle" class="item-row"><img src="assets/images/product-images/product-image16.jpg" alt="" class="featured-image">
+                                    <td valign="middle" class="item-row"><img src="/assets/images/product-images/product-image16.jpg" alt="" class="featured-image">
                                     <div class="product-price product_price"><span>$89,00</span></div>
                                         <form class="variants clearfix">
                                             <input type="hidden">
@@ -58,7 +58,7 @@
                                         </form>
                                         <p class="grid-link__title hidden">Cut Dress</p>
                                     </td>
-                                    <td class="item-row"><img src="assets/images/product-images/product-image18.jpg" alt="" class="featured-image">
+                                    <td class="item-row"><img src="/assets/images/product-images/product-image18.jpg" alt="" class="featured-image">
                                     <div class="product-price product_price"><span>$89,00</span></div>
                                         <form class="variants clearfix">
                                             <input type="hidden">
@@ -66,7 +66,7 @@
                                         </form>
                                         <p class="grid-link__title hidden">Cut Dress</p>
                                     </td>
-                                    <td class="item-row"><img src="assets/images/product-images/product-image20.jpg" alt="" class="featured-image">
+                                    <td class="item-row"><img src="/assets/images/product-images/product-image20.jpg" alt="" class="featured-image">
                                         <div class="product-price product_price"><span>$89,00</span></div>
                                         <form class="variants clearfix">
                                             <input type="hidden">
@@ -74,7 +74,7 @@
                                         </form>
                                         <p class="grid-link__title hidden">Cut Dress</p>
                                     </td>
-                                    <td class="item-row"><img src="assets/images/product-images/product-image23.jpg" alt="" class="featured-image">
+                                    <td class="item-row"><img src="/assets/images/product-images/product-image23.jpg" alt="" class="featured-image">
                                         <div class="product-price product_price"><span>$89,00</span></div>
                                         <form class="variants clearfix">
                                             <input type="hidden">
@@ -82,7 +82,7 @@
                                         </form>
                                         <p class="grid-link__title hidden">Cut Dress</p>
                                     </td>
-                                    <td class="item-row"><img src="assets/images/product-images/product-image28.jpg" alt="" class="featured-image">
+                                    <td class="item-row"><img src="/assets/images/product-images/product-image28.jpg" alt="" class="featured-image">
                                         <div class="product-price product_price"><span>$89,00</span></div>
                                         <form class="variants clearfix">
                                             <input type="hidden">
