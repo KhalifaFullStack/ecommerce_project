@@ -83,7 +83,7 @@
             <!--Desktop Logo-->
             <div class="logo col-md-2 col-lg-2 d-none d-lg-block">
                 <a href="{{ Route('home') }}">
-                    <img src="/assets/images/logo.svg" alt="Belle logo" title="Belle logo" />
+                    <img src="/assets/images/logo.svg" alt="Fashionova logo" title="Fashionova logo" />
                 </a>
             </div>
             <!--End Desktop Logo-->
@@ -104,15 +104,28 @@
                         <li class="lvl1 parent dropdown"><a href="#">Categories<i class="anm anm-angle-down-l"></i></a>
                             <ul class="dropdown">
 
-                                <li><a href="{{ Route('home') }}" class="site-nav">Men</a></li>
-                                <li><a href="{{ Route('home') }}" class="site-nav">Women</a></li>
-                                <li><a href="{{ Route('home') }}" class="site-nav">Kids</a></li>
-                                <li><a href="{{ Route('home') }}" class="site-nav">Shoes</a></li>
-                                <li><a href="{{ Route('home') }}" class="site-nav">Accessories</a></li>
-                                <li><a href="{{ Route('home') }}" class="site-nav">cosmetics</a></li>
-                                <li><a href="{{ Route('lookbook') }}" class="site-nav">Lookbook<span class="lbl nm_label1">New</span></i></a></li>
+                                <li><a href="{{ Route('men_shop') }}" class="site-nav site_nav_categories_men">Men</a></li>
+                                <li><a href="{{ Route('women_shop') }}" class="site-nav site_nav_categories_women">Women</a></li>
+                                <li><a href="{{ Route('kids_shop') }}" class="site-nav site_nav_categories_kids">Kids</a></li>
+                                <li><a href="{{ Route('shoes_shop') }}" class="site-nav site_nav_categories_shoes">Shoes</a></li>
+                                <li><a href="{{ Route('accessories_shop') }}" class="site-nav site_nav_categories_accessories">Accessories</a></li>
+                                <li><a href="{{ Route('cosmetics_shop') }}" class="site-nav site_nav_categories_cosmetics">cosmetics</a></li>
+                                <li><a href="{{ Route('lookbook') }}" class="site-nav site_nav_categories_lookbook">Lookbook<span class="lbl nm_label1">New</span></i></a></li>
                             </ul>
                         </li>
+
+                        {{-- <script>
+                            let = men = document.querySelector(".site_nav_categories_men")
+                            let = women = document.querySelector(".site_nav_categories_women")
+
+                            men.addEventListener("click", function(){
+                                window.location = "/men"
+                            })
+
+                            women.addEventListener("click", function(){
+                                window.location = "/women"
+                            })
+                        </script> --}}
 
                         <li class="lvl1 parent dropdown"><a href="#">Services<i class="anm anm-angle-down-l"></i></a>
                             <ul class="dropdown">

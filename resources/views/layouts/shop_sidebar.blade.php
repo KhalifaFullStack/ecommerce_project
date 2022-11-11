@@ -16,7 +16,7 @@
                 <div class="closeFilter d-block d-md-none d-lg-none"><i class="icon icon anm anm-times-l"></i></div>
                 <div class="sidebar_tags">
 
-                    <form method="GET" action="{{ route('input') }}" id="compact_value">
+                    <form method="GET" action="{{ route('input') }}">
                         <!--Categories-->
                         <div class="sidebar_widget categories filter-widget">
                             <div class="widget-title"><h2>Categories</h2></div>
@@ -43,7 +43,7 @@
                                     <li class="lvl-1"><button type="submit" name="accessories" value="accessories" class="site-nav">Accessories</button></li>
                                     <li class="lvl-1"><button type="submit" name="cosmetics" value="cosmetics" class="site-nav">Cosmetics</button></li>
                                     <li class="lvl-1"><button type="submit" name="all_products" value="all_products" class="site-nav">All Products</button></li>
-                                    {{-- Note: it works with -- type="submit"-- OR -- onclick="document.querySelector('#compact_value').submit();" --}}
+                                    {{-- Note: it works with -- type="submit"-- OR -- onclick="document.querySelector('#compact_value').submit();" (you must add and id if you will use the "onclick" method)--}}
                                 </ul>
                             </div>
                         </div>
@@ -58,12 +58,16 @@
                         <form action="{{ route('price_filter') }}" method="get" class="price-filter">
                             <div id="slider-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
                                 <div class="ui-slider-range ui-widget-header ui-corner-all"></div>
-                                <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
+                                <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0" name=""></span>
                                 <span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
                             </div>
                             <div class="row">
                                 <div class="col-6">
-                                    <p class="no-margin"><input id="amount" name="firter" value="1" type="text"></p>
+                                    {{-- <p class="no-margin"><input id="amount" name="filter" value="1" type="text"></p> --}}
+                                    <p class="no-margin">
+                                      <input id="amount_start" name="start_price" value="1" type="text">
+                                      <input id="amount_end" name="end_price" value="1" type="text">
+                                    </p>
                                 </div>
                                 <div class="col-6 text-right margin-25px-top">
                                     <button type="submit" class="btn btn-secondary btn--small">filter</button>

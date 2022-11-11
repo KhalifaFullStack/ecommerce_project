@@ -76,6 +76,14 @@ Route::group([], function () {
     route::get('/input', [ProductController::class, 'products'])->name('input');
     route::get('/shop', [ProductController::class, 'products'])->name('shop');
     route::get('/price_filter', [ProductController::class, 'price_filter'])->name('price_filter');
+
+    //get categories for the header and the home page's 1st slider
+    route::get('/men_shop', [ProductController::class, 'men_shop'])->name('men_shop');
+    route::get('/women_shop', [ProductController::class, 'women_shop'])->name('women_shop');
+    route::get('/kids_shop', [ProductController::class, 'kids_shop'])->name('kids_shop');
+    route::get('/shoes_shop', [ProductController::class, 'shoes_shop'])->name('shoes_shop');
+    route::get('/accessories_shop', [ProductController::class, 'accessories_shop'])->name('accessories_shop');
+    route::get('/cosmetics_shop', [ProductController::class, 'cosmetics_shop'])->name('cosmetics_shop');
 });
 
 //all routes for register, login and logout are built-in ---- but you can call out

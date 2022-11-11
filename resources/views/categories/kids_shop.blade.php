@@ -19,35 +19,35 @@
                         <!--End Toolbar-->
                         <div class="list-view-items grid--view-items">
 
-                            @forelse ( $compact_value as $product_value)  
+                            @forelse ( $kids_products as $kids_value)       
                                 <!--ListView Item-->
                                 <div class="list-product list-view-item">
                                     <div class="list-view-item__image-column">
                                         <div class="list-view-item__image-wrapper">
                                             <!-- Image -->
-                                            <a href="product-layout-2.html"><img class="list-view-item__image blur-up lazyload" data-src="{{ $product_value->image }}" src="{{ $product_value->image }}" alt="{{ $product_value->name." image not found" }}" title="{{ $product_value->name ?? 'Product name' }}"></a>
+                                            <a href="product-layout-2.html"><img class="list-view-item__image blur-up lazyload" data-src="{{ $kids_value->image }}" src="{{ $kids_value->image }}" alt="{{ $kids_value->name." image not found" }}" title="{{ $kids_value->name ?? 'Product name' }}"></a>
                                             <!-- End Image -->
                                     </div>
                                     </div>
                                     <div class="list-view-item__title-column">
-                                        <div class="h4 grid-view-item__title"><a href="product-layout-2.html">{{ $product_value->name ?? 'Product name'}}</a></div>
+                                        <div class="h4 grid-view-item__title"><a href="product-layout-2.html">{{ $kids_value->name ?? 'Product name'}}</a></div>
                                         <!-- Product Review -->
                                         <p class="product-review"><i class="font-13 fa fa-star"></i><i class="font-13 fa fa-star"></i><i class="font-13 fa fa-star"></i><i class="font-13 fa fa-star-o"></i><i class="font-13 fa fa-star-o"></i></p>
                                         <!-- End Product Review -->
                                         <!-- Sort Description -->
-                                        <p>{{ $product_value->description}}</p>
+                                        <p>{{ $kids_value->description}}</p>
                                         <!-- End Sort Description -->
                                         <!-- Price -->
                                         <p class="product-price grid-view-item__meta">
-                                            @if($product_value->discount <= 0 || $product_value->discount == " ")
-                                            <span class="product-price__price product-price__sale"><span class="money">{{ $product_value->price }} EGP</span></span>
-                                            @elseif( $product_value->discount > 0 )
-                                            <span class="old-price">{{ $product_value->price }} EGP</span>
-                                            <span class="product-price__price product-price__sale"><span class="money">{{ $product_value->price - ($product_value->price * $product_value->discount)}}</span></span>
+                                            @if($kids_value->discount <= 0 || $kids_value->discount == " ")
+                                            <span class="product-price__price product-price__sale"><span class="money">{{ $kids_value->price }} EGP</span></span>
+                                            @elseif( $kids_value->discount > 0 )
+                                            <span class="old-price">{{ $kids_value->price }} EGP</span>
+                                            <span class="product-price__price product-price__sale"><span class="money">{{ $kids_value->price - ($kids_value->price * $kids_value->discount)}}</span></span>
                                             @endif
                                         </p>
                                         <!-- End Price -->
-                                        <form class="variants" action="{{ route('create_cart', [$product_value->id]) }}" method="post">
+                                        <form class="variants" action="{{ route('create_cart', [$kids_value->id]) }}" method="post">
                                             @csrf
                                             <input class="cart__qty-input qty form-control" type="text" name="add_quantity" id="qty" value="1" pattern="[0-9]*">
                                             <button class="btn btn--small" type="submit" >Add to cart</button>
