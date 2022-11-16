@@ -84,7 +84,14 @@ Route::group([], function () {
     route::get('/shoes_shop', [ProductController::class, 'shoes_shop'])->name('shoes_shop');
     route::get('/accessories_shop', [ProductController::class, 'accessories_shop'])->name('accessories_shop');
     route::get('/cosmetics_shop', [ProductController::class, 'cosmetics_shop'])->name('cosmetics_shop');
+
+    //search-bar routs
+    route::get('/search', [ProductController::class, 'search'])->name('search-criteria');
 });
+
+Route::get('/shop-grid', function () {
+    return view('shop-grid');
+})->name('shop-grid');
 
 //all routes for register, login and logout are built-in ---- but you can call out
 

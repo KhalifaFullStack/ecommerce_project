@@ -1,16 +1,15 @@
 <!--Promotion Bar-->
 <div class="notification-bar mobilehide">
-    <a href="#" class="notification-bar__message">20% off your very first purchase, use promo code: belle
-        fashion</a>
+    <a href="#" class="notification-bar__message">20% off your very first purchase, use promo code: fashionova-Shoper</a>
     <span class="close-announcement">×</span>
 </div>
 <!--End Promotion Bar-->
 <!--Search Form Drawer-->
 <div class="search">
     <div class="search__form">
-        <form class="search-bar__form" action="#">
+        <form class="search-bar__form" action="{{ route('search-criteria') }}" method="GET">
             <button class="go-btn search__button" type="submit"><i class="icon anm anm-search-l"></i></button>
-            <input class="search__input" type="search" name="q" value="" placeholder="Search entire store..." aria-label="Search" autocomplete="off">
+            <input class="search__input" type="search" name="criteria" value="" placeholder="Search entire store..." aria-label="Search" autocomplete="off">
         </form>
         <button type="button" class="search-trigger close-btn"><i class="anm anm-times-l"></i></button>
     </div>
@@ -24,13 +23,9 @@
                 <div class="currency-picker">
                     <span class="selected-currency">USD</span>
                     <ul id="currencies">
-                        <li data-currency="INR" class="">INR</li>
-                        <li data-currency="GBP" class="">GBP</li>
-                        <li data-currency="CAD" class="">CAD</li>
-                        <li data-currency="USD" class="selected">USD</li>
-                        <li data-currency="AUD" class="">AUD</li>
+                        <li data-currency="EGP" class="selected">EGP</li>
+                        <li data-currency="USD" class="">USD</li>
                         <li data-currency="EUR" class="">EUR</li>
-                        <li data-currency="JPY" class="">JPY</li>
                     </ul>
                 </div>
 
@@ -76,17 +71,20 @@
     </div>
 </div>
 <!--End Top Header-->
+
 <!--Header-->
 <div class="header-wrap animated d-flex border-bottom">
     <div class="container-fluid">
         <div class="row align-items-center">
+
             <!--Desktop Logo-->
             <div class="logo col-md-2 col-lg-2 d-none d-lg-block">
                 <a href="{{ Route('home') }}">
-                    <img src="/assets/images/logo.svg" alt="Fashionova logo" title="Fashionova logo" />
+                    <img src="/assets/images/logo.png" alt="Fashionova logo" title="Fashionova logo" style="height: 10vh" />
                 </a>
             </div>
             <!--End Desktop Logo-->
+
             <div class="col-2 col-sm-3 col-md-3 col-lg-8">
                 <div class="d-block d-lg-none">
                     <button type="button" class="btn--link site-header__menu js-mobile-nav-toggle mobile-nav--open">
@@ -94,8 +92,10 @@
                         <i class="anm anm-bars-r"></i>
                     </button>
                 </div>
+
                 <!--Desktop Menu-->
                 <nav class="grid__item" id="AccessibleNav">
+
                     <!-- for mobile -->
                     <ul id="siteNav" class="site-nav medium center hidearrow ">
 
@@ -113,19 +113,6 @@
                                 <li><a href="{{ Route('lookbook') }}" class="site-nav site_nav_categories_lookbook">Lookbook<span class="lbl nm_label1">New</span></i></a></li>
                             </ul>
                         </li>
-
-                        {{-- <script>
-                            let = men = document.querySelector(".site_nav_categories_men")
-                            let = women = document.querySelector(".site_nav_categories_women")
-
-                            men.addEventListener("click", function(){
-                                window.location = "/men"
-                            })
-
-                            women.addEventListener("click", function(){
-                                window.location = "/women"
-                            })
-                        </script> --}}
 
                         <li class="lvl1 parent dropdown"><a href="#">Services<i class="anm anm-angle-down-l"></i></a>
                             <ul class="dropdown">
@@ -145,75 +132,112 @@
                     </ul>
                 </nav>
                 <!--End Desktop Menu-->
+
             </div>
             <!--Mobile Logo-->
             <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-block d-lg-none mobile-logo">
                 <div class="logo">
                     <a href="index.html">
-                        <img src="/assets/images/logo.svg" alt="Belle Multipurpose Html Template" title="Belle Multipurpose Html Template" />
+                        <img src="/assets/images/logo.png" alt="Fashonova Ecommerce Laravel and bootstrap" title="Fashonova Ecommerce Laravel and bootstrap" />
                     </a>
                 </div>
             </div>
-            <!--Mobile Logo-->
-            <div class="col-4 col-sm-3 col-md-3 col-lg-2">
-                <div class="site-cart">
+                    <!--Mobile Logo-->
+                    <div class="col-4 col-sm-3 col-md-3 col-lg-2">
 
-                    @auth
-                        @if (auth()->user()->user_type == 'customer')
-                            <!--Minicart Popup-->
+                @auth
+                    @if(auth()->user()->user_type == 'customer')
+                        
+                        <div class="site-cart">
                             <a href="#" class="site-header__cart" title="Cart">
                                 <i class="icon anm anm-bag-l"></i>
-                                <span id="CartCount" class="site-header__cart-count" data-cart-render="item_count">{{ \App\Models\Cart::where('customer_id', '=', auth()->user()->id)->count() }}</span>
+                                <span id="CartCount" class="site-header__cart-count"
+                                    data-cart-render="item_count">{{ \App\Models\Cart::where('customer_id', '=', auth()->user()->id)->count(); }}</span>
+                                    {{-- This is a replacement of ($count_cart_header)-> you can use this when you want to add a small part of backend and 
+                                        it id not worth making a whole new function -- here you just add the condition using directly the model 
+                                        -- can be used in replacement of any variable even if this variable is for a loop --
+                                        {{ \App\Models\Cart::where('customer_id', '=', auth()->user()->id)->count(); }} --}}
                             </a>
+
+                            <!--Minicart Popup-->
                             <div id="header-cart" class="block block-cart">
+
+                        @forelse ( \App\Models\Cart::where('customer_id', '=', auth()->user()->id)->get() as $cart_products)
+
                                 <ul class="mini-products-list">
                                     <li class="item">
                                         <a class="product-image" href="#">
-                                            <img src="/assets/images/product-images/cape-dress-1.jpg" alt="3/4 Sleeve Kimono Dress" title="" />
+                                            <img src="{{ $cart_products->image }}"
+                                                alt="Picture for product id: {{ $cart_products->id }}" title="" />
                                         </a>
                                         <div class="product-details">
-                                            <a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
-                                            <a href="#" class="edit-i remove"><i class="anm anm-edit" aria-hidden="true"></i></a>
-                                            <a class="pName" href="cart.html">Sleeve Kimono Dress</a>
+
+                                            <form action="{{ route('delete_row', [$cart_products->id]) }}" method="post">
+                                                @csrf
+                                                {{ method_field('delete') }}
+
+                                                <button type="submit" style="border:none;" class="remove"><i class="anm anm-times-l"
+                                                        aria-hidden="true"></i></button>
+                                            </form>
+
+                                            <a class="pName" href="cart.html">{{ $cart_products->product_name ?? "Name for prduct id: .$cart_products->id" }}</a>
                                             <div class="variant-cart">Black / XL</div>
                                             <div class="wrapQtyBtn">
                                                 <div class="qtyField">
                                                     <span class="label">Qty:</span>
-                                                    <a class="qtyBtn minus" href="javascript:void(0);"><i class="fa anm anm-minus-r" aria-hidden="true"></i></a>
-                                                    <input type="text" id="Quantity" name="quantity" value="1" class="product-form__input qty">
-                                                    <a class="qtyBtn plus" href="javascript:void(0);"><i class="fa anm anm-plus-r" aria-hidden="true"></i></a>
+                                                    <a class="qtyBtn minus" href="javascript:void(0);"><i
+                                                            class="fa anm anm-minus-r" aria-hidden="true"></i></a>
+
+                                                    <form id="card_header_update" method="POST" action="{{ route('update_cart', [$cart_products->id]) }}" style="padding: auto; margin:auto;">
+                                                            @csrf
+                                                            {{ method_field('patch') }}
+                                                        <input type="text" id="Quantity" name="update_quantity" value="{{ $cart_products->quantity}}" max="{{ $cart_products->available_quantity}}" min="1"
+                                                            class="product-form__input qty">
+                                                    </form>
+
+                                                    <a class="qtyBtn plus" href="javascript:void(0);"><i
+                                                            class="fa anm anm-plus-r" aria-hidden="true"></i></a>
+                                                    <button onclick="document.getElementById('card_header_update').submit();" style="border: 1px solid; padding: 0px 2px; margin: 5px; color:whitesmoke; background-color:black;">Edit <i class="anm anm-edit"
+                                                        aria-hidden="true" style="color: whitesmoke; width:1px; height:1px;"></i></button>
                                                 </div>
                                             </div>
-                                            <div class="priceRow">
+                                            <!-- product price -->
                                                 <div class="product-price">
-                                                    <span class="money">$59.00</span>
+                                                    @if($cart_products->discount <= 0)
+                                                    <span class="price">{{ $cart_products->price }} EGP</span>
+                                                    @elseif($cart_products->discount > 0)
+                                                    <span class="old-price">{{ $cart_products->price }}</span>
+                                                    <span class="price">{{ $cart_products->price - ($cart_products->price * $cart_products->discount)}} EGP</span>
+                                                    @endif
                                                 </div>
-                                            </div>
+                                            <!-- End product price -->
                                         </div>
                                     </li>
                                 </ul>
+                                <hr>
+                                @empty
+                            @endforelse
+
                                 <div class="total">
                                     <div class="total-in">
-                                        <span class="label">Cart Subtotal:</span><span class="product-price"><span class="money">$748.00</span></span>
+                                        <span class="label">Cart Subtotal:</span><span class="product-price"><span
+                                                class="money">$748.00</span></span>
                                     </div>
                                     <div class="buttonSet text-center">
-                                        <a href="{{ Route('show_cart') }}" class="btn btn-secondary btn--small">View Cart</a>
-                                        <a href="{{ Route('checkout') }}" class="btn btn-secondary btn--small">Checkout</a>
+                                        <a href="cart.html" class="btn btn-secondary btn--small">View Cart</a>
+                                        <a href="checkout.html" class="btn btn-secondary btn--small">Checkout</a>
                                     </div>
                                 </div>
                             </div>
                             <!--End Minicart Popup-->
-                        @endif
+                        </div>
+                    @endif
                     @endauth
-
-                                                
-                    <div class="site-header__search">
-                        <button type="button" class="search-trigger"><i class="icon anm anm-search-l"></i></button>
+                        <div class="site-header__search">
+                            <button type="button" class="search-trigger"><i class="icon anm anm-search-l"></i></button>
+                        </div>
                     </div>
-
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!--End Header-->
+        <!--End Header-->

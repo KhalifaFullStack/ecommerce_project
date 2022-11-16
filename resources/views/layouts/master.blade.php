@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/assets/images/favicon.png" />
+    <link rel="shortcut icon" href="/assets/images/tap_logo.png" />
 
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="/assets/css/plugins.css">
@@ -33,16 +33,7 @@
 
 <body class="template-index home2-default">
 
-    <!-- Preloader
-    <div class="preloader">
-        <div class="preloader-inner">
-            <div class="preloader-icon">
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div> -->
-
+    <!-- Preloader -->
     <div id="pre-loader">
         <img src="/assets/images/loader.gif" alt="Loading..." />
     </div>
