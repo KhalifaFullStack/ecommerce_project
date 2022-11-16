@@ -11,7 +11,6 @@ class HomeController extends Controller
 
     public function home_new_arrivals()
     {
-
         // $products = Product::get()->where('hover_image', '!=', null);
 
         $products_first_row   = Product::skip(0)->take(4)->where('hover_image', '!=', null)->get(); // get from record 0 to record 4 (including the where clause)
