@@ -26,7 +26,7 @@ return new class extends Migration
             $table->text('address', '600')->nullable();
             $table->string('phone_no')->nullable();
             $table->string('email');
-            $table->integer('quantity');
+            $table->integer('quantity')->value(1);
             $table->integer('available_quantity');
             $table->string('customer_name');
 

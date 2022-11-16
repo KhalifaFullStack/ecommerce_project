@@ -11,11 +11,19 @@ class CartController extends Controller
 {
     public function index()
     {
-        $all_cart_products   = Cart::all()->where('customer_id', '=', auth()->user()->id);
+        $all_cart_products   = Cart::where('customer_id', '=', auth()->user()->id)->get();
         $count_cart_products = $all_cart_products->count();
 
         return view('cart', compact('all_cart_products', 'count_cart_products'));
     }
+
+    // public function cart_header()
+    // {
+    //     $header_cart_products   = Cart::where('customer_id', '=', auth()->user()->id)->get();
+    //     $count_cart_header = $header_cart_products->count();
+
+    //     return view('layouts.header', compact('header_cart_products', 'count_cart_header'));
+    // }
 
     public function create_cart(request $request, $id)
     {
@@ -44,7 +52,7 @@ class CartController extends Controller
             return redirect()->back()->with(['empty_quantity_createCart' => 'Product quantity must be at-least 1 item quantity']);
         } elseif ($request->add_quantity > $product->available_quantity) {
             return redirect()->back()->with(['exceeds_availableQuantity' => 'Quantity ordered exceeds quantity available. Please try again!']);
-        } elseif ($request->add_quantity <= $product->available_quantity) {
+        }  elseif ($request->add_quantity <= $product->available_quantity) {
             $cart->quantity                 = $request->add_quantity;
             $product->available_quantity    = $product->available_quantity - $request->add_quantity;
             $product->save();

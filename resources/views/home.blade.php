@@ -158,6 +158,7 @@ Home page
         </div>
     </div>
     <!--End Parallax Section-->
+
     <!--New Arrivals-->
     <div class="product-rows section">
         <div class="container">
@@ -169,32 +170,43 @@ Home page
                     </div>
                 </div>
             </div>
+
             <div class="grid-products">
                 <div class="row">
 
-                    @forelse($products_first_row as $product)
-
+                    @forelse ($home_products as $home_product)
+                        
                     <div class="col-6 col-sm-2 col-md-3 col-lg-3 item">
+
                         <!-- start product image -->
                         <div class="product-image">
-
-                            <!-- start product image -->
-                            <a href="product-layout-1.html" class="grid-view-item__link">
-
+                            
+                            <a href="#" class="grid-view-item__link">
                                 <!-- image -->
-                                <img class="primary blur-up lazyload" data-src="{{$product->image}}" src="{{$product->image}}" alt="image" title="product">
+                                <img class="primary blur-up lazyload"
+                                    data-src="{{ $home_product->image }}"
+                                    src="{{ $home_product->image }}" alt="Image for product id number: {{ $home_product->id }}"
+                                    title="product">
                                 <!-- End image -->
-
                                 <!-- Hover image -->
-                                <img class="hover blur-up lazyload" data-src="{{$product->hover_image}}" src="{{$product->hover_image}}" alt="image" title="product">
+                                <img class="hover blur-up lazyload"
+                                    data-src="{{ $home_product->hover_image }}"
+                                    src="{{ $home_product->hover_image }}" alt="Hover image for product id number: {{ $home_product->id }}"
+                                    title="product">
                                 <!-- End hover image -->
 
-                                <!-- Variant Image-->
-                                <img class="grid-view-item__image hover variantImg" src="/assets/images/product-images/product-image1.jpg" alt="image" title="product">
-                                <!-- Variant Image-->
-
                                 <!-- product label -->
-                                <div class="product-labels rounded"><span class="lbl on-sale">Sale</span> <span class="lbl pr-label1">new</span></div>
+                                <div class="product-labels">
+                                    @if($home_product->discount > 0)
+                                        <span class="lbl on-sale">-{{ $home_product->discount * 100 }}%</span>
+                                        <span class="lbl on-sale">Sale</span>                                            
+                                    @endif
+
+                                    @php $data = Carbon\Carbon::parse($home_product->created_at)->diffInDays(Carbon\Carbon::now()); @endphp
+                                        @if($data <= 7) <!---------- in days ---------->
+                                    <span class="lbl pr-label1">new</span>
+                                        @endif
+                                    </div>
                                 <!-- End product label -->
                             </a>
                             <!-- end product image -->
@@ -204,106 +216,32 @@ Home page
                             <!-- countdown end --> --}}
 
                             <!-- Start product button -->
-                            <form class="variants add" action="{{ route('create_cart', [$product->id]) }}" method="post">
+                            <form class="variants add" action="{{ route('create_cart', [$home_product->id]) }}" method="post">
                                 @csrf
-                                <input type="number" name="add_quantity">
-                                <button class="btn btn-addto-cart" type="submit" tabindex="0">Add To Cart</button>
+                                <button class="btn btn-addto-cart" name="add_quantity" value="1" type="submit" >Add To Cart</button>
                             </form>
+
                             <div class="button-set">
-                                <a href="javascript:void(0)" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal" data-target="#content_quickview">
+
+                                {{-- <a href="javascript:void(0)" title="Quick View"
+                                    class="quick-view-popup quick-view" data-toggle="modal"
+                                    data-target="#content_quickview">
                                     <i class="icon anm anm-search-plus-r"></i>
-                                </a>
+                                </a> --}}
+
                                 <div class="wishlist-btn">
                                     <a class="wishlist add-to-wishlist" href="wishlist.html">
                                         <i class="icon anm anm-heart-l"></i>
                                     </a>
                                 </div>
+
                                 <div class="compare-btn">
-                                    <a class="compare add-to-compare" href="compare.html" title="Add to Compare">
+                                    <a class="compare add-to-compare" href="compare.html"
+                                        title="Add to Compare">
                                         <i class="icon anm anm-random-r"></i>
                                     </a>
                                 </div>
-                            </div>
-                            <!-- end product button -->
-                        </div>
-                        <!-- end product image -->
-                        <!--start product details -->
-                        <div class="product-details text-center">
-                            <!-- product name -->
-                            <div class="product-name">
-                                <a href="product-layout-1.html">{{$product->name}}</a>
-                            </div>
-                            <!-- End product name -->
 
-                            <!-- product price -->
-                            <div class="product-price">
-                                @if($product->discount > 0)
-
-                                    <span class="old-price">{{$product->price}} EGP</span>
-                                    <span class="price">{{$product->price - ($product->discount * $product->price)}} EGP</span>
-                                    
-                                @elseif($product->discount   <= 0) 
-                                    <span class="price">{{$product->price}} EGP</span>
-                                @endif
-                            </div>
-                            <!-- End product price -->
-
-                            <!-- Color Variant -->
-                            <!-- <ul class="swatches">
-                                <li class="swatch small rounded navy" rel="/assets/images/product-images/product-image-stw1.jpg"></li>
-                                <li class="swatch small rounded green" rel="/assets/images/product-images/product-image-stw1-1.jpg"></li>
-                                <li class="swatch small rounded gray" rel="/assets/images/product-images/product-image-stw1-2.jpg"></li>
-                                <li class="swatch small rounded aqua" rel="/assets/images/product-images/product-image-stw1-3.jpg"></li>
-                                <li class="swatch small rounded orange" rel="/assets/images/product-images/product-image-stw1-4.jpg"></li>
-                            </ul> -->
-                            <!-- End Variant -->
-                        </div>
-                        <!-- End product details -->
-                    </div>
-
-                    @empty
-
-                    @endforelse
-                </div>
-                    
-                <div class="row">
-                                @forelse ( $products_seconds_row as $sec_product )
-                    <div class="col-6 col-sm-2 col-md-3 col-lg-3 item">
-                        <!-- start product image -->
-                        <div class="product-image">
-                            <!-- start product image -->
-                            <a href="product-layout-1.html" class="grid-view-item__link">
-                                <!-- image -->
-                                <img class="primary blur-up lazyload" data-src="{{ $sec_product->image }}" src="{{ $sec_product->image }}" alt="image" title="product" />
-                                <!-- End image -->
-                                <!-- Hover image -->
-                                <img class="hover blur-up lazyload" data-src="{{ $sec_product->hover_image }}" src="{{ $sec_product->hover_image }}" alt="image" title="product" />
-                                <!-- End hover image -->
-                                <!-- Variant Image-->
-                                <img class="grid-view-item__image hover variantImg" src="/assets/images/product-images/product-image7.jpg" alt="image" title="product">
-                                <!-- Variant Image-->
-                            </a>
-                            <!-- end product image -->
-
-                            <!-- Start product button -->
-                            <form class="variants add" action="#" onclick="window.location.href='cart.html'" method="post">
-                                <button class="btn btn-addto-cart" type="button" tabindex="0">Select
-                                    Options</button>
-                            </form>
-                            <div class="button-set">
-                                <a href="javascript:void(0)" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal" data-target="#content_quickview">
-                                    <i class="icon anm anm-search-plus-r"></i>
-                                </a>
-                                <div class="wishlist-btn">
-                                    <a class="wishlist add-to-wishlist" href="wishlist.html">
-                                        <i class="icon anm anm-heart-l"></i>
-                                    </a>
-                                </div>
-                                <div class="compare-btn">
-                                    <a class="compare add-to-compare" href="compare.html" title="Add to Compare">
-                                        <i class="icon anm anm-random-r"></i>
-                                    </a>
-                                </div>
                             </div>
                             <!-- end product button -->
                         </div>
@@ -311,199 +249,50 @@ Home page
 
                         <!--start product details -->
                         <div class="product-details text-center">
-                            <!-- product name -->
-                            <div class="product-name">
-                                <a href="product-layout-1.html">{{ $sec_product->name ?? "line 497"}}</a>
-                            </div>
-                            <!-- End product name -->
-                            <!-- product price -->
-                            <div class="product-price">
-
-                                @if($sec_product->discount <= 0 || $sec_product->discount == null || $sec_product->discount == "")
-                                    <span class="price">{{ $sec_product->price ?? "line 504" }} EGP</span>
-                                    
-                                    @elseif ($sec_product->discount > 0)
-                                    <span class="old-price">{{ $sec_product->price ?? "line 507" }} EGP</span>
-                                    <span class="price">{{ $sec_product->price - ($sec_product->dicount * $sec_product->price) ?? "line 508"}} EGP</span>
-                                @endif
-
-                            </div>
-                            <!-- End product price -->
-
-                            <!-- Color Variant -->
-                            <ul class="swatches">
-                                <li class="swatch small rounded gray" rel="/assets/images/product-images/product-image16.jpg"></li>
-                                <li class="swatch small rounded red" rel="/assets/images/product-images/product-image5.jpg"></li>
-                                <li class="swatch small rounded orange" rel="/assets/images/product-images/product-image5-1.jpg"></li>
-                                <li class="swatch small rounded yellow" rel="/assets/images/product-images/product-image17.jpg"></li>
-                            </ul>
-                            <!-- End Variant -->
                             
+                            <!-- product name -->
+                            <div class="product-name">
+                                <a href="product-layout-1.html">{{ $home_product->name ?? "The name of the product id: . $home_product->id" }}</a>
+                            </div>
+                            <!-- End product name -->
+
+                            <!-- product price -->
+                            <div class="product-price">
+                                @if($home_product->discount <= 0)
+                                <span class="price">{{ $home_product->price }} EGP</span>
+                                @elseif($home_product->discount > 0)
+                                <span class="old-price">{{ $home_product->price }}</span>
+                                <span class="price">{{ $home_product->price - ($home_product->price * $home_product->discount)}} EGP</span>
+                                @endif
+                        </div>
+                            <!-- End product price -->
+
+                            {{-- <!-- Color Variant -->
+                            <ul class="swatches">
+                                <li class="swatch small rounded navy"
+                                    rel="assets/images/product-images/product-image-stw1.jpg"></li>
+                                <li class="swatch small rounded green"
+                                    rel="assets/images/product-images/product-image-stw1-1.jpg"></li>
+                                <li class="swatch small rounded gray"
+                                    rel="assets/images/product-images/product-image-stw1-2.jpg"></li>
+                                <li class="swatch small rounded aqua"
+                                    rel="assets/images/product-images/product-image-stw1-3.jpg"></li>
+                                <li class="swatch small rounded orange"
+                                    rel="assets/images/product-images/product-image-stw1-4.jpg"></li>
+                            </ul>
+                            <!-- End Variant --> --}}
+
                         </div>
                         <!-- End product details -->
                     </div>
-                    
+
                     @empty
-                    
-                @endforelse
-
-                    {{-- <div class="col-6 col-sm-2 col-md-3 col-lg-3 item">
-                        <div class="product-image">
-                            <!--start product image -->
-                            <a href="product-layout-1.html" class="grid-view-item__link">
-                                <!-- image -->
-                                <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image19.jpg" src="/assets/images/product-images/product-image19.jpg" alt="image" title="product" />
-                                <!-- End image -->
-                                <!-- Hover image -->
-                                <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image19-1.jpg" src="/assets/images/product-images/product-image19-1.jpg" alt="image" title="product" />
-                                <!-- End hover image -->
-                            </a>
-                            <!-- end product image -->
-                            <!-- product button -->
-                            <form class="variants add" action="#" onclick="window.location.href='cart.html'" method="post">
-                                <button class="btn btn-addto-cart" type="button" tabindex="0">Add To
-                                    Cart</button>
-                            </form>
-                            <div class="button-set">
-                                <a href="javascript:void(0)" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal" data-target="#content_quickview">
-                                    <i class="icon anm anm-search-plus-r"></i>
-                                </a>
-                                <!-- Start product button -->
-                                <div class="wishlist-btn">
-                                    <a class="wishlist add-to-wishlist" href="#" title="Add to Wishlist">
-                                        <i class="icon anm anm-heart-l"></i>
-                                    </a>
-                                </div>
-                                <div class="compare-btn">
-                                    <a class="compare add-to-compare" href="compare.html" title="Add to Compare">
-                                        <i class="icon anm anm-random-r"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- End product button -->
-                        </div>
-                        <!--End start product image -->
-
-                        <!--start product details -->
-                        <div class="product-details text-center">
-                            <!-- product name -->
-                            <div class="product-name">
-                                <a href="product-layout-1.html">Romary Dress</a>
-                            </div>
-                            <!-- End product name -->
-                            <!-- product price -->
-                            <div class="product-price">
-                                <span class="price">$348.60</span>
-                            </div>
-                            <!-- End product price -->
-                        </div>
-                        <!-- End product details -->
-                    </div>
-                    <div class="col-6 col-sm-2 col-md-3 col-lg-3 item">
-                        <div class="product-image">
-                            <!-- start product image -->
-                            <a href="product-layout-1.html" class="grid-view-item__link">
-                                <!-- image -->
-                                <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image18.jpg" src="/assets/images/product-images/product-image18.jpg" alt="image" title="product" />
-                                <!-- End image -->
-                                <!-- Hover image -->
-                                <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image18-1.jpg" src="/assets/images/product-images/product-image18-1.jpg" alt="image" title="product" />
-                                <!-- End hover image -->
-                            </a>
-                            <!-- end product image -->
-                            <!-- Start product button -->
-                            <form class="variants add" action="#" onclick="window.location.href='cart.html'" method="post">
-                                <button class="btn btn-addto-cart" type="button" tabindex="0">Add To
-                                    Cart</button>
-                            </form>
-                            <div class="button-set">
-                                <a href="javascript:void(0)" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal" data-target="#content_quickview">
-                                    <i class="icon anm anm-search-plus-r"></i>
-                                </a>
-                                <div class="wishlist-btn">
-                                    <a class="wishlist add-to-wishlist" href="#" title="Add to Wishlist">
-                                        <i class="icon anm anm-heart-l"></i>
-                                    </a>
-                                </div>
-                                <div class="compare-btn">
-                                    <a class="compare add-to-compare" href="compare.html" title="Add to Compare">
-                                        <i class="icon anm anm-random-r"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- End product button -->
-                        </div>
-                        <!--End start product image -->
-                        <!--start product details -->
-                        <div class="product-details text-center">
-                            <!-- product name -->
-                            <div class="product-name">
-                                <a href="product-layout-1.html">Lima Shirt</a>
-                            </div>
-                            <!-- End product name -->
-                            <!-- product price -->
-                            <div class="product-price">
-                                <span class="price">$698.00</span>
-                            </div>
-                            <!-- End product price -->
-                        </div>
-                        <!-- End product details -->
-
-                    </div>
-                    <div class="col-6 col-sm-2 col-md-3 col-lg-3 item">
-                        <div class="product-image">
-                            <!-- start product image -->
-                            <a href="product-layout-1.html" class="grid-view-item__link">
-                                <!-- image -->
-                                <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image2.jpg" src="/assets/images/product-images/product-image2.jpg" alt="image" title="product">
-                                <!-- End image -->
-                                <!-- Hover image -->
-                                <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image2-1.jpg" src="/assets/images/product-images/product-image2-1.jpg" alt="image" title="product">
-                                <!-- End hover image -->
-                            </a>
-                            <!-- product button -->
-                            <form class="variants add" action="#" onclick="window.location.href='cart.html'" method="post">
-                                <button class="btn btn-addto-cart" type="button" tabindex="0">Add To
-                                    Cart</button>
-                            </form>
-                            <div class="button-set">
-                                <a href="javascript:void(0)" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal" data-target="#content_quickview">
-                                    <i class="icon anm anm-search-plus-r"></i>
-                                </a>
-                                <div class="wishlist-btn">
-                                    <a class="wishlist add-to-wishlist" href="#" title="Add to Wishlist">
-                                        <i class="icon anm anm-heart-l"></i>
-                                    </a>
-                                </div>
-                                <div class="compare-btn">
-                                    <a class="compare add-to-compare" href="compare.html" title="Add to Compare">
-                                        <i class="icon anm anm-random-r"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <!-- End product button -->
-                        </div>
-                        <!-- End start product image -->
-                        <!--start product details -->
-                        <div class="product-details text-center">
-                            <!-- product name -->
-                            <div class="product-name">
-                                <a href="product-layout-1.html">Elastic Waist Dress</a>
-                            </div>
-                            <!-- End product name -->
-                            <!-- product price -->
-                            <div class="product-price">
-                                <span class="price">$748.00</span>
-                            </div>
-                            <!-- End product price -->
-                        </div>
-                        <!-- End product details -->
-                    </div> --}}
-                </div>
+                        
+                    @endforelse
 
                 <div class="row">
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                        <a href="shop-left-sidebar.html" class="btn">View all</a>
+                        <a href="{{ route('shop') }}" class="btn">View all</a>
                     </div>
                 </div>
             </div>
