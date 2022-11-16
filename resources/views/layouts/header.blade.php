@@ -197,8 +197,25 @@
 
                                                     <a class="qtyBtn plus" href="javascript:void(0);"><i
                                                             class="fa anm anm-plus-r" aria-hidden="true"></i></a>
-                                                    <button onclick="document.getElementById('card_header_update').submit();" style="border: 1px solid; padding: 0px 2px; margin: 5px; color:whitesmoke; background-color:black;">Edit <i class="anm anm-edit"
-                                                        aria-hidden="true" style="color: whitesmoke; width:1px; height:1px;"></i></button>
+                                                    <button onclick="submitForm();" style="border: 1px solid; padding: 0px 2px; margin: 5px; color:whitesmoke; background-color:black;">
+                                                        Edit 
+                                                        <i class="anm anm-edit"aria-hidden="true" style="color: whitesmoke; width:1px; height:1px;"></i>
+                                                    </button>
+                                                    <script>
+                                                        var input_quantity = document.querySelector("#Quantity");
+                                                        input_quantity.addEventListener("keypress", function submit_update_quantity(event) {
+                                                          if (event.key === "Enter" || event.keyCode === 13) {
+                                                            event.preventDefault();
+                                                            let = update_quantity = document.querySelector("#card_header_update").click();
+                                                            update_quantity.submit()
+                                                          }
+                                                        });
+
+                                                        function submitForm() {
+                                                            let form = document.querySelector("#card_header_update");
+                                                            form.submit();
+                                                        }
+                                                    </script>
                                                 </div>
                                             </div>
                                             <!-- product price -->
@@ -224,8 +241,8 @@
                                                 class="money">$748.00</span></span>
                                     </div>
                                     <div class="buttonSet text-center">
-                                        <a href="cart.html" class="btn btn-secondary btn--small">View Cart</a>
-                                        <a href="checkout.html" class="btn btn-secondary btn--small">Checkout</a>
+                                        <a href="{{ route('show_cart') }}" class="btn btn-secondary btn--small">View Cart</a>
+                                        <a href="{{ route('checkout') }}" class="btn btn-secondary btn--small">Checkout</a>
                                     </div>
                                 </div>
                             </div>
