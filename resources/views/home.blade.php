@@ -181,7 +181,7 @@ Home page
                         <!-- start product image -->
                         <div class="product-image">
                             
-                            <a href="#" class="grid-view-item__link">
+                            <a href="{{ route('single_product_show', [$home_product->id, $home_product->category, $home_product->type]) }}" class="grid-view-item__link">
                                 <!-- image -->
                                 <img class="primary blur-up lazyload"
                                     data-src="{{ $home_product->image }}"

@@ -311,9 +311,21 @@ class ProductController extends Controller
     public function search(Request $request)
     {
         $criteria     = $request->criteria;
-        $products     = Product::where('name', 'like', '%'.$criteria.'%')->get();
+        $products     = Product::where('name', 'like', '%' . $criteria . '%')->get();
         $search_count = $products->count();
 
-        return view('search', compact('products', 'criteria', 'search_count'))->with('i' , ($request->input('page', 1) - 1) * 5);
+        return view('search', compact('products', 'criteria', 'search_count'))->with('i', ($request->input('page', 1) - 1) * 5);
+    }
+
+    public function single_product_show($id, $category = null, $type = null)
+    {
+        $single_product     = Product::find($id); //same as saying: find the product with same id as the slug id that was passed
+        $related_products   = Product::where('category', '=', $category)->where('type', '=', $type)->get();
+
+        if ($single_product == null) {
+            return view('404');
+        } else {
+            return view('product-page', compact('single_product', 'related_products'));
+        }
     }
 }

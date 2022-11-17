@@ -27,14 +27,6 @@ Route::group([], function () {    //group function for "home" route (same route 
     Route::get('/home', [HomeController::class, 'home_new_arrivals'])->name('home');
 });
 
-Route::get('/about-us', function () {
-    return view('about-us');
-})->name('about-us');
-
-Route::get('/blog', function () {
-    return view('blog');
-})->name('blog');
-
 //start of Cart routes ----------------------
 Route::group(['middleware' => ['notCustomer', 'auth']], function () {
     Route::get('/cart', [CartController::class, 'index'])->name('show_cart');
@@ -47,6 +39,14 @@ Route::group(['middleware' => ['notCustomer', 'auth']], function () {
     Route::delete('/delete_row/{id}', [CartController::class, 'delete_row'])->name('delete_row');
 });
 //End of Cart routes ----------------------
+
+Route::get('/about-us', function () {
+    return view('about-us');
+})->name('about-us');
+
+Route::get('/blog', function () {
+    return view('blog');
+})->name('blog');
 
 Route::get('/checkout', function () {
     return view('checkout');
@@ -68,11 +68,17 @@ Route::get('/lookbook', function () {
     return view('lookbook');
 })->name('lookbook');
 
-Route::get('/product-page', function () {
-    return view('product-page');
-})->name('product-page');
+Route::get('/shop-grid', function () {
+    return view('shop-grid');
+})->name('shop-grid');
+
+Route::get('/wishlist', function () {
+    return view('wishlist');
+})->name('wishlist');
+
 
 Route::group([], function () {
+    //Main shop routes
     route::get('/input', [ProductController::class, 'products'])->name('input');
     route::get('/shop', [ProductController::class, 'products'])->name('shop');
     route::get('/price_filter', [ProductController::class, 'price_filter'])->name('price_filter');
@@ -87,11 +93,10 @@ Route::group([], function () {
 
     //search-bar routs
     route::get('/search', [ProductController::class, 'search'])->name('search-criteria');
-});
 
-Route::get('/shop-grid', function () {
-    return view('shop-grid');
-})->name('shop-grid');
+    //Single Products routes
+    route::get('/product-page/{id}/{category?}/{type?}', [ProductController::class, 'single_product_show'])->name('single_product_show');
+});
 
 //all routes for register, login and logout are built-in ---- but you can call out
 
