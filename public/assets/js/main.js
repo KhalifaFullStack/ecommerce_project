@@ -622,9 +622,9 @@
 	function price_slider(){
 		$("#slider-range").slider({
 			range: true,
-			min: 100,
-			max: 2000,
-			values: [0, 2000],
+			min: 12,
+			max: 200,
+			values: [0, 100],
 			slide: function(event, ui) {
 				$("#amount").val("$" + ui.values[0] + " - $" + ui.values[1]);
 			}
@@ -633,25 +633,9 @@
 		" - $" + $("#slider-range").slider("values", 1));
 	}
 	price_slider();
-
-	// function price_slider(){
-	// 	$("#slider-range").slider({
-	// 		range: true,
-	// 		min: 100,
-	// 		max: 2000,
-	// 		values: [0, 2000],
-	// 		slide: function(event, ui) {
-	// 			$("#amount_start").val("$" + ui.values[0];
-	// 			$("#amount_end").val("$" + ui.values[1]);
-	// 		}
-	// 	});
-	// 	//$("#amount").val("$" + $("#slider-range").slider("values", 0) +
-	// 	//" - $" + $("#slider-range").slider("values", 1));
-	// }
-	// price_slider();
 	
 	/*-----------------------------------
-	14. Color Swacthes
+	 14. Color Swacthes
 	-------------------------------------*/
 	function color_swacthes(){
 		$.each($(".swacth-list"), function() {

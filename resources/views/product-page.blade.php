@@ -225,16 +225,13 @@
                                             </div>
                                             <div class="display-table-cell text-right">
                                                 <div class="social-sharing">
-                                                    <a target="_blank" href="#" class="btn btn--small btn--secondary btn--share share-facebook" title="Share on Facebook">
+                                                    <a target="_blank" href="https://www.facebook.com" class="btn btn--small btn--secondary btn--share share-facebook" title="Share on Facebook">
                                                         <i class="fa fa-facebook-square" aria-hidden="true"></i> <span class="share-title" aria-hidden="true">Share</span>
                                                     </a>
-                                                    <a target="_blank" href="#" class="btn btn--small btn--secondary btn--share share-twitter" title="Tweet on Twitter">
-                                                        <i class="fa fa-twitter" aria-hidden="true"></i> <span class="share-title" aria-hidden="true">Tweet</span>
+                                                    <a target="_blank" href="https://www.tweeter.com" class="btn btn--small btn--secondary btn--share share-twitter" title="Tweet on Twitter">
+                                                        <i class="fa fa-twitter" aria-hidden="true"></i> <span class="share-title" aria-hidden="true">Tweeter</span>
                                                     </a>
-                                                    <a href="#" title="Share on google+" class="btn btn--small btn--secondary btn--share" >
-                                                        <i class="fa fa-google-plus" aria-hidden="true"></i> <span class="share-title" aria-hidden="true">Google+</span>
-                                                    </a>
-                                                    <a target="_blank" href="#" class="btn btn--small btn--secondary btn--share share-pinterest" title="Pin on Pinterest">
+                                                    <a target="_blank" href="https://www.Pinterest.com" class="btn btn--small btn--secondary btn--share share-pinterest" title="Pin on Pinterest">
                                                         <i class="fa fa-pinterest" aria-hidden="true"></i> <span class="share-title" aria-hidden="true">Pin it</span>
                                                     </a>
                                                     <a href="#" class="btn btn--small btn--secondary btn--share share-pinterest" title="Share by Email" target="_blank">
@@ -295,7 +292,7 @@
                                     <h3>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h3>
                                     <p>You can change the position of any sections such as slider, banner, products, collection and so on by just dragging and dropping.&nbsp;</p>
                                     <h3>Lorem Ipsum is not simply random text.</h3>
-<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+                                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
                                     <p>Change colors, fonts, banners, megamenus and more. Preview changes are live before saving them.</p>
                                     <h3>1914 translation by H. Rackham</h3>
                                     <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
@@ -304,7 +301,7 @@
                                     <h3>The standard Lorem Ipsum passage, used since the 1500s</h3>
                                     <p>You can use variant style from colors, images or variant images. Also available differnt type of design styles and size.</p>
                                     <h3>Lorem Ipsum is not simply random text.</h3>
-<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+                                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
                                     <h3>Proin ut lacus eget elit molestie posuere.</h3>
                                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
                                 </div>
@@ -525,7 +522,7 @@
                                 <!-- start product image -->
                                 <div class="product-image">
                                     <!-- start product image -->
-                                    <a href="#">
+                                    <a href="{{ route('single_product_show', [$related_product->id, $related_product->category, $related_product->type]) }}">
                                         <!-- image -->
                                         <img class="primary blur-up lazyload" data-src="{{ $related_product->image }}" src="{{ $related_product->image }}" alt="Image for product id: {{ $related_product->id }}"title="product">
                                         <!-- End image -->
@@ -548,33 +545,44 @@
                                     <!-- end product image -->
         
                                     <!-- Start product button -->
-                                    <form class="variants add" action="#" onclick="window.location.href='cart.html'"method="post">
-                                        <button class="btn btn-addto-cart" type="button" tabindex="0">Select Options</button>
+                                    <form class="variants add" action="{{ route('create_cart', [$related_product->id]) }}" method="post">
+                                        @csrf
+                                        <button class="btn btn-addto-cart" type="submit" name="add_quantity" value="1" tabindex="0">Add to cart</button>
                                     </form>
+
                                     <div class="button-set">
-                                        <a href="#" title="Quick View" class="quick-view" tabindex="0">
+                                        <a href="{{ route('single_product_show', [$related_product->id, $related_product->category, $related_product->type]) }}" title="Quick View" class="quick-view" tabindex="0">
                                             <i class="icon anm anm-search-plus-r"></i>
                                         </a>
+
                                         <div class="wishlist-btn">
                                             <a class="wishlist add-to-wishlist" href="wishlist.html">
                                                 <i class="icon anm anm-heart-l"></i>
                                             </a>
                                         </div>
+
                                     </div>
                                     <!-- end product button -->
                                 </div>
                                 <!-- end product image -->
+
                                 <!--start product details -->
                                 <div class="product-details text-center">
+
                                     <!-- product name -->
                                     <div class="product-name">
-                                        <a href="#">Edna Dress</a>
+                                        <span>{{ $related_product->name ?? 'Name for product ID: '.$related_product->id }}</span>
                                     </div>
                                     <!-- End product name -->
+
                                     <!-- product price -->
                                     <div class="product-price">
-                                        <span class="old-price">$500.00</span>
-                                        <span class="price">$600.00</span>
+                                        @if ($related_product->discount == 0 || $related_product->discount == " ")
+                                            <span class="price">{{ $related_product->price }} EGP</span>
+                                        @elseif($related_product->discount > 0)
+                                            <span class="old-price">{{ $related_product->price }}</span>
+                                            <span class="price">{{ $related_product->price - ($related_product->price * $related_product->discount) }} EGP</span>
+                                        @endif
                                     </div>
                                     <!-- End product price -->
                                     
@@ -585,16 +593,6 @@
                                         <i class="font-13 fa fa-star-o"></i>
                                         <i class="font-13 fa fa-star-o"></i>
                                     </div>
-                                    <!-- Variant -->
-                                    <ul class="swatches">
-                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant1.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant2.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant3.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant4.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant5.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="/assets/images/product-images/variant6.jpg" alt="image" /></li>
-                                    </ul>
-                                    <!-- End Variant -->
                                 </div>
                             <!-- End product details -->
                             </div>
@@ -805,7 +803,7 @@
                                         <!-- start product image -->
                                         <a href="#">
                                             <!-- image -->
-                                         //   <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image15.jpg" src="/assets/images/product-images/product-image15.jpg" alt="image" title="product">
+                                            <img class="primary blur-up lazyload" data-src="/assets/images/product-images/product-image15.jpg" src="/assets/images/product-images/product-image15.jpg" alt="image" title="product">
                                             <!-- End image -->
                                             <!-- Hover image -->
                                             <img class="hover blur-up lazyload" data-src="/assets/images/product-images/product-image15-1.jpg" src="/assets/images/product-images/product-image15-1.jpg" alt="image" title="product">

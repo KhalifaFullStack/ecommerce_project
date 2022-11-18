@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\DashboardHomeController;
+use App\Http\Controllers\Admin\DashboardProductController;
 use App\Http\Controllers\CartController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -98,6 +100,31 @@ Route::group([], function () {
     route::get('/product-page/{id}/{category?}/{type?}', [ProductController::class, 'single_product_show'])->name('single_product_show');
 });
 
+//**************** ALL DASHBOARD ROUTES STARTS HERE ****************//
+route::group(['middleware' => ['dashboardAuth', 'auth']], function () {
+    Route::prefix('admin')->group(function () {
+
+        Route::get('/', [DashboardHomeController::class, 'index'])->name('dashboard');
+        Route::get('/home', [DashboardHomeController::class, 'index'])->name('dashboard');
+
+        /**********************Product folder routes*******************************/
+        Route::resource('/products', DashboardProductController::class);
+
+
+        Route::get('/profile', function () {
+            return view('profile');
+        })->name('profile');
+
+        Route::get('/sign-up-dashboard', function () {
+            return view('sign-up');
+        })->name('sign-up-dashboard');
+
+        Route::get('/sign-in-dashboard', function () {
+            return view('sign-in');
+        })->name('sign-in-dashboard');
+    });
+});
+
 //all routes for register, login and logout are built-in ---- but you can call out
 
 
@@ -112,4 +139,13 @@ Route::group([
 ], function () {
     // all the routes here
 });
-//**************************************************************************************************//s
+//**************************************************************************************************//
+
+//Route::resource('/products', DashboardProductController::class); which recalls only all the 6 crud functions in that controller (name must be plural /....s) and will recall each function with the single of the plural
+//the 6 functions in the controller here will be called in the blades using: products.show for ex. where products. is a must
+
+//Route::resource('/product/restore/{id}', DashboardProductController::class, 'delete')->name('delete'); this to recall any function you made over the 6 CRUD once and the name must start with /product/....
+
+//********If you want to make a route specifically for 1 or more function in the resource controller from a full resource route**********//
+
+//    route::resource('/example', DashboardProductController::class)->only('',''); or can use ->except('',''); and add the functions you want in them
