@@ -27,8 +27,9 @@ return new class extends Migration
             $table->float('discount')->nullable();
             $table->integer('available_quantity');
 
-            // $table->string('color');
-            // $table->string('size');
+            $table->string('color')->nullable();
+            $table->string('color_pic')->nullable();
+            $table->string('size')->nullable();
 
             $table->integer('supplier_id')->nullable();
             $table->integer('variation_id')->nullable();

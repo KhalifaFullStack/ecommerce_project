@@ -1,28 +1,54 @@
 <div class="col-12 grid-margin stretch-card">
-    <div class="card">
+    <div class="card px-5 py-4">
 
-        <form class="forms-sample">
-          <div class="form-group">
-            <label for="exampleInputName1">Name</label>
-            <input type="text" class="form-control" id="exampleInputName1" placeholder="Name">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputEmail3">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword4">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Password">
-          </div>
-          <div class="form-group">
-            <label for="exampleSelectGender">Gender</label>
-              <select class="form-control" id="exampleSelectGender">
-                <option>Male</option>
-                <option>Female</option>
-              </select>
+          <div class="d-flex justify-flex-start ">
+            <div class="form-group" style="width: 40%; margin-right: 5%;" >
+              <label>Product name</label>
+              <input type="text" class="form-control" name="name" placeholder="Product name">
             </div>
+
+            <div class="form-group" style="width: 40%">
+              <label>Description</label>
+              <textarea name="description" class="form-control">Add product description</textarea>
+            </div>
+          </div>
+
+          <div class="d-flex justify-flex-start ">
+            <div class="form-group" style="width: 40%; margin-right: 5%;">
+              <label for="exampleInputPassword4">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Password">
+            </div>
+
+            <div class="form-group">
+              <label for="exampleSelectGender">Product gender</label>
+                <select name="category" class="form-control" id="exampleSelectGender">
+                  @foreach ($products as $product)
+                  <option value="{{ $product->category }}">{{ $product->category }}</option>
+                  @endforeach
+                  
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleSelectGender">Product Type</label>
+                  <select name="type" class="form-control" id="exampleSelectGender">
+                    @foreach ($products as $product)
+                      <option value="{{ $product->type }}">{{ $product->type }}</option>
+                    @endforeach
+                </div>
+
+                <div class="form-group">
+                  <label for="exampleSelectGender">Other Types</label>
+                    <select name="other_type" class="form-control" id="exampleSelectGender">
+                      @foreach ($products as $product)
+                        <option value="{{ $product->other_types }}">{{ $product->other_types }}</option>
+                      @endforeach
+                    </select>
+                  </div>
+          </div>  
+
           <div class="form-group">
-            <label>File upload</label>
+            <label>Upload image</label>
             <input type="file" name="img[]" class="file-upload-default">
             <div class="input-group col-xs-12">
               <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
@@ -54,9 +80,4 @@
             <label for="exampleTextarea1">Textarea</label>
             <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary me-2">Submit</button>
-          <button class="btn btn-light">Cancel</button>
-        </form>
-      </div>
-    </div>
-  </div>
+

@@ -17,15 +17,18 @@ class Product extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function variantPics(): \Illuminate\Database\Eloquent\Relations\HasMany
+    public function color(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->hasMany(VariationPic::class);
+        return $this->hasMany(Color::class);
     }
 
-    Public function cart(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    public function size(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Size::class);
+    }
+
+    public function cart(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(Cart::class);
     }
-
-    
 }

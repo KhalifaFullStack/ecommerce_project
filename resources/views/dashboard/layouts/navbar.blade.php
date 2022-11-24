@@ -15,15 +15,14 @@
 
           <li class="nav-item nav-category">UI Elements</li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="menu-icon mdi mdi-floor-plan"></i>
+            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">                
               <span class="menu-title">Products</span>
               <i class="menu-arrow"></i> 
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="{{ route('products.index') }}">All Products</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Create</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ route('products.create') }}">Create</a></li>
                 <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Deleted</a></li>
               </ul>
             </div>

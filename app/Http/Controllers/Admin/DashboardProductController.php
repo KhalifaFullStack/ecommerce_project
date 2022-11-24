@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Product;
+use Illuminate\Support\Facades\Redirect;
+use PhpParser\Node\Stmt\Return_;
 
 class DashboardProductController extends Controller
 {
@@ -16,8 +18,9 @@ class DashboardProductController extends Controller
     public function index()
     {
         $products = Product::orderBy('created_at', 'asc')->paginate(30);
+        $product_count = Product::all()->count();
 
-        return view('dashboard.products.index', compact('products'));
+        return view('dashboard.products.index', compact('products', 'product_count'));
     }
 
     /**
@@ -60,7 +63,9 @@ class DashboardProductController extends Controller
      */
     public function edit($id)
     {
-        //
+        $product = Product::find($id);
+
+        return view('dashboard.products.edit', compact('product'));
     }
 
     /**

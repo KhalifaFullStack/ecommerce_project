@@ -3,87 +3,88 @@
 @section('dashboard.title', 'Products')
 
 @section('dashboard.content')
-    <div class="row">
-        <div class="col-12">
-            <div class="card my-4">
-                <div class="card-header p-0 position-relative mt-n4 mx-3 z-index-2">
-                    <div class="bg-gradient-primary shadow-primary border-radius-lg pt-4 pb-3">
-                    <h6 class="text-white text-capitalize ps-3"> All Products</h6>
-                    </div>
+
+<div class="col-lg-10 grid-margin stretch-card" style="margin:1% 3% 1% 1%;">
+    <div class="card">
+        <div class="card-body">
+            <div class="d-sm-flex justify-content-between align-items-start">
+                <div>
+                    <h4 class="card-title card-title-dash">All products</h4>
+                    <p class="card-subtitle card-subtitle-dash">There are {{ $product_count }} products</p>
                 </div>
-                <div class="card-body px-0 pb-2">
-                    <div class="table-responsive p-0">
-                        <table class="table align-items-center justify-content-center mb-0">
+                <div>
+                    <button onclick="window.location.href='cart.html'" class="btn btn-dark btn-md text-white" type="button"></i>Add new Product</button>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>category</th>
+                            <th>Color</th>
+                            <th>Size</th>
+                            <th>In stock</th>
+                            <th>Issued</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
 
-                            <thead>
-                                <tr>
-                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Name</th>
-                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Price</th>
-                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Category</th>
-                                    <th class="text-uppercase text-secondary text-xxs font-weight-bolder text-center opacity-7 ps-2">Action</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
+                    <tbody>
+                        @foreach($products as $product)
+                            <tr>
+                                <td class="py-1">
+                                    <img src="{{ $product->image }}" alt="image for id: {{ $product->id }}"/> <span>{{ ucfirst($product->name) ?? 'name for id: '.$product->id }}</span>
+                                </td>
 
-                            <tbody>
-                                @forelse($products as $product)
-                                    <tr>
-                                        <td>
-                                            <div class="d-flex px-2">
-                                                <div>
-                                                    <img src="{{ $product->image }}" class="avatar avatar-md rounded-circle me-2" alt="spotify">
-                                                </div>
-                                                <div class="my-auto">
-                                                    <h6 class="mb-0 text-sm">{{ $product->name }}</h6>
-                                                </div>
-                                            </div>
-                                        </td>
+                                <td>{{ $product->price }} EGP</td>
 
-                                        <td>
-                                            <p class="text-sm font-weight-bold mb-0">{{ $product->price }} EGP</p>
-                                        </td>
+                                <td>{{ ucfirst($product->category) ?? 'Category for product: '.$product->name }}</td>
 
-                                        <td>
-                                            <span class="text-xs font-weight-bold">{{ $product->category }}</span>
-                                        </td>
+                                <td>
+                                    <span class="text-xs font-weight-bold">Sizes</span>
+                                    <button type="button" onclick="window.location.href='{{ route('products.edit' , [$product->id]) }}'" class="btn btn-success btn-xs fw-bold">Manage</button>
+                                </td>
 
-                                        
+                                <td>
+                                    <span class="text-xs font-weight-bold">Colors</span>
+                                    <button type="button" onclick="window.location.href='{{ route('products.edit' , [$product->id]) }}'" class="btn btn-success btn-xs fw-bold">Manage</button>
+                                </td>
 
-                                        @if (auth()->user()->user_type == 'admin')
-                                            <td class="align-middle text-center">
-                                                <a href="" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                                                    Edit
-                                                </a>
+                                <td>
+                                    @if ($product->available_quantity >= 1)
+                                        <div class="badge badge-opacity-success">In stock</div>
+                                        <span class="text-xs font-weight-bold">With {{ $product->available_quantity }}</span>
+                                    @else
+                                        <div class="badge badge-danger">Out of stock</div>
+                                    @endif
+                                </td>
+
+                                <td><i class="mdi mdi-calendar text-muted me-1"></i> <span class="text-muted">{{ $product->created_at->translatedFormat('d/m/Y') }}</span></td>            
+
+                                @if (auth()->user()->user_type == 'admin')
+
+                                        <td class="d-flex justify-content-evenly">
+                                                    <button type="button" onclick="window.location.href='{{ route('products.edit' , [$product->id]) }}'" class="btn btn-success btn-xs fw-bold">Edit</button>
 
                                                 <form action="#" method="post">  
                                                     @csrf
                                                     {{ method_field('delete') }}
-                                                        <button type="submit" class="btn btn-danger font-weight-bold text-xs" style="padding:5px 10px; marign-left:5px;">Delete</button>
+                                                        <button type="submit" class="btn btn-danger btn-xs fw-bold" >Delete</button>
                                                 </form>
-                                            </td>
-
-                                        @elseif (auth()->user()->user_type == 'moderator')
-                                            
-                                        @endif
-
-                                        <td class="align-middle">
-                                            <button class="btn btn-link text-secondary mb-0">
-                                                <i class="fa fa-ellipsis-v text-xs"></i>
-                                            </button>
                                         </td>
-                                    </tr>
-                                @empty
 
-                                    <div class="alert alert-danger mx-auto">
-                                        There are no products yet!
-                                    </div>
-                                @endforelse
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                                @elseif (auth()->user()->user_type == 'moderator')
+                                    
+                                @endif
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
+  </div>
 @endsection
 
