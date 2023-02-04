@@ -22,27 +22,25 @@
             <div class="form-group">
               <label for="exampleSelectGender">Product gender</label>
                 <select name="category" class="form-control" id="exampleSelectGender">
-                  @foreach ($products as $product)
-                  <option value="{{ $product->category }}">{{ $product->category }}</option>
-                  @endforeach
-                  
-                </select>
+                  <option value="men" {{ isset($products) && $products->category == "men" ? 'selected'  : '' }}>Men</option>
+                  <option value="women" {{ isset($products) && $products->category == "women" ? 'selected'  : '' }}>Women</option>
+                  <option value="kids" {{ isset($products) && $products->category == "kids" ? 'selected'  : '' }}>Kids</option>
+                </select> 
               </div>
 
               <div class="form-group">
                 <label for="exampleSelectGender">Product Type</label>
                   <select name="type" class="form-control" id="exampleSelectGender">
-                    @foreach ($products as $product)
-                      <option value="{{ $product->type }}">{{ $product->type }}</option>
-                    @endforeach
+                      <option value="shoes">Shoes</option>
+                      <option value="shoes">Shoes</option>
+                      <option value="shoes">Shoes</option>
+                  </select>
                 </div>
 
                 <div class="form-group">
                   <label for="exampleSelectGender">Other Types</label>
                     <select name="other_type" class="form-control" id="exampleSelectGender">
-                      @foreach ($products as $product)
-                        <option value="{{ $product->other_types }}">{{ $product->other_types }}</option>
-                      @endforeach
+                        <option value=""></option>
                     </select>
                   </div>
           </div>  

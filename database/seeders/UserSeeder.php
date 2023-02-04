@@ -20,12 +20,14 @@ class UserSeeder extends Seeder
 
             'username'      => "AhmedKhalifa1",
             'name'          => "Ahmed Khalifa",
-            'dob'           => "04/08/1996",
+            'profile_pic'   => "/assets/images/users/profile-picture.jpeg",
+            'cover_pic'     => "/assets/images/users/cover-1.jpg",
+            'phone_no'      => "+201112554996",
             'biography'     => "graduated from AAST as BIS student",
+            'dob'           => "04/08/1996",
+            'gender'        => "male",
             'user_type'     => "admin",
             'address'       => "5th settlement",
-            'phone_no'      => "+201112554996",
-            'gender'        => "male",
             'email'         => "mido.iphone4@gmail.com",
             'password'      => '$2y$10$FkP6DQyOkkiPKdwb2VuWfu37M0UmaaMxHRadJfb6Qm8tHnmEZXv9W' //password is: 1234567890
         ]);

@@ -13,11 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('colors', function (Blueprint $table) {
+        Schema::create('feedbacks', function (Blueprint $table) {
             $table->id();
-            $table->string('color');
-            $table->string('color_image')->nullable();
-            $table->integer('product_id');
+            $table->integer('rating_number')->default(0);
+            $table->longText('comment')->nullable();
+
+            //foreign key
+            $table->integer('product_id')->nullable();
             $table->timestamps();
         });
     }
@@ -29,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('colors');
+        Schema::dropIfExists('feedbacks');
     }
 };

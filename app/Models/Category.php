@@ -6,14 +6,15 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Color extends Model
+
+class Category extends Model
 {
     use HasFactory, SoftDeletes;
 
     protected $guarded = [];
 
-    public function Product(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    public function sub_category(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->belongsTo(Product::class);
+        return $this->hasMany(Sub_category::class);
     }
 }

@@ -30,6 +30,7 @@ class DashboardProductController extends Controller
      */
     public function create()
     {
+
         return view('dashboard.products.create');
     }
 
@@ -41,7 +42,6 @@ class DashboardProductController extends Controller
      */
     public function store(Request $request)
     {
-        
     }
 
     /**
@@ -63,7 +63,7 @@ class DashboardProductController extends Controller
      */
     public function edit($id)
     {
-        $product = Product::find($id);
+        $products = Product::find($id);
 
         return view('dashboard.products.edit', compact('product'));
     }

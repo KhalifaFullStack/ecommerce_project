@@ -15,27 +15,28 @@ return new class extends Migration
     {
         Schema::create('carts', function (Blueprint $table) {
             $table->id();
+
+            $table->string('customer_name');
+            $table->string('phone_no')->unique();
+            $table->string('email')->unique();
+            $table->longText('address')->nullable();
+
+
             $table->string('product_name');
             $table->integer('price');
-            $table->enum('category', ['men', 'women', 'kids', 'cosmetics', 'shoes']);
-            $table->enum('accessories', ['true', 'false'])->default('false');
-            $table->enum('type', ['casual', 'formal', 'sports'])->nullable();
+            $table->string('image')->nullable();
+            $table->float('discount')->default(0);
+            $table->integer('quantity')->default(1);
+            $table->string('category');
+            $table->string('sub_category');
             $table->longText('description')->nullable();
-            $table->string('image', '600')->nullable();
-            $table->float('discount')->nullable();
-            $table->text('address', '600')->nullable();
-            $table->string('phone_no')->nullable();
-            $table->string('email');
-            $table->integer('quantity')->value(1);
-            $table->integer('available_quantity');
-            $table->string('customer_name');
 
-            // $table->string('country');
-            // $table->string('color');
-            // $table->string('size');
+
+            $table->integer('available_quantity')->default(1);
 
             $table->integer('updated_used_id')->nullable();
 
+            //foreign keys
             $table->integer('customer_id');
             $table->integer('product_id');
 

@@ -17,26 +17,16 @@ return new class extends Migration
             $table->id();
             $table->string('name', '400');
             $table->integer('price');
-            $table->enum('category', ['men', 'women', 'kids']);
-            $table->enum('other_types', ['cosmetics', 'shoes', 'bags'])->nullable();
-            $table->enum('accessories', ['true', 'false'])->default('false');
-            $table->enum('type', ['casual', 'formal', 'sports'])->nullable();
+            $table->integer('discount')->default(0);
             $table->longText('description')->nullable();
-            $table->string('image', '600')->nullable();
-            $table->string('hover_image', '600')->nullable();
-            $table->float('discount')->nullable();
-            $table->integer('available_quantity');
+            $table->string('brand_name')->default('unknown');
 
-            $table->string('color')->nullable();
-            $table->string('color_pic')->nullable();
-            $table->string('size')->nullable();
-
+            //all foreign keys
             $table->integer('supplier_id')->nullable();
-            $table->integer('variation_id')->nullable();
+            $table->integer('subcat_id')->nullable();
 
             $table->integer('created_used_id')->nullable();
             $table->integer('updated_user_id')->nullable();
-
 
             $table->timestamps();
             $table->softDeletes();

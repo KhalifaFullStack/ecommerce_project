@@ -31,7 +31,7 @@ class User extends Authenticatable
     protected $guarded = [];
 
 
-    public function Product(): \Illuminate\Database\Eloquent\Relations\HasMany
+    public function product(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
         return $this->HasMany(Product::class);
     }
@@ -41,7 +41,15 @@ class User extends Authenticatable
         return $this->HasMany(Cart::class);
     }
 
+    public function subscription(): \Illuminate\Database\Eloquent\Relations\HasOne
+    {
+        return $this->HasOne(Subscription::class);
+    }
 
+    public function contact_us(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->HasMany(Contact_us::class);
+    }
     /**
      * The attributes that should be hidden for serialization.
      *

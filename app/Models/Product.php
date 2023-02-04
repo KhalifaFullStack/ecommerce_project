@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+// use Illuminate\Database\Eloquent\Relations;
 
 class Product extends Model
 {
@@ -17,18 +18,33 @@ class Product extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function color(): \Illuminate\Database\Eloquent\Relations\HasMany
+    public function sub_category(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->hasMany(Color::class);
+        return $this->belongsTo(Sub_category::class, 'subcat_id', 'id');
     }
 
-    public function size(): \Illuminate\Database\Eloquent\Relations\HasMany
+    public function product_detail(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->hasMany(Size::class);
+        return $this->hasMany(Product_detail::class);
     }
 
     public function cart(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(Cart::class);
+    }
+
+    public function feedback(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Feedback::class);
+    }
+
+    public function comparisons(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Comparisons::class);
+    }
+
+    public function wishlist(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Wishlist::class);
     }
 }
