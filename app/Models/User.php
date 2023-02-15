@@ -31,9 +31,9 @@ class User extends Authenticatable
     protected $guarded = [];
 
 
-    public function product(): \Illuminate\Database\Eloquent\Relations\HasMany
+    public function product_detail(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
-        return $this->HasMany(Product::class);
+        return $this->HasMany(Product_detail::class);
     }
 
     public function cart(): \Illuminate\Database\Eloquent\Relations\HasMany

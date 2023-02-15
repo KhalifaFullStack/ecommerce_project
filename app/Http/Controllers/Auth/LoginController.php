@@ -49,23 +49,21 @@ class LoginController extends Controller
                 - $request->get('xyz')
                 - $request->input('xyz')
          */
-        if(is_numeric($request->get('email'))){
+        if (is_numeric($request->get('email'))) {
             return ['phone' => $request->email, 'password' => $request->password];
-        }
-        elseif (filter_var($request->get('email'), FILTER_VALIDATE_EMAIL)){
+        } elseif (filter_var($request->get('email'), FILTER_VALIDATE_EMAIL)) {
             return ['email' => $request->email, 'password' => $request->password];
-        }
-        else{
+        } else {
             return ['username' => $request->email, 'password' => $request->password];
         }
     }
     /*********************** for login by email, username or phone (currently in use) ***********************/
 
-    function authenticated(Request $request, $user){ // used for login at (datetime) and the ip of the computer that was logged in with
+    function authenticated(Request $request, $user)
+    { // used for login at (datetime) and the ip of the computer that was logged in with
         $user->update([
-            'last_login_at' => Carbon::now()->toDateTimeString(),
-            'last_login_ip' => $request->getClientIp()
+            'last_login_time' => Carbon::now()->toDateTimeString(),
+            'last_login_place' => $request->getClientIp()
         ]);
     }
-
 }

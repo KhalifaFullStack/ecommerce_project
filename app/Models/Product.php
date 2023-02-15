@@ -13,11 +13,6 @@ class Product extends Model
 
     protected $guarded = [];
 
-    public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
-    {
-        return $this->belongsTo(User::class);
-    }
-
     public function sub_category(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo(Sub_category::class, 'subcat_id', 'id');
@@ -46,5 +41,10 @@ class Product extends Model
     public function wishlist(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
         return $this->hasMany(Wishlist::class);
+    }
+
+    public function user(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
+    {
+        return $this->belongsToMany(User::class, 'create_user_id', 'update_user_id', 'supplier_id', 'id');
     }
 }

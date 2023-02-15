@@ -22,7 +22,9 @@ return new class extends Migration
 
             //foreign key
             $table->integer('product_id')->nullable();
+            $table->integer('supplier_id')->nullable();
 
+            $table->softDeletes();
             $table->timestamps();
         });
     }

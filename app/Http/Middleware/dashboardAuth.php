@@ -16,11 +16,10 @@ class dashboardAuth
      */
     public function handle(Request $request, Closure $next)
     {
-        if(auth()->user()->user_type == 'customer'){
-            return view('home');
-        }
-        elseif(auth()->user()->user_type == 'supplier'){
-            return view('dashboard.product');
+        if (auth()->user()->user_type == 'customer') {
+            return redirect()->route('home');
+        } elseif (!auth()->user()) {
+            return redirect()->route('register');
         }
         return $next($request);
     }

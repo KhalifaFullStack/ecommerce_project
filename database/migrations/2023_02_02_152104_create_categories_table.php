@@ -17,6 +17,11 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->longText('description')->nullable();
+
+            $table->integer('create_user_id')->nullable();
+            $table->integer('update_user_id')->nullable();
+
+            $table->softDeletes();
             $table->timestamps();
         });
     }

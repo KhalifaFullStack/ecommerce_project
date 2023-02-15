@@ -21,4 +21,14 @@ class Sub_category extends Model
     {
         return $this->hasMany(Product::class);
     }
+
+    public function create_user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(User::class, 'create_user_id', 'id');
+    }
+
+    public function update_user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(User::class, 'update_user_id', 'id');
+    }
 }

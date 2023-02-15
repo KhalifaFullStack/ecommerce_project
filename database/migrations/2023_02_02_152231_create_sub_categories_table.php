@@ -17,8 +17,13 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->longText('description')->nullable();
-            //forgein key:
+            
+            //forgein keys:
             $table->integer('category_id');
+            $table->integer('create_user_id')->nullable();
+            $table->integer('update_user_id')->nullable();
+
+            $table->softDeletes();
             $table->timestamps();
         });
     }

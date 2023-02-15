@@ -15,41 +15,100 @@ class SubCategorySeeder extends Seeder
      */
     public function run()
     {
-        $sub_category = Sub_category::create([ //ID = 1
-            'name'        => 'Boys Winter Collection',
-            // 'description' => "",
-            'category_id'      => "1",   //ID (1) from categories table -> "men"
+        $sub_category = Sub_category::create([ //id=1
+            'name'        => 'clothes',
+            'description' => "xxxxxxxxxxxx",
+            'category_id'      => "1",
         ]);
 
-        $sub_category = Sub_category::create([ //ID = 2
-            'name'        => "Boys' Coat",
-            // 'description' => "",
-            'category_id'      => "1",   //ID (1) from categories table -> "men"
+        $sub_category = Sub_category::create([ //id=2
+            'name'        => "shoes",
+            'description' => "xxxxxxxxxxxx",
+            'category_id'      => "1",
         ]);
 
-
-        $sub_category = Sub_category::create([ //ID = 3
-            'name'        => 'Girls Winter Collection',
-            // 'description' => "",
-            'category_id'      => "2",   //ID (2) from categories table -> "women"
+        $sub_category = Sub_category::create([ //id=3
+            'name'        => "bags",
+            'description' => "xxxxxxxxxxxx",
+            'category_id'      => "1",
         ]);
 
-        $sub_category = Sub_category::create([ //ID = 4
-            'name'        => "Girls' Coat",
-            // 'description' => "",
-            'category_id'      => "2",   //ID (2) from categories table -> "women"
+        $sub_category = Sub_category::create([ //id=4
+            'name'        => 'watches',
+            'description' => "xxxxxxxxxxxx",
+            'category_id'      => "1",
         ]);
 
-        $sub_category = Sub_category::create([ //ID = 4
-            'name'        => 'Kids Winter Collection',
-            // 'description' => "",
-            'category_id'      => "3",   //ID (3) from categories table -> "kids"
+        $sub_category = Sub_category::create([ //id=5
+            'name'        => "accessories",
+            'description' => "xxxxxxxxxxxx",
+            'category_id'      => "1",
         ]);
 
-        $sub_category = Sub_category::create([ //ID = 4
-            'name'        => "Kids' Coat",
-            // 'description' => "",
-            'category_id'      => "3",   //ID (3) from categories table -> "kids"
+        //------------------ starting sub-category for women - id=2
+
+        $sub_category = Sub_category::create([ //id=6
+            'name'        => 'clothes',
+            'description' => "xxxxxxxxxxxx",
+            'category_id'      => "2",
+        ]);
+
+        $sub_category = Sub_category::create([ //id=7
+            'name'        => "shoes",
+            'description' => "xxxxxxxxxxxx",
+            'category_id'      => "2",
+        ]);
+
+        $sub_category = Sub_category::create([ //id=8
+            'name'        => "bags",
+            'description' => "xxxxxxxxxxxx",
+            'category_id'      => "2",
+        ]);
+
+        $sub_category = Sub_category::create([ //id=9
+            'name'        => 'accessories',
+            'description' => "xxxxxxxxxxxx",
+            'category_id'      => "2",
+        ]);
+
+        $sub_category = Sub_category::create([ //id=10
+            'name'        => "jewelry",
+            'description' => "xxxxxxxxxxxx",
+            'category_id'      => "2",
+        ]);
+
+        $sub_category = Sub_category::create([ //id=11
+            'name'        => "cosmetics",
+            'description' => "xxxxxxxxxxxx",
+            'category_id'      => "2",
+        ]);
+
+        //------------------ starting sub-category for Kids - id=3
+
+        $sub_category = Sub_category::create([ //id=12
+            'name'        => 'kids fashion',
+            'description' => "xxxxxxxxxxxx",
+            'category_id'      => "3",
+        ]);
+
+        $sub_category = Sub_category::create([
+            'name'        => 'baby & toddler toys', //id=14
+            'description' => "xxxxxxxxxxxx",
+            'category_id'      => "3",
+        ]);
+
+        //------------------ starting Automotive parts for Kids - id=4
+
+        $sub_category = Sub_category::create([ //id=15
+            'name'        => 'accessories',
+            'description' => "xxxxxxxxxxxx",
+            'category_id'      => "4",
+        ]);
+
+        $sub_category = Sub_category::create([ //id=16
+            'name'        => 'Sport packs',
+            'description' => "xxxxxxxxxxxx",
+            'category_id'      => "4",
         ]);
     }
 }

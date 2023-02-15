@@ -1,8 +1,12 @@
 <?php
 
 use App\Http\Controllers\Admin\DashboardHomeController;
+use App\Http\Controllers\Admin\DashboardProductDetailController;
 use App\Http\Controllers\Admin\DashboardProductController;
+use App\Http\Controllers\Admin\DashboardCategoryController;
+use App\Http\Controllers\Admin\DashboardSubCategoryController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\ContactUsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
@@ -58,9 +62,11 @@ Route::get('/compare-page', function () {
     return view('compare-page');
 })->name('compare-page');
 
-Route::get('/contact-us', function () {
-    return view('contact-us');
-})->name('contact-us');
+//start of Contact Us route ----------------------
+Route::get('/contact-us', [ContactUsController::class, 'create_form'])->name('contact-us');
+Route::Post('/contact-us/store', [ContactUsController::class, 'store_form'])->name('store_contact_us');
+//End of Contact Us route ----------------------
+
 
 Route::get('/faqs', function () {
     return view('faqs');
@@ -108,8 +114,32 @@ route::group(['middleware' => ['dashboardAuth', 'auth']], function () {
         Route::get('/home', [DashboardHomeController::class, 'index'])->name('dashboard');
 
         /**********************Product folder routes*******************************/
-        Route::resource('/products', DashboardProductController::class);
+        Route::resource('/product_details', DashboardProductDetailController::class)->except(['index']);
+        Route::get('/product_details/{id}/{name?}', [DashboardProductDetailController::class, 'index'])->name('product_details.index');
 
+        Route::resource('/products', DashboardProductController::class);
+        Route::get('/product/delete', [DashboardProductController::class, 'delete'])->name('products.delete');
+        Route::get('/product/restore/{id}', [DashboardProductController::class, 'restore'])->name('products.restore');
+        Route::delete('/product/forceDelete/{id}', [DashboardProductController::class, 'forceDelete'])->name('products.forceDelete');
+
+
+        /**********************category & sub-category folder routes*******************************/
+        Route::resource('/categories', DashboardCategoryController::class);
+        Route::get('/category/delete', [DashboardCategoryController::class, 'delete'])->name('categories.delete');
+        Route::get('/category/restore/{id}', [DashboardCategoryController::class, 'restore'])->name('categories.restore');
+        Route::delete('/category/forceDelete/{id}', [DashboardCategoryController::class, 'forceDelete'])->name('categories.forceDelete');
+
+        /******************************sub-category folder routes***************************************/
+        Route::resource('/subcategories', DashboardSubCategoryController::class);
+        Route::get('/subcategory/delete', [DashboardSubCategoryController::class, 'delete'])->name('subcategories.delete');
+        Route::get('/subcategory/restore/{id}', [DashboardSubCategoryController::class, 'restore'])->name('subcategories.restore');
+        Route::delete('/subcategory/forceDelete/{id}', [DashboardSubCategoryController::class, 'forceDelete'])->name('subcategories.forceDelete');
+
+        /******************************contact-us folder routes***************************************/
+        Route::get('/contact-us', [ContactUsController::class, 'index'])->name('contactUs.index');
+        Route::delete('/contact_us/delete/{id}', [ContactUsController::class, 'destroy'])->name('contactUs.destroy');
+
+        /******************************contact-us folder routes***************************************/
 
         Route::get('/profile', function () {
             return view('profile');

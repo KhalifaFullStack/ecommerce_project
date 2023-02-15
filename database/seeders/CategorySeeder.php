@@ -17,18 +17,22 @@ class CategorySeeder extends Seeder
     {
         $category = Category::create([ //ID = 1
             'name'        => 'men',
-            // 'description' => "",
+            'description' => "xxxxxxxxxx",
         ]);
 
         $category = Category::create([ //ID = 2
             'name'        => "women",
-            // 'description' => "",
+            'description' => "xxxxxxxxxx",
         ]);
 
         $category = Category::create([ //ID = 3
             'name'        => "kids",
-            // 'description' => "",
+            'description' => "xxxxxxxxxx",
         ]);
 
+        $category = Category::create([ //ID = 4
+            'name'        => "automotive parts",
+            'description' => "xxxxxxxxxx",
+        ]);
     }
 }

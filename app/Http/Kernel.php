@@ -65,5 +65,6 @@ class Kernel extends HttpKernel
         'verified'      => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
         'notCustomer'   => \App\Http\Middleware\notCustomer::class,
         'dashboardAuth' => \App\Http\Middleware\dashboardAuth::class,
+        'ifSupplierDashboard' => \App\Http\Middleware\ifSupplierDashboard::class,
     ];
 }

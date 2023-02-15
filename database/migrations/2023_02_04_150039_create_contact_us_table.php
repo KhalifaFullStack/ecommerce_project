@@ -20,12 +20,12 @@ return new class extends Migration
             $table->string('phone')->nullable();
             $table->string('email');
             $table->string('subject');
-            $table->longText('messages');
+            $table->longText('message');
             $table->string('user_type')->nullable();
 
 
             //foreign key
-            $table->integer('user_id')->nullable();
+            $table->integer('created_user_id')->nullable();
 
             $table->softDeletes();
             $table->timestamps();

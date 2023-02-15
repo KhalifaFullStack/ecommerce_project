@@ -17,4 +17,14 @@ class Category extends Model
     {
         return $this->hasMany(Sub_category::class);
     }
+
+    public function create_user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(User::class, 'create_user_id', 'id');
+    }
+
+    public function update_user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->belongsTo(User::class, 'update_user_id', 'id');
+    }
 }
