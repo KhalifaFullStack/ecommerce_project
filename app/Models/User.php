@@ -50,6 +50,17 @@ class User extends Authenticatable
     {
         return $this->HasMany(Contact_us::class);
     }
+
+    public function created_user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->BelongsTo(User::class);
+    }
+
+    public function updated_user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
+    {
+        return $this->BelongsTo(User::class);
+    }
+
     /**
      * The attributes that should be hidden for serialization.
      *
@@ -68,4 +79,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    //Inside the user model
+
+    public function scopeType($query, $userType)
+    {
+        return $query->where('user_type', '=', $userType);
+    }
+
 }

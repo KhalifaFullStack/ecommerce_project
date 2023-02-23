@@ -195,6 +195,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         Darryldecode\Cart\CartServiceProvider::class,
+        Maatwebsite\Excel\ExcelServiceProvider::class,
     ],
 
     /*
@@ -209,9 +210,10 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
-        
+
         // 'ExampleClass' => App\Example\ExampleClass::class,
-        'Cart' => Darryldecode\Cart\Facades\CartFacade::class,
+        'Cart'  => Darryldecode\Cart\Facades\CartFacade::class,
+        'Excel' => Maatwebsite\Excel\Facades\Excel::class,
     ])->toArray(),
 
 

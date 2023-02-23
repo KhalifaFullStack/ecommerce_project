@@ -16,6 +16,7 @@ class DashboardProductDetailController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
     public function index($id)
     {
         $find_product   = Product::FindOrFail($id);
@@ -29,8 +30,9 @@ class DashboardProductDetailController extends Controller
 
         $product_count  = $products->count();
 
-        return view('dashboard.products.detail', compact('products', 'find_product', 'product_count'));
+        return view('dashboard.products.indexDetail', compact('products', 'find_product', 'product_count'));
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -39,7 +41,7 @@ class DashboardProductDetailController extends Controller
      */
     public function create()
     {
-
+        
         return view('dashboard.products.create');
     }
 
@@ -95,8 +97,31 @@ class DashboardProductDetailController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
     public function destroy($id) //this is exactly the softdelete where it is only deleted to the recycle-bin (ps:add value to deleted_at) and can be restored by: public function restore()
     {
-        //
+        $product_detail = Product_detail::find($id);
+        $product_detail->delete();
+        return redirect()->route('product_details.delete');
+        // ->with(['deleted_product_message' => "($product->name) - Deleted successfully from the products main page"]);
+    }
+
+    public function delete()
+    {
+        $product_details = Product_detail::orderBy('created_at', 'asc')->onlyTrashed()->paginate(10);
+        $count    = $product_details->count();
+        return view('dashboard.products.deleteDetail', compact('product_details', 'count'));
+    }
+
+    public function restore($id)
+    {
+        $product_detail = Product_detail::withTrashed()->findOrFail($id)->restore();
+        return redirect()->route('product_details.delete');
+    }
+
+    public function forceDelete($id)
+    {
+        $product_detail = Product_detail::where('id', '=', $id)->forceDelete();
+        return redirect()->route('product_details.delete');
     }
 }

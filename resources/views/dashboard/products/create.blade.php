@@ -1,7 +1,9 @@
 @extends('dashboard.layouts.master')
-@inject('products', 'App\Models\Product');
 
-@section('dashboard.title', 'Products')
+{{-- @inject('product', 'App\Models\Product');  --}}
+{{-- @inject('subcategory', 'App\Models\Sub_Category');  --}}
+
+@section('dashboard.title', 'Add Product')
 
 @section('dashboard.content')
 

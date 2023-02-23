@@ -28,8 +28,10 @@
                             <th>Category</th>
                             <th>Issued</th>
                             <th>More Details</th>
-                            <th>Action</th>
-                            
+
+                            @if (auth()->user()->user_type == 'admin' || auth()->user()->user_type == 'supplier')
+                                <th>Action</th>
+                            @endif
                         </tr>
                     </thead>
 
@@ -66,7 +68,7 @@
                                     <button type="button" onclick="window.location.href='#'" class="btn btn-dark btn-xs fw-bold">Deleted Details</button> {{-- {{ route('product_details.delete' , [$product->id, $product->name]) }} --}}
                                 </td>
 
-                                @if (auth()->user()->user_type == 'admin')
+                                @if (auth()->user()->user_type == 'admin' || auth()->user()->user_type == 'supplier')
 
                                         <td class="d-flex justify-content-evenly">
 

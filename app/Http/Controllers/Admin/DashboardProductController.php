@@ -4,8 +4,10 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Category;
 use App\Models\Product;
 use App\Models\Product_detail;
+use App\Models\Sub_category;
 use Illuminate\Support\Facades\Redirect;
 use PhpParser\Node\Stmt\Return_;
 
@@ -36,7 +38,7 @@ class DashboardProductController extends Controller
      */
     public function create()
     {
-        //
+        return view('dashboard.products.create');
     }
 
     /**
@@ -69,7 +71,13 @@ class DashboardProductController extends Controller
      */
     public function edit($id)
     {
-        //
+        $product     = Product::Find($id);
+        if ($product == null) {
+            return view('404');
+        } else {
+            $subcategory = Sub_category::all();
+            return view('dashboard.products.edit', compact('product', 'subcategory'));
+        }
     }
 
     /**
@@ -81,7 +89,25 @@ class DashboardProductController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $product = Product::find($id);
+
+        $product->name              = $request->name;
+        $product->brand_name        = $request->brand;
+        $product->price             = $request->price;
+        $product->discount          = $request->discount;
+        $product->description       = $request->description;
+        $product->subcat_id         = $request->subcat_id;
+        $product->updated_user_id   = auth()->user()->id;
+
+
+        if (auth()->user()->user_type = 'supplier') {
+            $product->supplier_id = auth()->user()->id;
+        } else {
+            $product->supplier_id = $request->supplier_id;
+        }
+        $product->save();
+
+        return redirect()->route('products.index');
     }
 
     /**

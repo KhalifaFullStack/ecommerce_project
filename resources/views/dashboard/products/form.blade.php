@@ -1,81 +1,71 @@
 <div class="col-12 grid-margin stretch-card">
-    <div class="card px-5 py-4">
+  <div class="card px-5 py-4">
 
-          <div class="d-flex justify-flex-start ">
+        <div class="d-flex justify-flex-start ">
+          <div class="form-group" style="width: 40%; margin-right: 5%;" >
+            <label>Product Name</label>
+            <input type="text" class="form-control" name="name" placeholder="Add Product Name"
+            value="{{ Request::old('name') ? Request::old('name') : $product->name }}">
+          </div>
+
+          <div class="form-group" style="width: 40%">
+            <label>Brand Name</label>
+            <input name="brand" class="form-control" placeholder="Add Brand Name" 
+            value="{{ Request::old('brand_name') ? Request::old('brand_name') : $product->brand_name }}">
+          </div>
+        </div>
+
+        <div class="d-flex justify-flex-start ">
+          <div class="form-group" style="width: 40%; margin-right: 5%;" >
+            <label>Price</label>
+            <input type="text" class="form-control" name="price" placeholder="Add Price"
+            value="{{ Request::old('price') ? Request::old('price') : $product->price }}">
+          </div>
+
+          <div class="form-group" style="width: 40%">
+            <label>Discount</label>
+            <input name="discount" class="form-control" placeholder="Add Price Discount" 
+            value="{{ Request::old('discount') ? Request::old('discount') : $product->discount }}">
+          </div>
+        </div>
+
+        <div class="form-group" style="width: 60%">
+          <label>Description</label>
+          <input height="10" name="description" class="form-control" placeholder="Add Product description" 
+          value="{{ Request::old('description') ? Request::old('description') : $product->description }}">
+        </div>
+
+        <div class="d-flex justify-flex-start ">
+          <div class="form-group" style="width: 40%; margin-right: 5%;" >
+            <label>Category & Sub-category <span class="text-danger">*</span></label>
+              <select class="form-select form-select-sm" name="subcat_id">category Name
+                <option selected>Select Sub-category Name</option>
+                @forelse ($subcategory as $subCat)
+                <option value="{{ $subCat->id }}" {{ $subCat->id == $product->subcat_id ? 'selected' : '' }}>
+                {{ $subCat->name }} &rightarrow; {{ $subCat->category->name }}</option>
+                @empty
+
+                @endforelse
+            </select>
+          </div>
+
             <div class="form-group" style="width: 40%; margin-right: 5%;" >
-              <label>Product name</label>
-              <input type="text" class="form-control" name="name" placeholder="Product name">
+                <label>Supplier <span class="text-danger">*</span></label>
+              @inject('user', 'App\Models\User')
+              @if(auth()->user()->user_type == "supplier")
+                  {!! Form::select('supplier_id', $user->where('id', auth()->user()->id)->pluck('name', 'id'), Request::old('supplier_id') ? Request::old('supplier_id') : $product->supplier_id,[
+                      'class' => 'form-control select'.( $errors->has('supplier_id') ? ' is-invalid' : '' ),
+                      // ( $ProductDetail_model->supplier_id == auth()->user()->id ? 'selected'  : '' ),
+                      // 'required',
+                      // 'disabled',
+                  ]) !!} 
+              @else
+                  {!! Form::select('supplier_id', $user->type('supplier')->pluck('name','id'), Request::old('supplier_id') ? Request::old('supplier_id') : $product->supplier_id,[
+                      'placeholder' => '---------- Please select a supplier ----------',
+                      'class'       => 'form-control select'.( $errors->has('supplier_id') ? ' is-invalid' : '' ),
+                      // ( $ProductDetail_model->supplier_id == $user->id ? 'selected'  : '' ),
+                      // 'required',
+                  ]) !!} 
+              @endif
             </div>
-
-            <div class="form-group" style="width: 40%">
-              <label>Description</label>
-              <textarea name="description" class="form-control">Add product description</textarea>
-            </div>
-          </div>
-
-          <div class="d-flex justify-flex-start ">
-            <div class="form-group" style="width: 40%; margin-right: 5%;">
-              <label for="exampleInputPassword4">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Password">
-            </div>
-
-            <div class="form-group">
-              <label for="exampleSelectGender">Product gender</label>
-                <select name="category" class="form-control" id="exampleSelectGender">
-                  <option value="men" {{ isset($products) && $products->category == "men" ? 'selected'  : '' }}>Men</option>
-                  <option value="women" {{ isset($products) && $products->category == "women" ? 'selected'  : '' }}>Women</option>
-                  <option value="kids" {{ isset($products) && $products->category == "kids" ? 'selected'  : '' }}>Kids</option>
-                </select> 
-              </div>
-
-              <div class="form-group">
-                <label for="exampleSelectGender">Product Type</label>
-                  <select name="type" class="form-control" id="exampleSelectGender">
-                      <option value="shoes">Shoes</option>
-                      <option value="shoes">Shoes</option>
-                      <option value="shoes">Shoes</option>
-                  </select>
-                </div>
-
-                <div class="form-group">
-                  <label for="exampleSelectGender">Other Types</label>
-                    <select name="other_type" class="form-control" id="exampleSelectGender">
-                        <option value=""></option>
-                    </select>
-                  </div>
-          </div>  
-
-          <div class="form-group">
-            <label>Upload image</label>
-            <input type="file" name="img[]" class="file-upload-default">
-            <div class="input-group col-xs-12">
-              <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
-              <span class="input-group-append">
-                <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
-              </span>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="input-group">
-              <div class="input-group-prepend">
-                <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                  <div role="separator" class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Separated link</a>
-                </div>
-              </div>
-              <input type="text" class="form-control" aria-label="Text input with dropdown button">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputCity1">City</label>
-            <input type="text" class="form-control" id="exampleInputCity1" placeholder="Location">
-          </div>
-          <div class="form-group">
-            <label for="exampleTextarea1">Textarea</label>
-            <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
-          </div>
-
+        </div>

@@ -23,12 +23,15 @@
                             <th>Product</th>
                             <th>Price</th>
                             <th>Discount</th>
-                            <th>Supplier</th>
+                            <th>Supplier Name</th>
                             <th>Brand Name</th>
                             <th>Category</th>
                             <th>Issued</th>
                             <th>More Details</th>
+
+                            @if (auth()->user()->user_type == 'admin' || auth()->user()->user_type == 'supplier')
                             <th>Action</th>
+                            @endif
                             
                         </tr>
                     </thead>
@@ -48,7 +51,7 @@
                                 </td>
 
                                 <td>
-                                    {{ $product->supplier_id ?? 'error please call tech support' }}
+                                    {{ $product->user->name ?? 'error please call tech support' }}
                                 </td>
 
                                 <td>
@@ -57,6 +60,7 @@
 
                                 <td>
                                     {{-- {{ ucfirst($product->sub_category->category->name) ?? 'Category for product: '.$product->name }} ->  --}}
+                                    {{ ucfirst($product->sub_category->category->name ?? 'Sub-category for product: '.$product->name) }} &rightarrow;
                                     {{ ucfirst($product->sub_category->name ?? 'Sub-category for product: '.$product->name) }}
                                 </td>
 
@@ -66,7 +70,7 @@
                                     <button type="button" onclick="window.location.href='{{ route('product_details.index' , [$product->id, $product->name]) }}'" class="btn btn-dark btn-xs fw-bold">More Details</button>
                                 </td>
 
-                                @if (auth()->user()->user_type == 'admin')
+                                @if (auth()->user()->user_type == 'admin' || auth()->user()->user_type == 'supplier')
 
                                         <td class="d-flex justify-content-evenly">
 

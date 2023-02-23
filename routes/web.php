@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\DashboardProductDetailController;
 use App\Http\Controllers\Admin\DashboardProductController;
 use App\Http\Controllers\Admin\DashboardCategoryController;
 use App\Http\Controllers\Admin\DashboardSubCategoryController;
+use App\Http\Controllers\Admin\DashboardUserController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\ContactUsController;
 use Illuminate\Support\Facades\Route;
@@ -110,20 +111,29 @@ Route::group([], function () {
 route::group(['middleware' => ['dashboardAuth', 'auth']], function () {
     Route::prefix('admin')->group(function () {
 
+        /**********************Dashboard Home routes*******************************/
         Route::get('/', [DashboardHomeController::class, 'index'])->name('dashboard');
         Route::get('/home', [DashboardHomeController::class, 'index'])->name('dashboard');
+
+        /**********************User Folder routes*******************************/
+        Route::resource('/users', DashboardUserController::class);
+        Route::get('/user/delete', [DashboardUserController::class, 'delete'])->name('users.delete');
+        Route::get('/user/restore/{id}', [DashboardUserController::class, 'restore'])->name('users.restore');
+        Route::delete('/user/forceDelete/{id}', [DashboardUserController::class, 'forceDelete'])->name('users.forceDelete');
 
         /**********************Product folder routes*******************************/
         Route::resource('/product_details', DashboardProductDetailController::class)->except(['index']);
         Route::get('/product_details/{id}/{name?}', [DashboardProductDetailController::class, 'index'])->name('product_details.index');
-
+        Route::get('/product_detail/delete', [DashboardProductDetailController::class, 'delete'])->name('product_details.delete');
+        Route::get('/product_detail/restore/{id}', [DashboardProductDetailController::class, 'restore'])->name('product_details.restore');
+        Route::delete('/product_detail/forceDelete/{id}', [DashboardProductDetailController::class, 'forceDelete'])->name('product_details.forceDelete');
+        /*Product folder routes*******************************/
         Route::resource('/products', DashboardProductController::class);
         Route::get('/product/delete', [DashboardProductController::class, 'delete'])->name('products.delete');
         Route::get('/product/restore/{id}', [DashboardProductController::class, 'restore'])->name('products.restore');
         Route::delete('/product/forceDelete/{id}', [DashboardProductController::class, 'forceDelete'])->name('products.forceDelete');
 
-
-        /**********************category & sub-category folder routes*******************************/
+        /**********************category folder routes*******************************/
         Route::resource('/categories', DashboardCategoryController::class);
         Route::get('/category/delete', [DashboardCategoryController::class, 'delete'])->name('categories.delete');
         Route::get('/category/restore/{id}', [DashboardCategoryController::class, 'restore'])->name('categories.restore');

@@ -90,6 +90,7 @@
             </div>
           </li>
 
+          @if(auth()->user()->user_type == 'admin' || auth()->user()->user_type == 'moderator')
           <li class="nav-item nav-category">Users</li>
 
           <li class="nav-item">
@@ -100,13 +101,14 @@
             </a>
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> All users </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Create user </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Deleted User </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ route('users.index') }}"> All users </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ route('users.create') }}"> Create user </a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ route('users.delete') }}"> Deleted User </a></li>
               </ul>
             </div>
-
           </li>
+          @endif
+
 
           <li class="nav-item nav-category">help</li>
           <li class="nav-item">

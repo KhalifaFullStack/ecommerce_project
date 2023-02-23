@@ -11,10 +11,10 @@
                 <div>
                     <h4 class="card-title card-title-dash">Details Of Your Product</h4>
                     <p class="card-subtitle card-subtitle-dash"><a style="color:black;" href="{{ route('products.index') }}">All Products</a>/
-                        <span style=" color:black;"> Details for "{{ $find_product->name }}"</span></p>
-                        <p class="card-subtitle card-subtitle-dash">There are {{ $product_count }} records</p>
+                        <p class="card-subtitle card-subtitle-dash">There are {{ $count }} records</p>
                 </div>
                 <div>
+                    <button onclick="window.location.href='{{ url()->previous() }}'" class="btn btn-dark btn-md text-white" type="button"></i>&leftarrow; Go back</button>
                     <button onclick="window.location.href='{{ route('products.create') }}'" class="btn btn-dark btn-md text-white" type="button"></i>Add new detail for this product</button>
                 </div>
             </div>
@@ -29,12 +29,15 @@
                             <th>Size</th>
                             <th>Availablitiy</th>
                             <th>Issued</th>
-                            <th>Action</th>
+
+                            @if (auth()->user()->user_type == 'admin' || auth()->user()->user_type == 'supplier')
+                                <th>Action</th>
+                            @endif
                         </tr>
                     </thead>
 
                     <tbody>
-                        @foreach($products as $product_detail)
+                        @foreach($product_details as $product_detail)
                             <tr>
                                 <td class="py-1">
                                     <img src="{{ $product_detail->image }}" alt="image for id: {{ $product_detail->id }}"/> <span>{{ ucfirst($product_detail->product->name) ?? 'name for id: '.$product_detail->id }}</span>
@@ -64,19 +67,19 @@
 
                                 <td><i class="mdi mdi-calendar text-muted me-1"></i> <span class="text-muted">{{ $product_detail->created_at->translatedFormat('d/m/Y') }}</span></td>            
 
-                                @if (auth()->user()->user_type == 'admin')
+                                @if (auth()->user()->user_type == 'admin' || auth()->user()->user_type == 'supplier')
 
                                         <td class="d-flex justify-content-evenly">
-                                                    <button type="button" onclick="window.location.href='{{ route('product_details.edit' , [$product_detail->id]) }}'" class="btn btn-success btn-xs fw-bold">Edit</button>
+                                                    <button type="button" onclick="window.location.href='{{ route('product_details.restore' , [$product_detail->id]) }}'" class="btn btn-success btn-xs fw-bold">Restore</button>
 
-                                                <form action="#" method="post">  
+                                                <form action="{{ route('product_details.forceDelete' , [$product_detail->id]) }}" method="post">  
                                                     @csrf
                                                     {{ method_field('delete') }}
-                                                        <button type="submit" class="btn btn-danger btn-xs fw-bold" >Delete</button>
+                                                        <button type="submit" class="btn btn-danger btn-xs fw-bold" >Delete Permenantly</button>
                                                 </form>
                                         </td>
 
-                                @elseif (auth()->user()->user_type == 'moderator')
+                                    @elseif (auth()->user()->user_type == 'moderator')
                                     
                                 @endif
                             </tr>
@@ -86,7 +89,7 @@
 
                     <nav class="m-b-30 mt-2 p-2" aria-label="Page navigation example">
                         <ul class="pagination justify-content-center pagination-primary">
-                            {!! $products->links('pagination::bootstrap-5') !!}
+                            {!! $product_details->links('pagination::bootstrap-5') !!}
                         </ul>
                   </nav>
             </div>

@@ -27,6 +27,7 @@ return new class extends Migration
             $table->enum('user_type', ['admin', 'moderator', 'supplier', 'customer']);
             $table->string('dob');
             $table->longText('address')->nullable();
+            $table->enum('status', ['inactive', 'active', 'blocked'])->default('active');
 
             $table->string('whatsapp')->nullable();
             $table->string('facebook')->nullable();

@@ -43,8 +43,8 @@ class Product extends Model
         return $this->hasMany(Wishlist::class);
     }
 
-    public function user(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
+    public function user(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
-        return $this->belongsToMany(User::class, 'create_user_id', 'update_user_id', 'supplier_id', 'id');
+        return $this->belongsTo(User::class, 'supplier_id');
     }
 }
